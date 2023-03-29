@@ -1,4 +1,4 @@
-# 我的个人notebook
+# 我的笔记本
 
 > About this project
 
