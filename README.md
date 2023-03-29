@@ -1,8 +1,8 @@
-# x41v3r-notebook
+# 我的个人notebook
 
 > About this project
 
-hkfjjadsbgjaskjadsf
+个人的编程学习笔记，事无巨细
 
 > 笔记文件内容概况
 
