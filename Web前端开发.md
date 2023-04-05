@@ -880,7 +880,7 @@ p{
 <a href="javascript:alert('谁让你点我的？');"></a>
 <!-- 可以通过将href属性值设置为"javascript:;"，表示点击之后什么也不做 -->
 ```
-* 虽然可以写在标签的属性中，但是他们属于结构与行为耦合，不方便维护，不推荐使用
+* 虽然可以写在标签的属性中，但是他们属于结构与行为的耦合，不方便维护，不推荐使用
 > 写在head标签中的script标签中
 ```html
 <html>
@@ -922,12 +922,12 @@ alert("我是外部js文件中的alert语句");
 // 单行注释
 ```
 
-### 2.JS数据类型
+### 2.JS数据和数据类型
 
 #### （1）字面量和变量
 
 * 字面量，一些不可改变的值，其实就是常量
-* 变量，可以用来保存字面量，而且变量的值是可以任意改变的，更加方便我们使用，所以在开发中都是通过变量去保存一个字面量，而很少直接使用字面量
+* 变量，可以用来保存字面量，而且变量的值是可以任意改变的，更加方便我们的使用，所以在开发中都是通过变量去保存一个字面量，而很少直接使用字面量
 
 * 声明变量
 
@@ -939,6 +939,16 @@ var b = 100;
 console.log(b);
 ```
 
+* 数据类型指的是字面量的类型，共有六种数据类型
+  * string&emsp;字符串
+  * number&emsp;数值
+  * boolean&emsp;布尔值
+  * null&emsp;空值
+  * Undefined&emsp;未定义
+  * Object&emsp;对象
+
+* 其中String、Number、Boolean、Null、Undefined属于基本数据类型，而Object属于引用数据类型
+
 #### （2）标识符
 
 > 在JS中所有可以由我们自主命名的都可以称为是标识符
@@ -949,11 +959,72 @@ console.log(b);
   * 不能以数字开头
   * 标识符不能是ES中的关键字或保留字
 * 命名规范：一般都采用小驼峰命名法
-* JS底层保存标识符时实际上采用的是Unicode编码，所以理论上讲，utf-8中的内容都可以作为标识符，但是不建议把中文作为标识符来使用，因为这样会被人笑死的哈哈哈哈
+* JS底层保存标识符时实际上采用的是Unicode编码，所以理论上讲，utf-8中的内容都可以作为标识符。也就是说可以用中文作为标识符，但是不建议把中文作为标识符来使用，因为这样会被人笑死的哈哈哈哈~~
 
 #### （3）字符串
 
+* Js中的字符串字面量需要使用一对引号引起来
+* 双引号引`" "`和单引号`‘ ’`都可以，但是不要混合使用
+* 引号不能嵌套：双引号里面不能放双引号、单引号内不能放单引号
+  * 但是单引号内能放双引号，双引号内也能放单引号
+
+```javascript
+var str = "hello"
+console.log(str);
+
+str = "fdasfdas"fdasfdasfdas"fdsafdas";(n)
+str = "fadsfdasf'fdsafdas'fdsafdas";(y)
+str = 'fdsafdasf"fdsafdasfdas"dsafdas';(y)
+str = "fdasfdsafda \"sfdsafdas\" fds";(y)//使用转义字符
+```
+
+* 转义字符&emsp;`\`
+  * `\"`&emsp;一个双引号
+  * `\'`&emsp;一个单引号
+  * `\n`&emsp;换行符
+  * `\t`&emsp;制表符
+  * `\\`&emsp;一个反斜杠
+
 #### （4）Number
+
+* JS中的所有数值都是Number类型，包括整数和浮点数
+* JS中number类型可以表示的范围
+  * 如果要表示的数字超过了最大值，则会返回一个`Infinity`，表示正无穷
+  * 如果要表示的数字小于了最小值，则会返回一个`-Infinity`，表示负无穷
+  * 这里的超出范围并不是javascript的number类型变量的表示范围，而是浏览器在网页中所能显示的范围
+
+```javascript
+console.log(Number.MAX_VALUE);
+//最大值：1.7976931348623157e+308
+
+console.log(-Number.MAX_VALUE);
+//最小值：-1.7976931348623157e+308
+```
+
+* `Infinity`是一个字面量，表示的意思就是number类型数据中的”无穷“，即一个超出了表示范围的值
+  * `typeof Infinity = number`
+
+```javascript
+console.log(Infinity);//正无穷
+console.log(-Infinity);//负无穷
+```
+
+* `NaN`是一个特殊的数字，表示Not A Number，也是一个字面量
+  * `typeof NaN = number`
+
+```javascript
+var a = "hello" * "hello";//变量a的值就是 NaN
+```
+
+* 大于零的最小值
+
+```javascript
+console.log(Number.MIN_VALUE);
+// 5e-34
+```
+
+* JS中的整数运算基本可以保证精确
+* 使用JS进行浮点数运算，可能得到一个不精确的结果，所以千万不要使用JS进行对精确度要求较高的运算
 
 #### （5）布尔值
 
@@ -962,6 +1033,12 @@ console.log(b);
 #### （7）强制类型转换
 
 ### 3.JS运算符
+
+
+
+typeof运算符：检查一个变量的类型
+
+语法：`typeof 变量名`
 
 
 
