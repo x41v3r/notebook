@@ -845,7 +845,7 @@ p{
   ![JavaScript的三个组成部分](./pictures/JavaScript的三个组成部分.png)
 * JavaScript语言的特点
   * 属于解释型语言
-  * 有着类似于C和 Java的语法结构
+  * 有着类似于C和 Java的语法结构 
   * 动态语言
   * 基于原型的面向对象
 
@@ -910,8 +910,8 @@ alert("我是外部js文件中的alert语句");
 #### （3）基本语法
 
 * javascript严格区分大小写
-* javascript每条语句都以分号（`;`）结尾
-  * 如果不写分号，浏览器会自动添加，但是会消耗一些系统资源
+* javascript每条语句都以分号&emsp;`;`&emsp;结尾
+  * 如果不写分号，浏览器会自动添加，但是这会消耗一些系统资源
   * 而且有些时候浏览器会加错分号，所以在开发中**分号必须写**
 * javascript会自动忽略多个空格和换行，所以我们可以利用空格和换行对代码进行格式化
 * javascript中的注释
@@ -944,8 +944,8 @@ console.log(b);
   * number&emsp;数值
   * boolean&emsp;布尔值
   * null&emsp;空值
-  * Undefined&emsp;未定义
-  * Object&emsp;对象
+  * undefined&emsp;未定义
+  * object&emsp;对象
 
 * 其中String、Number、Boolean、Null、Undefined属于基本数据类型，而Object属于引用数据类型
 
@@ -1026,11 +1026,42 @@ console.log(Number.MIN_VALUE);
 * JS中的整数运算基本可以保证精确
 * 使用JS进行浮点数运算，可能得到一个不精确的结果，所以千万不要使用JS进行对精确度要求较高的运算
 
-#### （5）布尔值
+#### （5）布尔值（Boolean）
+
+* 布尔值只有两个
+  * true
+  * false
+
+```javascript
+var bool = true;//这不能加引号
+console.log(typeof bool);//返回"boolean"
+```
 
 #### （6）null和Undefined
 
+* Null（空值）类型的值只有一个，就是`null`
+  * 专门用来表示一个为空的对象
+
+```javascript
+var a = null;
+console.log(typeof a);//返回值为"object"
+```
+
+* Undefined（未定义）类型的值也只有一个，就是`undefined`
+  * 当我们声明一个变量，但是并不给变量赋值时，他的值就是`undefined`
+
+```javascript
+var b;
+console.log(typeof b);//返回值为"undefined"
+```
+
 #### （7）强制类型转换
+
+
+
+fdasfdas
+
+
 
 ### 3.JS运算符
 
