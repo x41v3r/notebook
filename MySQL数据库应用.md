@@ -25,7 +25,7 @@
   * **数据库名、表名、表别名、字段名、字段别名**等&emsp;都小写
   * **SQL关键字、函数名、绑定变量**等&emsp;都大写
 
-### （3）注释
+### （3）MySQL注释
 
 ```sql
 -- 这是一个单行注释
@@ -52,7 +52,9 @@
 
 #### （1）关于SELECT语句
 
-```sql
+```mysql
+SELECT 1; #没有任何zi'ju
+
 SELECT 1+1,2*3;
 
 SELECT * FROM employees; -- 查找employees表中的全部信息

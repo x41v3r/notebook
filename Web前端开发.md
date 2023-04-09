@@ -1,4 +1,6 @@
-# Web前端开发
+
+
+# |Web前端开发
 
 ![Web前端开发](./pictures/Web前端开发.png) 
 
@@ -922,7 +924,7 @@ alert("我是外部js文件中的alert语句");
 // 单行注释
 ```
 
-### 2.JS数据和数据类型
+### 2.JS的数据和数据类型
 
 #### （1）字面量和变量
 
@@ -1059,7 +1061,7 @@ console.log(typeof b);//返回值为"undefined"
 
 
 
-fdasfdas
+
 
 
 
