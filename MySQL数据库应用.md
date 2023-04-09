@@ -27,7 +27,7 @@
 
 ### （3）MySQL注释
 
-```sql
+```mysql
 -- 这是一个单行注释
 # 这其实也是一个单行注释（mysql特有的一种注释方式）
 /*
@@ -53,8 +53,7 @@
 #### （1）关于SELECT语句
 
 ```mysql
-SELECT 1; #没有任何zi'ju
-
+SELECT 1; #没有任何子句
 SELECT 1+1,2*3;
 
 SELECT * FROM employees; -- 查找employees表中的全部信息
@@ -64,6 +63,12 @@ FROM employees; -- 查找employees表中特定的列（字段）
 ```
 
 #### （2）列的别名
+
+
+
+
+
+
 
 #### （3）去除重复行
 
