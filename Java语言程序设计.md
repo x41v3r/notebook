@@ -1107,7 +1107,7 @@ e.getInfo();
 > &emsp;&emsp;有了对象的多态性以后，内存中实际上是加载了**子类特有的属性和方法**了的，但是由于声明为父类类型，导致编译时只能调用父类中所声明的属性和方法
 * 问题：如何才能通过多态对象实体调用子类中特有的属性和方法？
 * 答：使用强制类型转换，进行向下转型
-  * `Student s = (Student)e`
+  * `Student s  (Student)e`
 * 在多态性对象向下转型之后，得到的对象就是一个普通的子类对象，这个新的对象和之前的多态对象位于同一个存储空间，**是同一个实例**
 > 使用强制向下转型时可能会出现ClassCastException异常，向下转型转化不成功，所以需要时使用instanceof关键字判定要进行的向下转型操作是否合法
 * instanceof关键字的使用
@@ -1254,8 +1254,6 @@ class CodeBlockTest{
 
 ### 9.final关键字
 
-> 含义：最终的
-
 * 修饰一个类：被final修饰的类不能被其他的类所继承
   * 举例：String类、System类、StringBuffer类
 
@@ -1318,7 +1316,7 @@ public class FinalTest{
 
 ```java
 abstract public class TestClass{
-    
+   
 }
 ```
 
@@ -1386,14 +1384,6 @@ abstract class Person{
 
 
 
-
-
-
-
-
-
-
-
 ### 12.内部类
 
 
@@ -1401,8 +1391,6 @@ abstract class Person{
 
 
 ## 三、Java异常处理
-
-
 
 
 
@@ -1419,7 +1407,7 @@ abstract class Person{
 > Object类是所有Java类的根父类
 * 如果在类的声明中为使用extends关键字指明其父类，则默认父类为java.lang.Object类
 ```java
-2public class Person{
+public class Person{
 	...
 }
 ```
@@ -1435,12 +1423,12 @@ method(Object obj){//可以接收任何类作为其参数
 	...
 }
 ```
-* Object类中的功能（属性、方法）具有通用性。
-* Object类只声明了一个空参构造器。
+* Object类中的功能（属性、方法）具有通用性
+* Object类只声明了一个空参构造器
 > Object类中的方法
 * `protected Object clone()`&emsp;创建并返回一份指定对象的拷贝
 * `boolean equals(Object obj)`&emsp;比较两个对象是否相等
-* `protected void finalize()`&emsp;当系统检测到没有引用指向这个对象时，自动执行该方法，将该对象进行垃圾回收。永远不要主动地去调用该方法。
+* `protected void finalize()`&emsp;当系统检测到没有引用指向这个对象时，自动执行该方法，将该对象进行垃圾回收。永远不要主动地去调用该方法
 * `Class<?> getClass()`&emsp;返回指定对象地运行时类
 * ......
 > `public boolean equals(Object obj)`方法，比较两个对象是否是相等的
