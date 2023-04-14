@@ -40,7 +40,7 @@ public class Hello{
 	* 包名：多单词组成时所字母都小写
 	* 类名、接口名：多单词组成时每个单词的首字符大写
 	* 变量（属性）名、方法名：多单词组成时，除第一个单词之外每一个单词的首字母都大写
-	* 常量名：每一个字母都大写，多单词时每个单词之间用_连接
+	* 常量名：每一个字母都大写，多单词时每个单词之间用`_`连接
 * 注意：一般情况下，**Java项目中类的包名不能以java.开头**，否则执行时就会抛出异常
 
 ### 2.数据类型
@@ -630,7 +630,7 @@ class Person{
 * “ 两同一不同 ”
   * 同一个类、同一个方法名
   * 形参列表不同（**参数个数不同**或**对应位置参数类型不同**）
-* 示例：
+* 示例代码
 ```java
 //返回两个整数的和
 int add(int x,int y){
@@ -1380,11 +1380,131 @@ abstract class Person{
 
 ### 11.接口（interface）的使用
 
+* 关于接口
+  * 一方面，有时必须从几个类中派生出一个子类，继承它们所有的属性和方法。但是，Java不支持多重继承。有了接口，
+    就可以得到多重继承的效果
+  * 另一方面，有时必须从几个类中抽取出一些共同的行为特征，而它们之间又没有子父类的关系，仅仅是具有相同的行为特征而已
+  * Java中类和接口是并列的两个结构
 
+* 定义接口中的成员
+  * JDK7及以前，只能定义全局常量和抽象方法
+    * 全局常量：必须都由`public static final`修饰，但是可以省略不写
+    * 抽象方法：必须都由`public abstract`修饰，这个也可以以和省略不写
+  * JDK8及以后：除了可以定义全局常量和抽象方法之外，还可以定义静态方法和默认方法
+
+```java
+interface Flyable{
+    public static final int MAX_SPEED = 7900;
+    int MIN_SPEED = 1;//省略了 public static final
+
+    public abstract void fly();
+    void stop();//省略了 public abstract
+}
+```
+
+* 接口中不能定义构造器！（这意味着接口不可以实例化）
+
+* 在Java的开发当中，接口通过让类去实现（implements）的方式来使用
+  * 如果实现类覆盖了接口中的所有抽象方法，则此实现类就可以实例化
+  * 如果实现类没有覆盖接口中的所有抽象方法，则此实现类必须为一个抽象类
+
+```java
+class Plane implements Flyable{
+    @Override
+    public void fly() {
+        System.out.println("飞机起飞");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("飞机降落");
+    }
+}
+
+abstract class kite implements Flyable{
+    @Override
+    public void fly() {
+        System.out.println("风筝起飞");
+    }
+}
+```
+
+* 接口的多实现（Java类可以实现多个接口，弥补了Java但继承性的局限性）
+  * 一个类实现了多个接口时，覆盖了**所有接口中的所有抽象方法**，则此实现类可以实例化，否则必须为一个抽象类
+  * 用类实现接口的同时也可以显式的对其他类进行继承
+
+```java
+interface Attack{
+    public abstract attack();
+}
+
+class Bullet extends Object implements Flyable,Attack{
+    @Override
+    public void fly() {
+        System.out.println("飞机起飞");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("飞机降落");
+    }
+    
+    @Override
+    public void attack(){
+        System.out.println("攻击")
+    } 
+}
+
+```
+
+* 接口之间的继承
+  * 接口之间可以多继承，一个子接口同时由多个父接口
+
+```java
+interface AA{
+    public abstract void methodOne();
+}
+
+interface BB{
+    public abstract void methodTwo();
+}
+
+interface CC extends AA,BB{
+    public abstract void methodThree();
+}
+
+class DD implements CC{
+    @Override
+    public void methodOne(){
+        
+    }
+    @Override
+    public void methodTwo(){
+        
+    }
+    @Override
+    public void methodThree(){
+        
+    }
+}
+```
+
+* 接口的具体使用体现了多态性
+* 接口实际上可以看作是一种规范
+
+视频day15-16
 
 
 
 ### 12.内部类
+
+
+
+
+
+
+
+
 
 
 
