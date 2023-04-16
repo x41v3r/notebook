@@ -1402,7 +1402,7 @@ interface Flyable{
 }
 ```
 
-* 接口中不能定义构造器！（这意味着接口不可以实例化）
+* 接口中不能定义构造器！（这意味着**接口不可以实例化**）
 
 * 在Java的开发当中，接口通过让类去实现（implements）的方式来使用
   * 如果实现类覆盖了接口中的所有抽象方法，则此实现类就可以实例化
@@ -1452,13 +1452,13 @@ class Bullet extends Object implements Flyable,Attack{
     @Override
     public void attack(){
         System.out.println("攻击")
-    } 
+    }
 }
 
 ```
 
 * 接口之间的继承
-  * 接口之间可以多继承，一个子接口同时由多个父接口
+  * 接口之间可以多继承，即一个子接口可以同时有着多个父接口
 
 ```java
 interface AA{
@@ -1494,19 +1494,7 @@ class DD implements CC{
 
 视频day15-16
 
-
-
 ### 12.内部类
-
-
-
-
-
-
-
-
-
-
 
 
 
