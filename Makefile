@@ -2,8 +2,9 @@ target: notebook.pdf
 
 notebook.pdf: notebook.tex
 	xelatex  notebook.tex
-	del notebook.pdf
+	rm notebook.pdf
 	xelatex notebook.tex
+	mv notebook.pdf ./output
 
 clean:
-	del notebook.pdf
+	rm *.aux
