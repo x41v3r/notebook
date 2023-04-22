@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  22 APR 2023 19:52
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  23 APR 2023 00:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,7 +259,7 @@ File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
 \g__pdf_backend_annotation_int=\count282
 \g__pdf_backend_link_int=\count283
 )
-(./notebook.aux (./computer_composition_principle.aux)
+(./notebook.aux (./principles_of_computer_organization.aux)
 (./data_structures_and_algorithms.aux) (./operating_system.aux)
 (./computer_network.aux) (./c_programming_language.aux)
 (./latex_typesetting_system.aux) (./java_programming_language.aux))
@@ -345,11 +345,12 @@ LaTeX Warning: No \author given.
 [1
 
 ]
-\openout2 = `computer_composition_principle.aux'.
+\openout2 = `principles_of_computer_organization.aux'.
 
- (./computer_composition_principle.tex
-File: images/softwares.png Graphic file (type bmp)
-<images/softwares.png>
+ (./principles_of_computer_organization.tex
+File: images/principles_of_computer_organization/softwares.png Graphic file (ty
+pe bmp)
+<images/principles_of_computer_organization/softwares.png>
 
 Overfull \hbox (35.29381pt too wide) in paragraph at lines 14--15
 [][]  
@@ -357,7 +358,27 @@ Overfull \hbox (35.29381pt too wide) in paragraph at lines 14--15
 
 [2
 
-] [3] [4] [5] [6] [7]) [8]
+]
+File: images/principles_of_computer_organization/r-base_to_decimal.png Graphic 
+file (type bmp)
+<images/principles_of_computer_organization/r-base_to_decimal.png>
+File: images/principles_of_computer_organization/binary_octal.png Graphic file 
+(type bmp)
+<images/principles_of_computer_organization/binary_octal.png>
+File: images/principles_of_computer_organization/binary_hexadecimal.png Graphic
+ file (type bmp)
+<images/principles_of_computer_organization/binary_hexadecimal.png>
+
+Overfull \hbox (35.29381pt too wide) in paragraph at lines 85--87
+[][] 
+ []
+
+
+Overfull \hbox (35.29381pt too wide) in paragraph at lines 85--87
+[]  
+ []
+
+[3] [4] [5] [6] [7]) [8]
 \openout2 = `data_structures_and_algorithms.aux'.
 
  (./data_structures_and_algorithms.tex [9
@@ -415,20 +436,20 @@ Overfull \hbox (7.76366pt too wide) in paragraph at lines 53--54
 
 
 ] [33] [34]) [35]
-(./notebook.aux (./computer_composition_principle.aux)
+(./notebook.aux (./principles_of_computer_organization.aux)
 (./data_structures_and_algorithms.aux) (./operating_system.aux)
 (./computer_network.aux) (./c_programming_language.aux)
 (./latex_typesetting_system.aux) (./java_programming_language.aux))
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: C4F09A3DE0F9941BAE3E14B2C587AB75;3736.
+(rerunfilecheck)             Checksum: 438002292D00D516A4C0E96FACDCD95F;3804.
  ) 
 Here is how much of TeX's memory you used:
- 10601 strings out of 476660
- 171649 string characters out of 5803252
+ 10655 strings out of 476660
+ 175946 string characters out of 5803252
  1889704 words of memory out of 5000000
- 30702 multiletter control sequences out of 15000+600000
+ 30753 multiletter control sequences out of 15000+600000
  517322 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 77i,6n,79p,453b,878s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,6n,79p,463b,878s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on notebook.pdf (35 pages).
