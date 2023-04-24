@@ -7,4 +7,4 @@ notebook.pdf: notebook.tex
 	mv notebook.pdf ./output
 
 clean:
-	rm *.aux
+	bash ./clean.sh
