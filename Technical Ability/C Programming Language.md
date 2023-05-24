@@ -52,21 +52,21 @@ Naming rules:
 
 > Integer
 
-|   Data Type    |   Memory Space    |              Value Range               |
-| -------------- | ----------------- | -------------------------------------- |
-| short          | 2 Bytes           | -32768~32767                           |
-| unsigned short | 2 Bytes           | 0~65535                                |
-| int            | 2Bytes OR 4 Bytes | -32768~32767 OR -2147483648~2147483647 |
-| unsigned int   | 2Bytes OR 4 Bytes | 0~65535 OR 0~4294967295                |
-| long           | 4 Bytes           | -2147483648~2147483647                 |
-| unsigned long  | 4 Bytes           | 0~4294967295                           |
+|   Data Type    |   Memory Space    |               Value Range                |
+| -------------- | ----------------- | ---------------------------------------- |
+| short          | 2 Bytes           | -32768\~32767                            |
+| unsigned short | 2 Bytes           | 0\~65535                                 |
+| int            | 2Bytes OR 4 Bytes | -32768\~32767 OR -2147483648\~2147483647 |
+| unsigned int   | 2Bytes OR 4 Bytes | 0\~65535 OR 0\~4294967295                |
+| long           | 4 Bytes           | -2147483648\~2147483647                  |
+| unsigned long  | 4 Bytes           | 0\~4294967295                            |
 
 > Floating-point
 
-| Data Type | Memory Space |   Value Range     |     |     |
-| --------- | ------------ | ----------------- | --- | --- |
-| float     | 4 Bytes      | 1.2E-38~3.4E+38   |     |     |
-| double    | 8 Bytes      | 2.3E-308~1.7E+308 |     |     |
+| Data Type | Memory Space |    Value Range     |
+| --------- | ------------ | ------------------ |
+| float     | 4 Bytes      | 1.2E-38\~3.4E+38   |
+| double    | 8 Bytes      | 2.3E-308\~1.7E+308 |
 
 > Character
 
