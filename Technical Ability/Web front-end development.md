@@ -15,7 +15,7 @@
 ### 1.1 basic structure
 
 ```html
-<!DOCTYPE html> <!-- The document declaration tells the browser the HTML version of the webpage, which indicates that it is in accordance with the HTML5 standard. -->
+<!DOCTYPE html>  <!-- The document declaration tells the browser the HTML version of the webpage, which indicates that it is in accordance with the HTML5 standard. -->
 <html> <!-- The root tag of HTML, all content of the webpage should be written within the root tag. -->
   <head> <!-- The header of a webpage, where the internal content is generally not displayed in the browser, is used to assist the browser or search engine in parsing the webpage. -->
       <meta charset="utf-8"/> <!-- Meta tag is used to set metadata. Here, the character set for browser parsing of web pages is specified as utf-8. -->
@@ -49,7 +49,32 @@
 &copy;  <!-- Copy right -->
 ```
 
-### 1.3
+### 1.3 the meta tag
+
+> The meta element is used to set the web page metadata. The metadata is not for users to see, but for web page parsing information provided to browsers
+
+```html
+<meta charset="UTF-8"/>
+<!-- set the charset of the web page -->
+
+<meta name="keywords" content="HTML5,前端"/>
+<!--
+    The name of this metadata is "keywords". 
+    Set keywords for web pages to facilitate search engines.
+    We can set multiple keywords for a webpage at the same time, with each keywords separated by an English comma.
+ -->
+
+<meta name="description" content="这是一个非常不错的网站"/>
+<!-- 
+    The name of this metadata is "description". 
+    It is used to set a description of the website, which will be displayed in the description information of search results in search engines. 
+ -->
+
+<meta http-equiv="refresh" content="3;url=https://www.baidu.com"/>
+<!--
+    Refresh within 3 seconds and redirect to the specified URL.
+-->
+```
 
 ## 2 CSS
 

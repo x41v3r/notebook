@@ -25,7 +25,7 @@ ln s_file hard_link  # create a hard link
 ln -s s_file soft_link  # create a soft link
 ```
 
-#### 1.1.2 file view command
+#### 1.1.2 file view commands
 
 ```bash
 cat file_name  # Output file content
@@ -46,7 +46,7 @@ chown user_name file_or_direc  # Manipulate a file's user assignment
 chgrp group_name file_or_direc  # Manipulate a file's group assignment
 ```
 
-#### 1.1.4 manipulate archive file
+#### 1.1.4 to manipulate archive file
 
 ```bash
 # .tar.gz
