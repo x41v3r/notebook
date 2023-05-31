@@ -24,7 +24,7 @@ void main()
 	*/
 }
 //C language is strictly case sensitive
-//The C program consists of statements, each of which must end with an English semicolon
+//The C program consists of statements, each of which must be ended with an English semicolon
 //Curly braces always appear in pairs
 ```
 
