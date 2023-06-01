@@ -1,1 +1,1 @@
-# Fundamentals of Digital Electronic Technology
+# Digital Electronic

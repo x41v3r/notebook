@@ -1,1 +1,1 @@
-# Fundamentals of Analog Electronic Technology
+# Analog Electronic
