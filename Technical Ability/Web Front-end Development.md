@@ -1,4 +1,4 @@
-# Web front-end development
+# Web Front-end Development
 
 * Tim Berners Lee created the World Wide Web in 1994.
 * This has established a unified standard specification for the development of web pages, which is also the current web development standard.
@@ -12,7 +12,7 @@
 
 > HTML: Hypertext Mark-up Language
 
-### 1.1 basic structure
+### 1.1 the basic structure of a web page
 
 ```html
 <!DOCTYPE html>  <!-- The document declaration tells the browser the HTML version of the webpage, which indicates that it is in accordance with the HTML5 standard. -->
@@ -74,6 +74,24 @@
 <!--
     Refresh within 3 seconds and redirect to the specified URL.
 -->
+```
+
+### 1.4 semantic tags
+
+```html
+<!-- title tags -->
+<h1>first level title</h1>
+<h2>second level title</h2>
+<h3>third level title</h3>
+<h4>forth level title</h4>
+<h5>fifth level title</h5>
+<h6>sixth level title</h6>
+
+<!-- hgroup -->
+<hgroup>
+    <h1>main title</h1>
+    <h2>subtitle</h2>
+</hgroup>
 ```
 
 ## 2 CSS

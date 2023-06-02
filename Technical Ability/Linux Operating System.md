@@ -46,7 +46,7 @@ chown user_name file_or_direc  # Manipulate a file's user assignment
 chgrp group_name file_or_direc  # Manipulate a file's group assignment
 ```
 
-#### 1.1.4 to manipulate archive file
+#### 1.1.4 to manipulate archive files
 
 ```bash
 # .tar.gz
