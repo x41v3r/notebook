@@ -12,7 +12,7 @@
 
 > HTML: Hypertext Mark-up Language
 
-### 1.1 the basic structure of a web page
+### 1.1 The basic structure of a web page
 
 ```html
 <!DOCTYPE html>  <!-- The document declaration tells the browser the HTML version of the webpage, which indicates that it is in accordance with the HTML5 standard. -->
@@ -32,7 +32,7 @@
     * self ending tags &emsp;`<img >` or `<img />` (Both of these are correct.)
 * HTML only has multiline comments, and comment tags are not allowed to be nested, otherwise the outer layer comments will end prematurely. Except for annotations, the content directly written in the body tag will be displayed on the page (in the specified style and layout).
 
-### 1.2 entity
+### 1.2 Entity
 
 > Sometimes in HTML, we cannot directly write some special symbols, such as multiple consecutive spaces, greater than and less than signs on both sides of the letter. 
 > Multiple consecutive spaces in HTML source code, no matter how many, will be automatically parsed by the browser as one by default.
@@ -49,7 +49,7 @@
 &copy;  <!-- Copy right -->
 ```
 
-### 1.3 the meta tag
+### 1.3 The meta tag
 
 > The meta element is used to set the web page metadata. The metadata is not for users to see, but for web page parsing information provided to browsers
 
@@ -76,7 +76,7 @@
 -->
 ```
 
-### 1.4 semantic tags
+### 1.4 Semantic tags
 
 ```html
 <!-- title tags -->
