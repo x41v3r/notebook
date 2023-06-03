@@ -28,7 +28,7 @@
 </html>
 ```
 * Tags usually appear in pairs, but there are some self ending tags.
-    * complete tag&emsp;`<p>content</p>`
+    * complete tags&emsp;`<p>content</p>`
     * self ending tags &emsp;`<img >` or `<img />` (Both of these are correct.)
 * HTML only has multiline comments, and comment tags are not allowed to be nested, otherwise the outer layer comments will end prematurely. Except for annotations, the content directly written in the body tag will be displayed on the page (in the specified style and layout).
 
@@ -51,7 +51,8 @@
 
 ### 1.3 The meta tag
 
-> The meta element is used to set the web page metadata. The metadata is not for users to see, but for web page parsing information provided to browsers
+> The meta element is used to set the web page metadata.   
+> The metadata is not for users to see, but for web page parsing information provided to browsers.
 
 ```html
 <meta charset="UTF-8"/>
@@ -79,7 +80,7 @@
 ### 1.4 Semantic tags
 
 ```html
-<!-- title tags -->
+<!-- title tags (block element)-->
 <h1>first level title</h1>
 <h2>second level title</h2>
 <h3>third level title</h3>
@@ -92,7 +93,20 @@
     <h1>main title</h1>
     <h2>subtitle</h2>
 </hgroup>
+
+<!-- p (block element)-->
+<p>this is a paragraph</p>
+
+<!-- div (block element) -->
+<div></div>
+
+<!-- span (inline element) -->
+<span></span>
 ```
+
+### 1.5 HTML Tabulation
+
+
 
 ## 2 CSS
 
