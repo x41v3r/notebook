@@ -32,7 +32,7 @@ void main()
 
 ![](./pics/c_operating_mechanism.png)
 
-#### 1.1.2 naming rules for identifiers
+#### 1.1.2 c language identifier naming convention
 
 > The character sequence used by C to name various variables and functions is called an identifier, and any place in the program that can be named by ourselves is called an identifier.
 
@@ -44,7 +44,7 @@ Naming rules:
 
 #### 1.1.3 c standard library
 
-&emsp;&emsp;The C language standard library is a set of C built-in functions, constants, and header files, such as "stdio.h", "stdlib.h", "math.h", and so on. Printf function under "stdio.h" is the most commonly used library function. The statement `system ("pause");` under "stdlib.h" prevents the program from flashing, and the system function implements the function of calling system commands.
+&emsp;&emsp;The C language standard library is a set of C built-in functions, constants, and header files, such as "stdio.h", "stdlib.h", "math.h", and so on. The `printf( )` function under "stdio.h" is the most commonly used library function. The statement `system ("pause");` under "stdlib.h" prevents the program from flashing, and the system function implements the function of calling system commands.
 
 ### 1.2 Variable and Constant
 

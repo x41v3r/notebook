@@ -31,8 +31,8 @@ ln -s s_file soft_link  # create a soft link
 cat file_name  # Output file content
 cat -n file_name  # Output file content and display numbers
 
-more file_name  # 
-less file_name  #
+more file_name  # output file content in a better way
+less file_name  # output file content in a better way
 
 head -n num  # Output the content of the first n lines of the file
 tail -n num  # Output the content of the last n lines of the file
@@ -67,6 +67,50 @@ tar -pxvf archive_file_name.tar.xz  # decompress the archive
 * We can ...
 
 ### 1.2 User and group management
+
+&emsp;&emsp;The Linux operating system is a multi user operating system, where each user is different from each other, having what they can and cannot do. 
+&emsp;&emsp;The root user is the system administrator and he is almost omnipotent. 
+
+#### 1.1.1 configuration files
+
+> /etc/passwd: the user master infomation file
+
+`username:password_mark:UID:GID:user's explanation:user_home_dir:default_shell_after_login`
+```bash
+root:x:0:0:the root user:/root:/bin/bash
+x41v3r:x:1001:1001:my normal user account:/home/x41v3r:/bin/zsh
+```
+
+> /etc/shadow: the user shadow file, storing the users' encrypted passwords
+
+`username:encrypted_passsword::::::`
+
+```bash
+root:$6$9w5Td6lg$bgpsy3olsq9WwWvS5Sst2W3ZiJpuCGDY.4w4MRk3ob/i85fl38RH15wzVoomff9isV1PzdcXmixzhnMVhMxbvO:15775:0:99999:7:::
+x41v3r:$6$zQf30TmlyIOz2enA$/NvEU1mdeSUbFDsxAo54kFwS07s5LwjJJGGJ37/Agy2RwteDLlnlxx3PginJeWBSfJIMv6SVeF/2/ivHVOFCq/:19507:0:99999:7:::
+```
+
+> /etc/group: dadasdas
+
+
+> /etc/gshadow: dsadas
+
+
+#### 1.1.2 configuration commands
+
+> user management commands
+
+```bash
+useradd -m username  # create a user and create a home directory for this user
+
+passwd  # set the password for onself
+
+passwd username  # set a password for the specific user(root only)
+passwd -l username  # lock a user(root only)
+passwd -u username  # unlock a user(root only)
+```
+
+
 
 
 

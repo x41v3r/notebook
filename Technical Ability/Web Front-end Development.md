@@ -94,7 +94,7 @@
     <h2>subtitle</h2>
 </hgroup>
 
-<!-- p (block element)-->
+<!-- p (block element) -->
 <p>this is a paragraph</p>
 
 <!-- div (block element) -->
@@ -103,6 +103,12 @@
 <!-- span (inline element) -->
 <span></span>
 ```
+* Semantic tags are divided into to categories: 
+    * Block elements
+    * Inline elements
+* Generally, inline elements are placed within block elements, but block elements are not placed within inline elements. But there are some exceptions: 
+    * Basically, anything can be placed within a block element, but no block element can be placed within a p element. (the p element is also a block element)
+    * Basically, nothing can be placed within an inline element, but anything can be palced in an a element. (the a element is also an inline element) 
 
 ### 1.5 HTML Tabulation
 
