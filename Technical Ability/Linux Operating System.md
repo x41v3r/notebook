@@ -71,7 +71,7 @@ tar -pxvf archive_file_name.tar.xz  # decompress the archive
 &emsp;&emsp;The Linux operating system is a multi user operating system, where each user is different from each other, having what they can and cannot do. 
 &emsp;&emsp;The root user is the system administrator and he is almost omnipotent. 
 
-#### 1.1.1 configuration files
+#### 1.2.1 configuration files
 
 > /etc/passwd: the user master infomation file
 
@@ -96,7 +96,7 @@ x41v3r:$6$zQf30TmlyIOz2enA$/NvEU1mdeSUbFDsxAo54kFwS07s5LwjJJGGJ37/Agy2RwteDLlnlx
 > /etc/gshadow: dsadas
 
 
-#### 1.1.2 management commands
+#### 1.2.2 management commands
 
 > user management commands
 
@@ -111,6 +111,8 @@ passwd -u username  # unlock a user(root only)
 ```
 
 ### 1.3 Authorization Management
+
+#### 1.3.1 the permission code
 
 ![](./pics/linux_permission_code.png)
 
