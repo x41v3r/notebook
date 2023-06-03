@@ -96,7 +96,7 @@ x41v3r:$6$zQf30TmlyIOz2enA$/NvEU1mdeSUbFDsxAo54kFwS07s5LwjJJGGJ37/Agy2RwteDLlnlx
 > /etc/gshadow: dsadas
 
 
-#### 1.1.2 configuration commands
+#### 1.1.2 management commands
 
 > user management commands
 
@@ -110,6 +110,9 @@ passwd -l username  # lock a user(root only)
 passwd -u username  # unlock a user(root only)
 ```
 
+### 1.3 Authorization Management
+
+![](./pics/linux_permission_code.png)
 
 
 
