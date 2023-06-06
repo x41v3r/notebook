@@ -92,9 +92,7 @@ x41v3r:$6$zQf30TmlyIOz2enA$/NvEU1mdeSUbFDsxAo54kFwS07s5LwjJJGGJ37/Agy2RwteDLlnlx
 
 > /etc/group: dadasdas
 
-
 > /etc/gshadow: dsadas
-
 
 #### 1.2.2 management commands
 
