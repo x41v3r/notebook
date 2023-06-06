@@ -12,7 +12,7 @@
 
 ![](./pics/data_structure_three_elements.png)
 
-#### 1.2 Characteristics of the algorithm
+#### 1.2 Characteristics of the Algorithms
 
 > The five characteristics that algorithms must possess
 
@@ -28,3 +28,10 @@
 * **Readability**: fdas
 * **Robustness**: adads
 * **High efficiency and low storage reserve requirements**: dsadsa
+
+#### 1.3 Measurement of Algorithm Efficiency
+
+
+
+
+
