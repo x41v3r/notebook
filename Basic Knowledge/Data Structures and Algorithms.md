@@ -31,7 +31,3 @@
 
 #### 1.3 Measurement of Algorithm Efficiency
 
-
-
-
-
