@@ -10,7 +10,7 @@
 * **Machine word length**: the maximum number of binary data bits that the CPU can process in one integer operation.
 * **Memory word length**: the number of bits of binary code contained in a storage unit.
 
-### 1.2 The Delvelopment of Computer
+### 1.2 The Development of Computer
 
 #### 1.2.1 hardware development
 

@@ -14,7 +14,7 @@
 
 #### 1.2 Characteristics of the Algorithms
 
-> The five characteristics that algorithms must possess
+> the five characteristics that algorithms must possess
 
 * **Finiteness**: das
 * **Certainty**: dfsf
