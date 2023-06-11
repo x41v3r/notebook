@@ -28,7 +28,7 @@
 
 * Inherit components on the substrate.
 
-> The era of VLSI
+> The era of large-scale inheritance circuit and VLSI
 
 * The emergence of microprocessors and microcomputers.
 
@@ -73,8 +73,15 @@
 
 > Total capacity
 
-* total capacity = the number of storage units * the length of each storage unit  (bit)
-* total capacity = the number of storage units * the length of each storage unit / 8  (Byte)
+$$
+cap = n \times len \space\space (bit)
+$$
+$$
+cap = n \times len \div 8 \space\space (byte)
+$$
+$cap$: the total capacity
+$n$: the number of storage units
+$len$: the length of each storage unit
 
 > Nth power of 2
 
@@ -90,12 +97,38 @@
 
 ## 2 Representation and Operation of Data in Computer
 
-### 2.1 Carry Counting System
+### 2.1 Carry counting system
 
+#### 2.1.1 reason for using binary
 
+* It can be represented by a physical device with two stable states, which is low-cost and easy to implement.
+* 0 and 1 exactly correspond to the false and true values of logical values, making it convenient to implement logical operations.
+* It is convenient to use logic gate circuits to perform arithmetic operations.
 
+#### 2.1.2 binary to octal and hexadecimal conversion
 
+![](./pics/binary_to_octal_and_hexadecimal.png)
+Left high fill 0, right low fill 0.
 
+#### 2.1.3 convert r base number to decimal number
 
+#### 2.1.4 convert decimal number to r base number
 
+## 3 Storage System
 
+### 3.1 Basic concepts
+
+#### 3.1.1 hierarchical structure
+
+![](./pics/storage_hierarchical_structure_pyramid.png)
+![](./pics/storage_hierarchical_structure.png)
+
+#### 3.1.2 
+
+## 4 Instruction Set
+
+## 5 Central Processing Unit
+
+## 6 Bus
+
+## 7 I/O System
