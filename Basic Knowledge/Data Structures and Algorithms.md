@@ -31,3 +31,17 @@
 
 #### 1.3 Measurement of Algorithm Efficiency
 
+## 2 Linaer List
+
+
+## 3 Stack and Queue
+
+## 4 Array and Special Martix
+
+## 5 Tree and Binary Tree
+
+## 6 Graph
+
+## 7 Search
+
+## 8 Order

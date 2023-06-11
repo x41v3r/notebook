@@ -97,7 +97,7 @@ $len$: the length of each storage unit
 
 ## 2 Representation and Operation of Data in Computer
 
-### 2.1 Carry counting system
+### 2.1 Carry counting system	
 
 #### 2.1.1 reason for using binary
 
@@ -105,7 +105,7 @@ $len$: the length of each storage unit
 * 0 and 1 exactly correspond to the false and true values of logical values, making it convenient to implement logical operations.
 * It is convenient to use logic gate circuits to perform arithmetic operations.
 
-#### 2.1.2 binary to octal and hexadecimal conversion
+#### 2.1.2 conversion from binary to octal and hexadecimal
 
 ![](./pics/binary_to_octal_and_hexadecimal.png)
 Left high fill 0, right low fill 0.
