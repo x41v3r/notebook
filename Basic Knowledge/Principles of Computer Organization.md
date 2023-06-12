@@ -64,12 +64,12 @@
 
 > MAR (Memory Address Register)
 
-* Reflect the number of storage units
+* Reflect the number of storage units.
 
 > MDR (Memeory Data Register)
 
-* Reflect the length of each storage unit
-* the bits of MDR == the length of each storage unit
+* Reflect the length of each storage unit.
+* The length of MDR equals to the length of each storage unit.
 
 > Total capacity
 
@@ -113,6 +113,20 @@ Left high fill 0, right low fill 0.
 #### 2.1.3 convert r base number to decimal number
 
 #### 2.1.4 convert decimal number to r base number
+
+### 2.2 Unsigned Integer
+
+#### 2.2.1 representation in hardware
+
+![](./pics/unsigned_int_representation_in_hardware.png)
+* All binary bits are numerical bits without sign bits, and the bit weight of the i-th bit is $2^{i-1}$.
+* An unsigned integer with n bits represents a range of $0$ to $2^{n}-1$. 
+    * If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
+* The smallest number that can be represented:  $0$ (all 0)
+* The maximum number that can be represented: $2^{n}-1$ (all 1)
+
+
+#### 2.2.2 implementation of addition and subtraction operations
 
 ## 3 Storage System
 

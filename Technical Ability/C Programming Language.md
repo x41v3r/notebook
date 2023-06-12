@@ -88,9 +88,9 @@ printf(“num=%d”,num);  //to use it
 
 int num = 60;  //Initialize while declaring
 ```
-&emsp;&emsp; We need to initialize it after declaring the variable. Because when defining variables, its memory may not be empty, and there may be invalid data stored, leading to abnormal program execution and exit.
+&emsp;&emsp; We need to initialize it after declaring the variable. Because when defining variables, its memory space may not be empty, and there may be invalid data stored, leading to abnormal program execution and exit.
 
-#### 1.2.3 define a constant (two sort of methods)
+#### 1.2.3 define a constant (two methods)
 
 > macro constant
 
