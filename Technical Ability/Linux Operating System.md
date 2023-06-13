@@ -73,7 +73,7 @@ tar -pxvf archive_file_name.tar.xz  # decompress the archive
 
 #### 1.2.1 configuration files
 
-> /etc/passwd: the user master infomation file
+> /etc/passwd: the users' master infomation file
 
 `username:password_mark:UID:GID:user's explanation:user_home_dir:default_shell_after_login`
 ```bash
@@ -106,6 +106,8 @@ passwd  # set the password for onself
 passwd username  # set a password for the specific user(root only)
 passwd -l username  # lock a user(root only)
 passwd -u username  # unlock a user(root only)
+
+
 ```
 
 ### 1.3 Authorization Management
@@ -114,6 +116,10 @@ passwd -u username  # unlock a user(root only)
 
 ![](./pics/linux_permission_code.png)
 
+|                 |                       r-4                        |                               w-2                                |             x-1              |
+| :-------------: | :----------------------------------------------: | :--------------------------------------------------------------: | :--------------------------: |
+|   for a file    |          allow reading of file content           |                allow modification of file content                | allow execution of the file  |
+| for a directory | allow viewing the list of files in the directory | allow creation, deletion, and movement of files in the directory | allow entry to the directory |
 
-
+#### 1.3.2
 

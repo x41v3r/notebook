@@ -33,7 +33,7 @@
 
 ## 2 Linear List
 
-### 2.1 Definition and Basic Structure of Linear Tables
+### 2.1 Definition and Basic Structure of Linear List
 
 > Definition
 > &emsp;&emsp;A linear list is a finite sequence of $n(n\geq0)$ data elements with the same data type, where $n$ is the list length. When $n=0$, the linear list is an empty list.

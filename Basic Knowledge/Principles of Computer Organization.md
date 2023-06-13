@@ -26,9 +26,9 @@
 
 > The era of small and medium-sized integrated circuits
 
-* Inherit components on the substrate.
+* Integrate components on a substrate
 
-> The era of large-scale inheritance circuit and VLSI
+> The era of large scale integration and VLSI (Vary Large Scale Integration)
 
 * The emergence of microprocessors and microcomputers.
 
@@ -69,7 +69,7 @@
 > MDR (Memeory Data Register)
 
 * Reflect the length of each storage unit.
-* The length of MDR equals to the length of each storage unit.
+* The length of MDR equals to the length of each storage unit in the main memory.
 
 > Total capacity
 
@@ -125,8 +125,16 @@ Left high fill 0, right low fill 0.
 * The smallest number that can be represented:  $0$ (all 0)
 * The maximum number that can be represented: $2^{n}-1$ (all 1)
 
-
 #### 2.2.2 implementation of addition and subtraction operations
+
+> Addition
+
+* Starting from the lowest bit, add by bit and carry to the higher bit.
+
+> Subtraction
+
+* The 'minuend' remains unchanged, while the 'subtract' is all negated in place. After negating, one is added, and subtraction becomes addition.
+* Starting from the lowest bit, add by bit and carry towards the higher bit.
 
 ## 3 Storage System
 
