@@ -10,7 +10,7 @@
 
 ### 1.1 Three Elements of Data Structure
 
-![](./pics/data_structure_three_elements.png)
+![](./pics/data_struct_three_elements.png)
 
 ### 1.2 Characteristics of the Algorithms
 
@@ -44,7 +44,7 @@ $$L=(a_1,a_2,\cdots,a_i,a_{i+1},\cdots,a_n)$$
 
 ## 3 Stack and Queue
 
-## 4 Array and Special Martix
+## 4 Array and Special Matrix
 
 ## 5 Tree and Binary Tree
 

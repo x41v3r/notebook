@@ -135,6 +135,7 @@ Left high fill 0, right low fill 0.
 
 * The 'minuend' remains unchanged, while the 'subtract' is all negated in place. After negating, one is added, and subtraction becomes addition.
 * Starting from the lowest bit, add by bit and carry towards the higher bit.
+* 
 
 ## 3 Storage System
 
