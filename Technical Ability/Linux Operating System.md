@@ -106,8 +106,6 @@ passwd  # set the password for onself
 passwd username  # set a password for the specific user(root only)
 passwd -l username  # lock a user(root only)
 passwd -u username  # unlock a user(root only)
-
-
 ```
 
 ### 1.3 Authorization Management
@@ -123,3 +121,42 @@ passwd -u username  # unlock a user(root only)
 
 #### 1.3.2
 
+## 2 The Neovim Editor
+
+### 2.1 Basic Usages
+
+> three basic working modes of vim
+
+![](./pics/vim_modes.jpg)
+
+> insert and append text
+
+| command |                                                                                                                                                                                                                            function                                                                                                                                                                                                                             |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| i                  | Insert the subsequently entered text at the current cursor position, and the text after the cursor moves to the right accordingly                                                                                                                                                                                                                                            |
+| I                 | Insert the subsequently entered text at the beginning of the line where the cursor is located. The beginning of the line is the first non white space character of the line, which is equivalent to moving the cursor to the beginning of the line to execute the i command. |
+| a                 | Insert the subsequently entered text after the current cursor position.                                                                                                                                                                                                                                                                                                                                              |
+| A                | Insert the subsequently entered text at the end of the line where the cursor is located, which is equivalent to moving the cursor to the end of the line and executing the a command.                                                                                                                                               |
+
+> find text
+
+> the visual mode
+
+| command |                                                                                                                                                                                function                                                                                                                                                                                 |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| v                 | Character Visualization Mode. The selection of target text in this mode is based on characters, which means that the text to be operated on should be selected one character at a time.                                                   |
+| V                 | Row visualization mode. The selection of target text for this pattern is based on behavioral units, which means that the pattern can select the text to be operated on line by line.                                                               |
+| Ctrl+v         | Block Visualization Mode. In this mode, you can select a rectangular area in the text as the target text, press Ctrl+v as the corner of the rectangle, and the endpoint position of the cursor movement as its diagonal. |
+
+### 2.4 IO storage principle of editor vim
+
+## 3 Bash Script
+
+## 4 Service Management
+
+## 5 Principles of Linux System
+
+### 5.1 Startup of Linux
+
+
+sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
