@@ -42,6 +42,8 @@ $$L=(a_1,a_2,\cdots,a_i,a_{i+1},\cdots,a_n)$$
 * The data type of each data element in a linear list is the same, that is to say, the storage space occupied by each element is the same.
 * A linear list must be a finite sequence, emphasizing order and must have a finite number of elements.
 
+### 2.2 
+
 ## 3 Stack and Queue
 
 ## 4 Array and Special Matrix
