@@ -114,9 +114,9 @@ passwd -u username  # unlock a user(root only)
 
 ![](./pics/linux_permission_code.png)
 
-|                 |                       r-4                        |                               w-2                                |             x-1              |
-| :-------------: | :----------------------------------------------: | :--------------------------------------------------------------: | :--------------------------: |
-|   for a file    |          allow reading of file content           |                allow modification of file content                | allow execution of the file  |
+|                           |                                    r-4                                     |                                                    w-2                                                     |                      x-1                      |
+| :-------------------: | :------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :-------------------------------------: |
+|      for a file       |               allow reading of file content               |                           allow modification of file content                           |  allow execution of the file   |
 | for a directory | allow viewing the list of files in the directory | allow creation, deletion, and movement of files in the directory | allow entry to the directory |
 
 #### 1.3.2
@@ -148,7 +148,7 @@ passwd -u username  # unlock a user(root only)
 | V                 | Row visualization mode. The selection of target text for this pattern is based on behavioral units, which means that the pattern can select the text to be operated on line by line.                                                               |
 | Ctrl+v         | Block Visualization Mode. In this mode, you can select a rectangular area in the text as the target text, press Ctrl+v as the corner of the rectangle, and the endpoint position of the cursor movement as its diagonal. |
 
-### 2.4 IO storage principle of editor vim
+### 2.4 IO storage principle of vim
 
 ## 3 Bash Script
 
