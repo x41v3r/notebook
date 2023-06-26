@@ -97,7 +97,3 @@ int num = 60;  //Initialize while declaring
 > const variable constant
 
 #### 1.2.4
-
-
-
-
