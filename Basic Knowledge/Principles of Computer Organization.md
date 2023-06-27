@@ -4,17 +4,7 @@
 
 ### 1.1 Composition of Computer System
 
-r with n bits represents a range of 0 to 2n−1.
-If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
-The smallest number that can be represented: 0 (all 0)
-The maximum number that can be represented: 2n−1 (all 1)
-2.2.2 implementation of addition and subtraction operations
-Addition![](./pics/principles_of_computer_organization/computer_system.png)r with n bits represents a range of 0 to 2n−1.
-If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
-The smallest number that can be represented: 0 (all 0)
-The maximum number that can be represented: 2n−1 (all 1)
-2.2.2 implementation of addition and subtraction operations
-Addition
+![](./pics/principles_of_computer_organization/computer_system.png)
 
 * **Instruction word length**: the total length of an instruction.
 * **Machine word length**: the maximum number of binary data bits that the CPU can process in one integer operation.
@@ -145,7 +135,6 @@ Left high fill 0, right low fill 0.
 
 * The 'minuend' remains unchanged, while the 'subtract' is all negated in place. After negating, one is added, and subtraction becomes addition.
 * Starting from the lowest bit, add by bit and carry towards the higher bit.
-* 
 
 ### 2.3 Signed Integer
 
