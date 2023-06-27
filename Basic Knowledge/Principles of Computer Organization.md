@@ -4,7 +4,17 @@
 
 ### 1.1 Composition of Computer System
 
-![](./pics/computer_system.png)
+r with n bits represents a range of 0 to 2n−1.
+If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
+The smallest number that can be represented: 0 (all 0)
+The maximum number that can be represented: 2n−1 (all 1)
+2.2.2 implementation of addition and subtraction operations
+Addition![](./pics/principles_of_computer_organization/computer_system.png)r with n bits represents a range of 0 to 2n−1.
+If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
+The smallest number that can be represented: 0 (all 0)
+The maximum number that can be represented: 2n−1 (all 1)
+2.2.2 implementation of addition and subtraction operations
+Addition
 
 * **Instruction word length**: the total length of an instruction.
 * **Machine word length**: the maximum number of binary data bits that the CPU can process in one integer operation.
@@ -50,11 +60,11 @@
 
 #### 1.3.1 early von Neumann machine structure
 
-![](./pics/early_von_neumann_machine_structure.png)
+![](./pics/principles_of_computer_organization/early_von_neumann_machine_structure.png)
 
 #### 1.3.2 modern computer architecture
 
-![](./pics/modern_computer_structure.png)
+![](./pics/principles_of_computer_organization/modern_computer_structure.png)
 
 ### 1.4 The Hierarchical Structure of Computer Systems
     
@@ -85,13 +95,13 @@ $len$: the length of each storage unit
 
 > Nth power of 2
 
-![](./pics/nth_power_of_2.png)
+![](./pics/principles_of_computer_organization/nth_power_of_2.png)
 
 #### 1.5.2 the central processing unit (CPU)
 
 > CPU main frequency: The frequency of digital pulse signal oscillation within the CPU.
 
-![](./pics/cpu_performance_metrics.png)
+![](./pics/principles_of_computer_organization/cpu_performance_metrics.png)
 
 #### 1.5.3 overall performance indicators
 
@@ -107,7 +117,7 @@ $len$: the length of each storage unit
 
 #### 2.1.2 conversion from binary to octal and hexadecimal
 
-![](./pics/binary_to_octal_and_hexadecimal.png)
+![](./pics/principles_of_computer_organization/binary_to_octal_and_hexadecimal.png)
 Left high fill 0, right low fill 0.
 
 #### 2.1.3 convert r base number to decimal number
@@ -118,7 +128,7 @@ Left high fill 0, right low fill 0.
 
 #### 2.2.1 representation in hardware
 
-![](./pics/unsigned_int_representation_in_hardware.png)
+![](./pics/principles_of_computer_organization/unsigned_int_representation_in_hardware.png)
 * All binary bits are numerical bits without sign bits, and the bit weight of the i-th bit is $2^{i-1}$.
 * An unsigned integer with n bits represents a range of $0$ to $2^{n}-1$. 
     * If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
@@ -137,14 +147,16 @@ Left high fill 0, right low fill 0.
 * Starting from the lowest bit, add by bit and carry towards the higher bit.
 * 
 
+### 2.3 Signed Integer
+
 ## 3 Storage System
 
 ### 3.1 Basic concepts
 
 #### 3.1.1 hierarchical structure
 
-![](./pics/storage_hierarchical_structure_pyramid.png)
-![](./pics/storage_hierarchical_structure.png)
+![](./pics/principles_of_computer_organization/storage_hierarchical_structure_pyramid.png)
+![](./pics/principles_of_computer_organization/storage_hierarchical_structure.png)
 
 #### 3.1.2 
 

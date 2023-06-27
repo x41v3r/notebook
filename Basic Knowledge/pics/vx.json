@@ -1,118 +1,20 @@
 {
     "created_time": "2023-05-19T14:00:55Z",
     "files": [
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-06T14:12:29Z",
-            "id": "52",
-            "modified_time": "2023-06-06T14:12:29Z",
-            "name": "data_structure_three_elements.png",
-            "signature": "784285914976173773",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-06T14:48:20Z",
-            "id": "53",
-            "modified_time": "2023-06-06T14:48:20Z",
-            "name": "computer_system.png",
-            "signature": "207324052408116",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-06T14:50:49Z",
-            "id": "54",
-            "modified_time": "2023-06-06T14:50:49Z",
-            "name": "program.png",
-            "signature": "784285914976176073",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-09T14:02:48Z",
-            "id": "55",
-            "modified_time": "2023-06-09T14:02:48Z",
-            "name": "nth_power_of_2.png",
-            "signature": "207324052664584",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-09T14:02:51Z",
-            "id": "56",
-            "modified_time": "2023-06-09T14:02:51Z",
-            "name": "modern_computer_structure.png",
-            "signature": "784285914976432395",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-09T14:02:54Z",
-            "id": "57",
-            "modified_time": "2023-06-09T14:02:54Z",
-            "name": "early_von_neumann_machine_structure.png",
-            "signature": "5546498803277967630",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-09T14:02:57Z",
-            "id": "58",
-            "modified_time": "2023-06-09T14:02:57Z",
-            "name": "cpu_performance_metrics.png",
-            "signature": "8223662518577606929",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-11T06:27:17Z",
-            "id": "59",
-            "modified_time": "2023-06-11T06:27:17Z",
-            "name": "binary_to_octal_and_hexadecimal.png",
-            "signature": "207324052810053",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-11T08:50:50Z",
-            "id": "60",
-            "modified_time": "2023-06-11T08:50:50Z",
-            "name": "storage_hierarchical_structure_pyramid.png",
-            "signature": "784285914976586474",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-11T13:02:27Z",
-            "id": "61",
-            "modified_time": "2023-06-11T13:02:27Z",
-            "name": "storage_hierarchical_structure.png",
-            "signature": "207324052833763",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-19T13:16:02Z",
-            "id": "62",
-            "modified_time": "2023-06-19T13:16:02Z",
-            "name": "data_struct_three_elements.png",
-            "signature": "207324053525778",
-            "tags": [
-            ]
-        }
     ],
     "folders": [
+        {
+            "name": "principles_of_computer_organization"
+        },
+        {
+            "name": "data_structures_and_algorithms"
+        },
+        {
+            "name": "operating_system"
+        },
+        {
+            "name": "computer_network"
+        }
     ],
     "id": "32",
     "modified_time": "2023-05-19T14:00:55Z",

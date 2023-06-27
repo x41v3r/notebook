@@ -49,7 +49,7 @@
 &copy;  <!-- Copy right -->
 ```
 
-### 1.3 The meta tag
+### 1.3 The Meta Tag
 
 > The meta element is used to set the web page metadata.   
 > The metadata is not for users to see, but for web page parsing information provided to browsers.
@@ -77,7 +77,7 @@
 -->
 ```
 
-### 1.4 Semantic tags
+### 1.4 Semantic Tags
 
 ```html
 <!-- title tags (block element)-->
@@ -112,14 +112,8 @@
 
 ### 1.5 HTML Tabulation
 
-
-
 ## 2 CSS
 
 > CSS: Cascading Style Sheets
 
-
-
 ## 3 JavaScript
-
-

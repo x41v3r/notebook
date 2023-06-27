@@ -6,11 +6,11 @@
 * How to informatize real world problems with program code?
 * How to efficiently process these information with computers to create value?
 
-![](./pics/program.png)
+![](./pics/data_structures_and_algorithms/program.png)
 
 ### 1.1 Three Elements of Data Structure
 
-![](./pics/data_struct_three_elements.png)
+![](./pics/data_structures_and_algorithms/data_struct_three_elements.png)
 
 ### 1.2 Characteristics of the Algorithms
 
