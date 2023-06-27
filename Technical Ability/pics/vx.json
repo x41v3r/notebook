@@ -1,40 +1,19 @@
 {
     "created_time": "2023-05-19T12:12:30Z",
     "files": [
-        {
-            "attachment_folder": "",
-            "created_time": "2023-05-19T12:39:42Z",
-            "id": "12",
-            "modified_time": "2023-05-19T12:39:42Z",
-            "name": "java_object_memory_parsing.png",
-            "signature": "177778159118",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-05-21T13:03:54Z",
-            "id": "40",
-            "modified_time": "2023-05-21T13:03:54Z",
-            "name": "c_operating_mechanism.png",
-            "signature": "177778333370",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2023-06-06T11:06:27Z",
-            "id": "51",
-            "modified_time": "2023-06-06T11:06:27Z",
-            "name": "linux_permission_code.png",
-            "signature": "207324052394803",
-            "tags": [
-            ]
-        }
     ],
     "folders": [
+        {
+            "name": "linux_operating_system"
+        },
+        {
+            "name": "c_programming_language"
+        },
+        {
+            "name": "java_programming_language"
+        }
     ],
-    "id": "26",
+    "id": "72",
     "modified_time": "2023-05-19T12:12:30Z",
     "signature": "177778157486",
     "version": 3

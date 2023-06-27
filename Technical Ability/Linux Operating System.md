@@ -112,7 +112,7 @@ passwd -u username  # unlock a user(root only)
 
 #### 1.3.1 the permission code
 
-![](./pics/linux_permission_code.png)
+![](./pics/linux_operating_system/linux_permission_code.png)
 
 |                           |                                    r-4                                     |                                                    w-2                                                     |                      x-1                      |
 | :-------------------: | :------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :-------------------------------------: |
@@ -127,7 +127,7 @@ passwd -u username  # unlock a user(root only)
 
 > three basic working modes of vim
 
-![](./pics/vim_modes.jpg)
+![](./pics/linux_operating_system/vim_modes.jpg)
 
 > insert and append text
 
