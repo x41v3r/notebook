@@ -51,10 +51,21 @@
 #### 1.3.1 early von Neumann machine structure
 
 ![](./pics/principles_of_computer_organization/early_von_neumann_machine_structure.png)
+Characteristics of von Neumann machines: 
+* Consisting of 5 major components.
+* Instructions and data are stored equally in main memory and can be accessed by address.
+* Instructions and data are represented in binary.
+* Instructions consist of opcode and address code.
+* Stored program.
+* Centered around the arithmetic unit.
 
 #### 1.3.2 modern computer architecture
 
 ![](./pics/principles_of_computer_organization/modern_computer_structure.png)
+The modern computer is memory centric.
+
+$CPU = Controller + Calculator$
+$Mainframe = CPU + Memory$
 
 ### 1.4 The Hierarchical Structure of Computer Systems
     
@@ -93,7 +104,7 @@ $len$: the length of each storage unit
 
 ![](./pics/principles_of_computer_organization/cpu_performance_metrics.png)
 
-#### 1.5.3 overall performance indicators
+#### 1.5.3 overall performance metrics
 
 ## 2 Representation and Operation of Data in Computer
 
@@ -112,7 +123,33 @@ Left high fill 0, right low fill 0.
 
 #### 2.1.3 convert r base number to decimal number
 
+$$
+\begin{aligned}
+&K_{n} K_{n-1} \cdots K_{2} K_{1} K_{0} K_{-1} K_{-2} K_{-3} \cdots K_{-m+1} K_{-m} \\
+&= K_{n} \times r^{n} + K_{n-1} \times r^{n-1} + \cdots + K_{2} \times r^{2} + K_{1} \times r^{1} + K_{0} \times r^0 + K_{-1} \times r^{-1} + K_{-2} \times r^{-2} + \cdots + K_{-m+1} \times r^{-m+1} + K_{-m} \times r^{-m}
+\end{aligned}
+$$
+
 #### 2.1.4 convert decimal number to r base number
+
+> integer part: Divide by the cardinality and take the remainder.
+
+![](./pics/principles_of_computer_organization/convert_integer_part_1.png)
+
+&emsp;&emsp;The remainder obtained by dividing by the radix each time is the lowest order of the remaining part of the target number (integer part). For example:
+
+![](./pics/principles_of_computer_organization/convert_integer_part_2.png)
+
+> fractional part: Multiply by the cardinality and take the integer.
+
+$$
+(K_{-1} \times r^{-1} + K_{-2} \times r^{-2} + \cdots + K_{-m+1} \times r^{-m+1} + K_{-m} \times r^{-m}) \times r = K_{-1} \times r^{0} + K_{-1} \times r^{-1} + \cdots + K_{-m+1} \times r^{-m+2} + K_{-m} \times r^{-m+1}
+$$
+
+&emsp;&emsp;$K_{-1} \times r^{0}$ is the integer to be taken.
+&emsp;&emsp;The integer part of the result obtained by multiplying the radix each time is the highest bit of the remaining part of the target number (fractional part). For example:
+![](./pics/principles_of_computer_organization/convert_fractional_part.png)
+
 
 ### 2.2 Unsigned Integer
 
@@ -125,7 +162,7 @@ Left high fill 0, right low fill 0.
 * The smallest number that can be represented:  $0$ (all 0)
 * The maximum number that can be represented: $2^{n}-1$ (all 1)
 
-#### 2.2.2 implementation of addition and subtraction operations
+#### 2.2.2 implementation of addition and subtraction
 
 > Addition
 
@@ -137,6 +174,16 @@ Left high fill 0, right low fill 0.
 * Starting from the lowest bit, add by bit and carry towards the higher bit.
 
 ### 2.3 Signed Integer
+
+### 2.4 Signed Fraction
+
+### 2.5 Implementation of Arithmetic Operations
+
+#### 2.5.1 multiplication and division of fixed-point numbers
+
+### 2.6 Storage and Arrangement of Data
+
+### 2.7 Representation and Operation of Floating-point Numbers
 
 ## 3 Storage System
 

@@ -17,20 +17,21 @@
 ```html
 <!DOCTYPE html>  <!-- The document declaration tells the browser the HTML version of the webpage, which indicates that it is in accordance with the HTML5 standard. -->
 <html> <!-- The root tag of HTML, all content of the webpage should be written within the root tag. -->
-  <head> <!-- The header of a webpage, where the internal content is generally not displayed in the browser, is used to assist the browser or search engine in parsing the webpage. -->
-      <meta charset="utf-8"/> <!-- Meta tag is used to set metadata. Here, the character set for browser parsing of web pages is specified as utf-8. -->
-      <title>This is the first webpage.</title> <!-- title标签 网页标签内的显示内容 -->
-  </head>
-  <body><!-- 网页主体 所有需要显示的网页内容都写在body内-->
-      <!-- 我是一个注释，不会显示在浏览器中 -->
-      <p>Hello,World</p>
-  </body>
+    <head> <!-- The header of a webpage, where the internal content is generally not displayed in the browser, is used to assist the browser or search engine in parsing the webpage. -->
+        <meta charset="utf-8"/> <!-- Meta tag is used to set metadata. Here, the character set for browser parsing of web pages is specified as utf-8. -->
+        <title>This is the first webpage.</title> <!-- Title element, whose content is displayed within the browser tags. -->
+    </head>
+    <body><!-- Main body of the web page, all content that needs to be displayed is written within the body element. -->
+        <!-- I am a comment and will not be displayed on the webpage. -->
+        <p>Hello,World</p>
+    </body>
 </html>
 ```
 * Tags usually appear in pairs, but there are some self ending tags.
     * complete tags&emsp;`<p>content</p>`
     * self ending tags &emsp;`<img >` or `<img />` (Both of these are correct.)
-* HTML only has multiline comments, and comment tags are not allowed to be nested, otherwise the outer layer comments will end prematurely. Except for annotations, the content directly written in the body tag will be displayed on the page (in the specified style and layout).
+* There are only multiline comments in HTML, no single line comments. And comment tags are not allowed to be nested, otherwise the outer layer comment tag will end prematurely.
+* Except for annotations, the content directly written in the body tag will be displayed on the page (in the specified style and layout).
 
 ### 1.2 Entity
 
@@ -39,14 +40,14 @@
 
 ```html
 <!--
-  如果必须在网页中使用这些特殊符号，那么就需要使用html中的实体（转义字符）。
-  实体的格式：
-    &实体名;
+    If you have to use these special symbols in a web page, you need to use entities (Escape character) in html.
+    Format of entity:
+        &entity_name;
 -->
 &emsp;   <!-- a space -->
-&gt;  <!-- great than -->
-&lt;  <!-- less than -->
-&copy;  <!-- Copy right -->
+&gt;  <!-- a greater-than symbol -->
+&lt;  <!-- a less-than symbol -->
+&copy;  <!-- a Copy right symbol -->
 ```
 
 ### 1.3 The Meta Tag
@@ -106,7 +107,7 @@
 * Semantic tags are divided into to categories: 
     * Block elements
     * Inline elements
-* Generally, inline elements are placed within block elements, but block elements are not placed within inline elements. But there are some exceptions: 
+* Generally, inline elements are placed within block elements, but block elements are not allowed to be placed within inline elements. But there are some exceptions: 
     * Basically, anything can be placed within a block element, but no block element can be placed within a p element. (the p element is also a block element)
     * Basically, nothing can be placed within an inline element, but anything can be palced in an a element. (the a element is also an inline element) 
 

@@ -99,7 +99,7 @@ x41v3r:$6$zQf30TmlyIOz2enA$/NvEU1mdeSUbFDsxAo54kFwS07s5LwjJJGGJ37/Agy2RwteDLlnlx
 > user management commands
 
 ```bash
-useradd -m username  # create a user and create a home directory for this user
+useradd -m username  # create a user and create a home directory for this user in the main time
 
 passwd  # set the password for onself
 

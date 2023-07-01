@@ -37,14 +37,14 @@ void main()
 > The character sequence used by C to name various variables and functions is called an identifier, and any place in the program that can be named by ourselves is called an identifier.
 
 Naming rules:
-* Composed of 26 uppercase and lowercase English letters, 0-9, underline, or $, and cannot start with a number.
+* Composed of 26 uppercase and lowercase English letters, 0-9, underline, or $, and not allowed to start with a number.
 * Keywords and reserved words cannot be used, but keywords and reserved words can be included.
 * The C identifier is strictly case sensitive and has unlimited length.
 * The C identifier cannot contain spaces.
 
 #### 1.1.3 c standard library
 
-&emsp;&emsp;The C language standard library is a set of C built-in functions, constants, and header files, such as "stdio.h", "stdlib.h", "math.h", and so on. The `printf( )` function under "stdio.h" is the most commonly used library function. The statement `system ("pause");` under "stdlib.h" prevents the program from flashing, and the system function implements the function of calling system commands.
+&emsp;&emsp;The C language standard library is a set of C built-in functions, constants, and header files, such as "stdio.h", "stdlib.h", "math.h", and so on. The `printf( )` function under "stdio.h" is the most commonly used library function. The statement `system ("command");` implements the function of calling system commands.
 
 ### 1.2 Variable and Constant
 
@@ -52,14 +52,14 @@ Naming rules:
 
 > Integer
 
-|   Data Type    | Memory Space |       Value Range       |
-| -------------- | ------------ | ----------------------- |
-| short          | 2 Bytes      | -32768\~32767           |
-| unsigned short | 2 Bytes      | 0\~65535                |
-| int            | 4 Bytes      | -2147483648\~2147483647 |
-| unsigned int   | 4 Bytes      | 0\~4294967295           |
-| long           | 8 Bytes      | -0\~0                   |
-| unsigned long  | 8 Bytes      | 0\~0                    |
+|   Data Type    | Memory Space |              Value Range              |
+| -------------- | ------------ | ------------------------------------- |
+| short          | 2 Bytes      | -32768\~32767                         |
+| unsigned short | 2 Bytes      | 0\~65535                              |
+| int            | 4 Bytes      | -2147483648\~2147483647               |
+| unsigned int   | 4 Bytes      | 0\~4294967295                         |
+| long           | 8 Bytes      | Anyway, it's a very large range.      |
+| unsigned long  | 8 Bytes      | Anyway, it's also a very large range. |
 
 > Floating-point
 
@@ -94,6 +94,27 @@ int num = 60;  //Initialize while declaring
 
 > macro constant
 
+```c
+#define DAY 7
+
+int main()
+{
+    printf("There is %d days in a week\n",DAY);
+    DAY = 8;//error, we cannot change its value
+    return 0;
+}
+```
+
 > const variable constant
+
+```c
+int mian()
+{
+    const int day = 7;
+    printf("There is %d days in a week\n",day);
+    day = 9;//error, we cannot change its value
+    return 0;
+}
+```
 
 #### 1.2.4
