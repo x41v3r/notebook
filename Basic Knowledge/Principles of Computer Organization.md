@@ -147,9 +147,8 @@ $$
 $$
 
 &emsp;&emsp;$K_{-1} \times r^{0}$ is the integer to be taken.
-&emsp;&emsp;The integer part of the result obtained by multiplying the radix each time is the highest bit of the remaining part of the target number (fractional part). For example:
+&emsp;&emsp;The integer part of the result obtained by multiplying the radix each time is <mark>the highest bit</mark> of the remaining part of the target number (fractional part). For example:
 ![](./pics/principles_of_computer_organization/convert_fractional_part.png)
-
 
 ### 2.2 Unsigned Integer
 
@@ -159,8 +158,8 @@ $$
 * All binary bits are numerical bits without sign bits, and the bit weight of the i-th bit is $2^{i-1}$.
 * An unsigned integer with n bits represents a range of $0$ to $2^{n}-1$. 
     * If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
-* The smallest number that can be represented:  $0$ (all 0)
-* The maximum number that can be represented: $2^{n}-1$ (all 1)
+* The minimum value that can be represented:  $0$ (all 0)
+* The maximum value that can be represented: $2^{n}-1$ (all 1)
 
 #### 2.2.2 implementation of addition and subtraction
 
@@ -174,6 +173,19 @@ $$
 * Starting from the lowest bit, add by bit and carry towards the higher bit.
 
 ### 2.3 Signed Integer
+
+#### 2.3.1 true form
+
+![](./pics/principles_of_computer_organization/true_form_representation.png)
+
+* The sign bit "0/1" corresponds to "positive/negative", and the remaining numerical bits represent the absolute value of the true value.
+* If the machine word length is n+1 bits, the source code of the signed integer represents the range: $-(2^{n}-1)\sim2^{n}-1$.
+* The true form of the true value "0" has two forms: +0 and -0 ( $[+0]_{原}=0,0000000;\space[-0]_{补}=1,0000000$ )
+* Disadvantage: The symbol bits represented by the true form cannot participate in operations and require complex hardware circuits to be designed to handle them, resulting in higher costs.
+
+#### 2.3.2 complement
+
+#### 2.3.3 frame shift
 
 ### 2.4 Signed Fraction
 
@@ -194,13 +206,12 @@ $$
 ![](./pics/principles_of_computer_organization/storage_hierarchical_structure_pyramid.png)
 ![](./pics/principles_of_computer_organization/storage_hierarchical_structure.png)
 
-#### 3.1.2 
+#### 3.1.2
 
 ## 4 Instruction Set
 
 ## 5 Central Processing Unit
 
 ## 6 Bus
-
 
 ## 7 I/O System
