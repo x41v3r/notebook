@@ -3,7 +3,7 @@
 ## 1 About Data Structures and Algorithms
 
 > Issues studied in data structure and algorithms:
-* How to informatize real world problems with program code?
+* How to informationize real world problems with program code?
 * How to efficiently process these information with computers to create value?
 
 ![](./pics/data_structures_and_algorithms/program.png)

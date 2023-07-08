@@ -94,7 +94,7 @@ $cap$: the total capacity
 $n$: the number of storage units
 $len$: the length of each storage unit
 
-> Nth power of 2
+> i-th power of 2
 
 ![](./pics/principles_of_computer_organization/nth_power_of_2.png)
 
@@ -110,7 +110,7 @@ $len$: the length of each storage unit
 
 ### 2.1 Carry counting system	
 
-#### 2.1.1 reason for using binary
+#### 2.1.1 reasons for using binary
 
 * It can be represented by a physical device with two stable states, which is low-cost and easy to implement.
 * 0 and 1 exactly correspond to the false and true values of logical values, making it convenient to implement logical operations.
