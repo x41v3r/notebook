@@ -185,6 +185,24 @@ $$
 
 #### 2.3.2 complement
 
+![](./pics/principles_of_computer_organization/get_complement_normal.png)
+
+The sign bits of all three representations above are represented by 0 for positive and 1 for negative.  
+Here is a simple way to convert the true form into a complement: 
+
+![](./pics/principles_of_computer_organization/get_complement_convenient.png)
+
+> Addition
+
+Starting from the lowest bit, add by bit (the sign bit participates in the operation) and carry to higher bits.
+
+> Subtraction
+
+$$
+[A]_{补}-[B]_{补}=[A]_{补}+[-B]_{补}
+$$
+
+
 #### 2.3.3 frame shift
 
 ### 2.4 Signed Fraction

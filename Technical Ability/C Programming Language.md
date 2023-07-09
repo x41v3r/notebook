@@ -28,7 +28,9 @@ void main()
 //Curly braces always appear in pairs
 ```
 
-#### 1.1.1 operating mechanism
+#### 1.1.1 c operating mechanism
+
+![](./pics/c_programming_language/c_operation_mechanism.png)
 
 ![](./pics/c_programming_language/c_operating_mechanism.png)
 
