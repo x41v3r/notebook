@@ -34,9 +34,9 @@
 
 #### 1.2.2 software development
 
-> applicaiton software
+> utility software
 
-> operational software
+> system software
 
 #### 1.2.3 two trends in computer development
 
@@ -48,7 +48,7 @@
 > The Design Concept of Stored Programs:   
 > &emsp;&emsp;The instructions are input into the main memory of the computer in the form of binary code, and then the first instruction of the program is executed according to its first address in the main memory, and then other instructions are executed according to the specified sequence of the program until the end of program execution.
 
-#### 1.3.1 early von Neumann machine structure
+#### 1.3.1 early Von Neumann machine architecture
 
 ![](./pics/principles_of_computer_organization/early_von_neumann_machine_structure.png)
 Characteristics of von Neumann machines: 
@@ -56,8 +56,8 @@ Characteristics of von Neumann machines:
 * Instructions and data are stored equally in main memory and can be accessed by address.
 * Instructions and data are represented in binary.
 * Instructions consist of opcode and address code.
-* Stored program.
-* Centered around the arithmetic unit.
+* The design idea of stored program.
+* Centered around the arithmetic and logical unit (Calculator).
 
 #### 1.3.2 modern computer architecture
 
@@ -67,7 +67,7 @@ The modern computer is memory centric.
 $CPU = Controller + Calculator$
 $Mainframe = CPU + Memory$
 
-### 1.4 The Hierarchical Structure of Computer Systems
+### 1.4 The Hierarchical Structure of Computer System
     
 ### 1.5 Mance Metrics
 
@@ -116,12 +116,12 @@ $len$: the length of each storage unit
 * 0 and 1 exactly correspond to the false and true values of logical values, making it convenient to implement logical operations.
 * It is convenient to use logic gate circuits to perform arithmetic operations.
 
-#### 2.1.2 conversion from binary to octal and hexadecimal
+#### 2.1.2 convert a binary number to a octal or hexadecimal number
 
 ![](./pics/principles_of_computer_organization/binary_to_octal_and_hexadecimal.png)
 Left high fill 0, right low fill 0.
 
-#### 2.1.3 convert r base number to decimal number
+#### 2.1.3 convert a number with radix R to a decimal number
 
 $$
 \begin{aligned}
@@ -130,7 +130,7 @@ $$
 \end{aligned}
 $$
 
-#### 2.1.4 convert decimal number to r base number
+#### 2.1.4 convert a decimal number to a number with radix R
 
 > integer part: Divide by the cardinality and take the remainder.
 
@@ -155,7 +155,7 @@ $$
 #### 2.2.1 representation in hardware
 
 ![](./pics/principles_of_computer_organization/unsigned_int_representation_in_hardware.png)
-* All binary bits are numerical bits without sign bits, and the bit weight of the i-th bit is $2^{i-1}$.
+* All binary bits are numerical bits, there is no sign bit, and the bit weight of the i-th bit is $2^{i-1}$.
 * An unsigned integer with n bits represents a range of $0$ to $2^{n}-1$. 
     * If it exceeds the range, it will overflow, indicating that the computer cannot process such a large number at once.
 * The minimum value that can be represented:  $0$ (all 0)
@@ -183,12 +183,12 @@ $$
 * The true form of the true value "0" has two forms: +0 and -0 ( $[+0]_{原}=0,0000000;\space[-0]_{补}=1,0000000$ )
 * Disadvantage: The symbol bits represented by the true form cannot participate in operations and require complex hardware circuits to be designed to handle them, resulting in higher costs.
 
-#### 2.3.2 complement
+#### 2.3.2 complement code
 
 ![](./pics/principles_of_computer_organization/get_complement_normal.png)
 
-The sign bits of all three representations above are represented by 0 for positive and 1 for negative.  
-Here is a simple way to convert the true form into a complement: 
+The sign bit of all three representations above are represented by 0 for positive and 1 for negative.  
+Here is a simple way to convert the true form to its complement code: 
 
 ![](./pics/principles_of_computer_organization/get_complement_convenient.png)
 
@@ -214,6 +214,19 @@ $$
 ### 2.6 Storage and Arrangement of Data
 
 ### 2.7 Representation and Operation of Floating-point Numbers
+
+#### 2.7.1 
+
+![](./pics/principles_of_computer_organization/floating-point_number_structure.png)
+
+* Exponent（阶码）: It is usually a Fixed-point integer represented by complement code or frame shift, and is recorded as E, reflecting the representation range of the Floating-point number and the actual position of Decimal separator.
+* Mantissa（尾数）: It is usually a Fixed-point decimal fraction represented by complement code or true form, which is recorded as M, reflecting the precision of the Floating-point number.
+* True-value（真值）: $N=r^{E} \times M$
+
+#### note
+
+* The main purpose of using normalized Floating-point number is to increase the precision of data representation.
+* 
 
 ## 3 Storage System
 
