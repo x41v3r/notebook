@@ -55,3 +55,5 @@ $$L=(a_1,a_2,\cdots,a_i,a_{i+1},\cdots,a_n)$$
 ## 7 Search
 
 ## 8 Order
+
+
