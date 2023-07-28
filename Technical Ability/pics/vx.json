@@ -4,16 +4,16 @@
     ],
     "folders": [
         {
-            "name": "linux_operating_system"
+            "name": "linux"
         },
         {
-            "name": "c_programming_language"
+            "name": "c"
         },
         {
-            "name": "web_front-end_development"
+            "name": "web"
         },
         {
-            "name": "cpp_programming_language"
+            "name": "cpp"
         }
     ],
     "id": "72",

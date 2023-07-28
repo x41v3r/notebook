@@ -112,7 +112,7 @@ passwd -u username  # unlock a user(root only)
 
 #### 1.3.1 the permission code
 
-![](./pics/linux_operating_system/linux_permission_code.png)
+![](./pics/linux/linux_permission_code.png)
 
 |                           |                                    r-4                                     |                                                    w-2                                                     |                      x-1                      |
 | :-------------------: | :------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :-------------------------------------: |
@@ -123,13 +123,13 @@ passwd -u username  # unlock a user(root only)
 
 ## 2 The Neovim Editor
 
-![](./pics/linux_operating_system/vi-vim-cheat-sheet.png)
+![](./pics/linux/vi-vim-cheat-sheet.png)
 
 ### 2.1 Basic Usages
 
 > three basic working modes of vim
 
-![](./pics/linux_operating_system/vim_modes.jpg)
+![](./pics/linux/vim_modes.jpg)
 
 > insert and append text
 
