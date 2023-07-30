@@ -4,16 +4,16 @@
     ],
     "folders": [
         {
-            "name": "computer"
+            "name": "数据结构"
         },
         {
-            "name": "data_structures_and_algorithms"
+            "name": "操作系统"
         },
         {
-            "name": "operating_system"
+            "name": "计算机组成原理"
         },
         {
-            "name": "computer_network"
+            "name": "计算机网络"
         }
     ],
     "id": "32",
