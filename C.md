@@ -30,9 +30,9 @@ void main()
 
 #### 1.1.1 c operating mechanism
 
-![](./pics/c/c_operation_mechanism.png)
+![](./pictures/c/c_operation_mechanism.png)
 
-![](./pics/c/c_operating_mechanism.png)
+![](./pictures/c/c_operating_mechanism.png)
 
 #### 1.1.2 c language identifier naming convention
 
