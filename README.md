@@ -1,3 +1,3 @@
 # README
 
-This a vnote notebook.
+This a notebook written in Markdown.
