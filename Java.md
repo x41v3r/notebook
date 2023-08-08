@@ -133,7 +133,8 @@ char charVar_2 = stringVar.charAt(1);
 char charVar_3 = stringVar.charAt(2);
 char charVar_4 = stringVar.charAt(3);
 char charVar_5 = stringVar.charAt(4);
-```
+``` 
+
 * String类型值的**双引号内可以有一个或多个字符，也可以什么都没有**
 * String可以分别和8种基本的数据类型进行运算，但是都只能是字符串的拼接运算
 
