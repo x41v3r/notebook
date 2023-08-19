@@ -68,7 +68,7 @@ tar -pxvf archive_file_name.tar.xz  # decompress the archive
 
 ### 1.2 User and group management
 
-&emsp;&emsp;The Linux operating system is a multi user operating system, where each user is different from each other, having what they can and cannot do. 
+&emsp;&emsp;The Linux operating system is a multi user operating system, where each user is different from each other, having what they can and cannot do.   
 &emsp;&emsp;The root user is the system administrator and he is almost omnipotent. 
 
 #### 1.2.1 configuration files
