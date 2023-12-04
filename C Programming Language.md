@@ -1,6 +1,8 @@
 # C Programming Language
 
-## 1 About The C Programming Language
+## 1 About the C Programming Language
+
+### 1.1 
 
 ## 2 Types, Operators, and Expressions
 
@@ -46,7 +48,7 @@ long double ld;
 
 ### 2.3 Constants
 
-> An integer constant like 1234 is an int.
+> An integer constant like "1234" is an int.
 
 &emsp;&emsp;A long constant is written with a terminal "l" or "L", as in 123456789L; an integer  too big to fit into an int will also be taken as a long.
 
