@@ -507,7 +507,7 @@ public class MyBatisDemo {
 
 > 定义与 SQL 映射文件同名的 Mapper 接口，并且将 Mapper 接口和映射文件放置在同一目录下。
 
-![[SQL映射文件的位置.png]]
+![SQL映射文件的位置](./images/SQL映射文件的位置.png)
 
 > 设置 SQL 映射文件的 namespace 属性为 Mapper 接口全限定名。
 
@@ -700,8 +700,14 @@ List<Brand> selectByCondition(Brand brand);
 //接口方法
 List<Brand> selectByCondition(Map map);
 
-//调用时
+//构造 map，要保证 map 中键的名称与 sql 中对应的占位符的名称保持一致
 Map map = new HashMap();
+map.put("status",status);
+map.put("companyName",companyName);
+map.put("brandName",brandName);
+
+//调用查询
+List<Brand> brands = brandMapper.selectByCondition(map);
 ```
 
 ## 6.动态条件查询
@@ -712,4 +718,6 @@ Map map = new HashMap();
 
 
 # 四、使用 HTTP 协议
+
+
 
