@@ -9,9 +9,9 @@
 > 内联样式表：在标签内部通过style属性来设置元素的样式
   
 * 问题：
-    * 内联样式只能对一个标签生效，如果希望影响到多个元素，就必须在每一个元素中都复制一遍
-    * 当样式发生变化时，我们必须一个一个地修改，非常不方便
-    * 多条样式会写到同一行中，不能格式化，不便于程序的编写和阅读
+  * 内联样式只能对一个标签生效，如果希望影响到多个元素，就必须在每一个元素中都复制一遍
+  * 当样式发生变化时，我们必须一个一个地修改，非常不方便
+  * 多条样式会写到同一行中，不能格式化，不便于程序的编写和阅读
 * 注意：在实际开发时**不要使用内联样式**
     
 ```html
@@ -49,9 +49,9 @@
 > 外部样式表：将CSS样式写到一个外部的CSS文件中，然后通过link标签来引入外部的CSS文件  
   
 * 优点：任何网页都可以对其进行引用，使样式可以在不同的页面之间进行复用
-* 这是层叠样式表使用的最多实践
+  * 这是层叠样式表使用的最多实践
 * 将样式编写到外部的CSS文件中，这样还可以充分利用浏览器的缓存机制，从而加快网页的加载速度，提高用户体验
-    
+
 ```html
 <!-- HTML文件 -->
 <!DOCTYPE html>
@@ -78,16 +78,15 @@ p{
 }
 ```
 
-## 2.CSS的基本语法
+## 2.CSS 的基本语法
 
-* CSS的基本语法：`选择器 声明块`
-* 选择器：通过选择器可以选中页面中的指定元素，比如**选择器p**的作用就是选中页面中的所有p元素
+* CSS 的基本语法：`选择器 声明块`
+* 选择器：通过选择器可以选中页面中的指定元素，比如**选择器 p** 的作用就是选中页面中的所有 p 元素
 * 声明块：通过声明块来指定要为元素设置的样式
-    * 声名块由一个一个的声明组成
-    * 声明是一个名值对结构，一个样式名对应一个样式值，名和值之间以英文冒号`:`连接
-    * 声明块中的每个声明都以英文分号`;`结尾，最后一个声明可以不写分号，但是**最好也写上分号**，这样不容易出错
-
-* CSS注释
+  * 声名块由一个一个的声明组成
+  * 声明是一个名值对结构，一个样式名对应一个样式值，名和值之间以英文冒号`:`连接
+  * 声明块中的每个声明都以英文分号`;`结尾，最后一个声明可以不写分号，但是**最好也写上分号**，这样不容易出错
+* CSS 注释
 
 ```css
 /*
@@ -102,26 +101,26 @@ p{
 * 元素选择器：根据标签名来选中指定的元素
   * 语法：`标签名{}`
   * 例子：
-    * `p{ }`&emsp;选中页面中的所有p元素
-    * `h1{ }`&emsp;选中页面中的所有h1元素
-    * `div{ }`&emsp;选中页面中的所有div元素
-* ID选择器：根据元素的id属性值**选中一个元素**
+    * `p{ }`&emsp;选中页面中的所有 p 元素
+    * `h1{ }`&emsp;选中页面中的所有 h1 元素
+    * `div{ }`&emsp;选中页面中的所有 div 元素
+* ID 选择器：根据元素的 id 属性值**选中一个元素**
   * 语法：`#id属性值{}`
   * 例子：
-    * `#box{ }`&emsp;选中页面中id属性为box的元素
-    * `#red{ }`&emsp;选中页面中id属性为red的元素
-  * 注意：页面元素的id不能重复，一个元素只能是一个id
-* 类选择器：根据元素的class属性值**选中一组元素**
-  * class属性是一个标签的属性，它和id类似，不同的是class可以重复使用，可以通过class属性来为元素分组
+    * `#box{ }`&emsp;选中页面中 id 属性为 box 的元素
+    * `#red{ }`&emsp;选中页面中 id 属性为 red 的元素
+  * 注意：页面元素的 id 不能重复，一个元素只能是一个 id
+* 类选择器：根据元素的 class 属性值**选中一组元素**
+  * class 属性是一个标签的属性，它和 id 类似，不同的是class可以重复使用，可以通过 class 属性来为元素分组
   * 语法：`.class属性值{ }`
   * 例子：
-    * `.blue{ }`&emsp;选中页面中class属性为blue的所有元素
-    * `.red{ }`&emsp;选中页面中class属性为red的所有元素
-  * 一个元素可以设置多个class属性值，都写在双引号内，不同的属性值之间用空格隔开
+    * `.blue{ }`&emsp;选中页面中 class 属性为 blue 的所有元素
+    * `.red{ }`&emsp;选中页面中 class 属性为red的所有元素
+  * 一个元素可以设置多个 class 属性值，都写在双引号内，不同的属性值之间用空格隔开
 * 通配选择器：选中页面中的所有元素
   * 语法：`*{ }`
 
-#### （2）复合选择器
+## 2.复合选择器
 
 * 交集选择器：选中同时符合多个条件的元素
   * 语法：`选择器1选择器2选择器3选择器4{ }`
@@ -137,30 +136,27 @@ p{
     * `#b1,.pss,h1,span,div.red{ }`
 * 一般**不推荐在选择器中使用id选择器和其它选择器复合**，因为仅仅使用id选择器就可以唯一确定某个元素了，根本不需要和其它选择器复合
 
-#### （3）父子兄弟选择器（关系选择器）
+## 3.父子兄弟选择器（关系选择器）
 
 ```html
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>关系选择器</title>
-  </head>
-  <body>
-
-    <div>
-      <p>
-        我是div中的p元素
-        <span>我是p元素中的span</span>
-      </p>
-      <span>我是div中的span元素</span>
-      <span>我是div中的span元素</span>
-      <span>我是div中的span元素</span>
-      <span>我是div中的span元素</span>
-    </div>
-
-    <span>我是div元素外的span元素</span>
-
+    <head>
+        <meta charset="UTF-8">
+        <title>关系选择器</title>
+    </head>
+    <body>
+        <div>
+        <p>
+          我是div中的p元素
+	  <span>我是p元素中的span</span>
+        </p>
+        <span>我是div中的span元素</span>
+        <span>我是div中的span元素</span>
+        <span>我是div中的span元素</span>
+        <span>我是div中的span元素</span>
+        </div>
+        <span>我是div元素外的span元素</span>
   </body>
 </html>
 ```
@@ -168,194 +164,173 @@ p{
 > 元素之间的关系
 
 * 父元素：直接包含子元素的元素叫做父元素
-
 * 子元素：直接被父元素包含的元素是子元素
-
 * 祖先元素：直接或间接包含后代元素的元素叫做祖先元素，一个元素的父元素也是它的祖先元素
-
 * 后代元素：直接或间接被祖先元素包含的元素叫做后代元素，子元素也是后代元素
-
 * 兄弟元素：拥有相同父元素的元素是兄弟元素
-  
-  > 选择器的写法
+
+> 选择器的写法
 
 * 子元素选择器：选中指定父元素的指定子元素
-  
-  * 语法：`父元素 > 子元素`
-
+    * 语法：`父元素 > 子元素`
 * 后代元素选择器：指定元素内的指定后代元素
-  
-  * 语法：`祖先 后代`
-
+    * 语法：`祖先 后代`
 * 兄弟选择器（选择下一个兄弟）
-  
-  * 语法：`前一个 + 后一个`
+    * 语法：`前一个 + 后一个`
     
-    ```html
-    <style>
+```html
+<style>
     p + span{
-    color: green;
+        color: green;
     }
     /*
-    在同一个父元素下的多个子元素中
-    选定p元素后面的第一个span元素（只会对p元素后边紧挨的第一个span元素生效，中间不能有其它任何元素，必须是紧挨着的，且只有第一个会生效）
+        在同一个父元素下的多个子元素中
+        选定p元素后面的第一个span元素（只会对p元素后边紧挨的第一个span元素生效，中间不能有其它任何元素，必须是紧挨着的，且只有第一个会生效）
     */
-    </style>
-    ```
+</style>
+```
 
 * 兄弟选择器（选择下边所有的指定兄弟）
-  
   * 语法：
     
-    ```html
-    <style>
+```html
+<style>
     p ~ span{
-    color: green;
+        color: green;
     }
     /*
-    在同一个父元素下的多个子元素中
-    选定p元素后面所有的span元素（对p元素后面的所有span兄弟元素都会生效）
+        在同一个父元素下的多个子元素中
+        选定p元素后面所有的span元素（对p元素后面的所有span兄弟元素都会生效）
     */
-    </style>
-    ```
+</style>
+```
     
-    > 混合使用
+> 混合使用
 
-#### （4）属性选择器
+## 4.属性选择器
 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8"/>
-    <title>属性选择器</title>
-    <style>
-      /* 选中设置了title属性的p元素 */
-      p[title]{
+    <head>
+        <meta charset="UTF-8"/>
+        <title>属性选择器</title>
+        <style>
+        /* 选中设置了title属性的p元素 */
+        p[title]{
+        }
 
-      }
+        /* 选中设置了title属性，且属性值为asd的p元素 */
+        p[title=asd]{
+        }
 
-      /* 选中设置了title属性，且属性值为asd的p元素 */
-      p[title=asd]{
+        /* 选中设置了title属性，且属性值以asd开头的p元素 */
+        p[title^=asd]{
+        }
 
-      }
+        /* 选中设置了title属性，且属性值以asd结尾的p元素 */
+        p[title$=asd]{
+        }
 
-      /* 选中设置了title属性，且属性值以asd开头的p元素 */
-      p[title^=asd]{
-
-      }
-
-      /* 选中设置了title属性，且属性值以asd结尾的p元素 */
-      p[title$=asd]{
-
-      }
-
-      /* 选中设置了title属性，且属性值中含有asd（任意位置）的p元素 */
-      p[title*=asd]{
-
-      }
-</style>
-  </head>
-  <body>
-    <p title="asd">asdfghjkzxcvbnmqwertyui</p>
-    <p title="asdfg">asdfghjkzxcvbnmqwertyui</p>
-    <p title="asdfghjkl">asdfghjkzxcvbnmqwertyui</p>
-    <p title="fdsgdgdfasd">asdfghjkzxcvbnmqwertyui</p>
-    <p title="fsadfsdaasdfsagasf">asdfghjkzxcvbnmqwertyui</p>
-    <p>asdfghjkzxcvbnmqwertyui</p>
-    <p>asdfghjkzxcvbnmqwertyui</p>
-    <p>asdfghjkzxcvbnmqwertyui</p>
-  </body>
+        /* 选中设置了title属性，且属性值中含有asd（任意位置）的p元素 */
+        p[title*=asd]{
+        }
+        </style>
+    </head>
+    <body>
+        <p title="asd">asdfghjkzxcvbnmqwertyui</p>
+        <p title="asdfg">asdfghjkzxcvbnmqwertyui</p>
+        <p title="asdfghjkl">asdfghjkzxcvbnmqwertyui</p>
+        <p title="fdsgdgdfasd">asdfghjkzxcvbnmqwertyui</p>
+        <p title="fsadfsdaasdfsagasf">asdfghjkzxcvbnmqwertyui</p>
+        <p>asdfghjkzxcvbnmqwertyui</p>
+        <p>asdfghjkzxcvbnmqwertyui</p>
+        <p>asdfghjkzxcvbnmqwertyui</p>
+      </body>
 </html>
 ```
 
-#### （5）伪类选择器
+## 5.伪类选择器
 
 > 伪类：不存在的类、特殊的类
 
 * 伪类用来描述一个元素的特殊状态
-  
   * 一般情况下使用英文冒号`:`开头
-
 * 根据所有子元素进行排序
-  
   * `:first-child`&emsp;第一个子元素
   * `:last-child`&emsp;最后一个子元素
   * `:nth-child(num)`&emsp;第num个子元素
     * n&emsp;第1到正无穷个元素全部选中
     * 2n或even&emsp;所有偶数位的元素
     * 2n+1或odd&emsp;所有奇数位的元素
-
 * 在子元素中的同类型元素中进行排序
-  
   * `span:first-of-type`&emsp;子元素中的第一个span元素
   * `span:last-of-type`&emsp;子元素中的最后一个span元素
   * `span:nth-of-type(num)`&emsp;子元素中第num个span元素
     * 特殊值与上述同理
-
 * `:not()`&emsp;否定伪类，将符合条件的元素从选择器中去除
-  
-  > 超链接伪类
+
+> 超链接伪类
 
 * `a:link`&emsp;表示没有被访问过的链接
-
 * `a:visited`&emsp;表示访问过的链接
-
 * `a:hover`&emsp;表示上方有鼠标移入的链接
-
 * `a:active`&emsp;表示被鼠标点击的链接
 
 * 注意事项
-  
   * 超链接伪类只能用于a标签，想也知道的
   * 由于隐私的原因，所以visited这个伪类只能修改链接的颜色，链接的其它属性都按照link伪类的设置显示出来
   * hover和active，在相关事件发生时，会覆盖掉之前设置的任何样式，显示他们各自设置的样式
   * 超链接的这个几个伪类，同时写时的顺序问题
 
-#### （6）伪元素选择器
+## 6.伪元素选择器
 
 > 伪元素：表示页面中一些特殊的并不存在的元素（特殊的位置）
 
 * 伪元素，使用&emsp;**::**&emsp;开头
-  
-  ```html
-  <!DOCTYPE html>
-  <html>
+
+```html
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <title>伪元素选择器</title>
         <style>
-            p{
-                font-size: 30px;
-            }
+        p{
+            font-size: 30px;
+        }
+
+	/* 选中p中的第一个字母 */
+	p::first-letter{
+	    font-size:100px
+	}
+
+	/* 选中p中的第一行，这第一行的范围可能会随着浏览器的变化而变化 */
+	p::first-line{
+            background-color: yellow;
+	}
+      
+        /* 选中p中被鼠标选中的部分 */
+	p::selection{
+            background-color: yellowgreen;
+        }
   
-      /* 选中p中的第一个字母 */
-      p::first-letter{
-        font-size:100px
-      }
-      /* 选中p中的第一行，这第一行的范围可能会随着浏览器的变化而变化 */
-      p::first-line{
-        background-color: yellow;
-      }
-      /* 选中p中被鼠标选中的部分 */
-      p::selection{
-        background-color: yellowgreen;
-      }
-  
-      /* 选中 元素内容的开头 和 开始标签 之间（缝）的位置 */
-      div::before{
-        content: 'hello';
-        font-size: 10px;
-        color: red;
-      }
-      /* 选中 元素内容的末尾 和 结束标签 之间的（缝）位置 */
-      div::after{
-        content: 'hello';
-        font-size: 100px;
-        color: green;
-      }
-      /* 这两个选择器应用的很多 */
-      /* content属性用于给选中的这两个位置设置内容，使得其设置的样式有意义 */
+        /* 选中 元素内容的开头 和 开始标签 之间（缝）的位置 */
+        div::before{
+            content: 'hello';
+            font-size: 10px;
+            color: red;
+        }
+      
+        /* 选中 元素内容的末尾 和 结束标签 之间的（缝）位置 */
+        div::after{
+            content: 'hello';
+            font-size: 100px;
+            color: green;
+        }
+      
+        /* 这两个选择器应用的很多 */
+        /* content属性用于给选中的这两个位置设置内容，使得其设置的样式有意义 */
         </style>
     </head>
     <body>
@@ -363,10 +338,10 @@ p{
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, atque nostrum? Corrupti excepturi facilis nisi aliquam at, voluptatum optio maiores cupiditate repudiandae sint natus maxime architecto ea, ad culpa. Sit!
         </p>
     </body>
-  </html>
-  ```
+</html>
+```
 
-### 3.一些基础知识
+# 3.一些基础知识
 
 #### （1）继承
 
