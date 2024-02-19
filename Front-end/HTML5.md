@@ -10,7 +10,7 @@
 
 <!-- 包含关系 -->
 <head>
-	<title></title>
+    <title></title>
 </head>
 <!-- 并列关系 -->
 <head></head>
@@ -85,7 +85,7 @@
 
 ## 1.标题标签
 
-> HTML5 共提供了 \<h1\> - \<h6\> 共六级标签
+> HTML5 共提供了 `<h1>` - `<h6>` 共六级标签
 
 ```html
 <h1>一级标题</h1>
@@ -365,7 +365,7 @@
 
 &emsp;&emsp;一个完整的表单通常由表单域、表单控件（表单元素）和提示信息 3 个部分构成。
 
-> 表单域（包含表单控件的区域）
+## 1.表单域（包含表单控件的区域）
 
 ```html
 <form action="url地址" method="提交方式" name="表单域名称">
@@ -374,15 +374,175 @@
 </form>
 ```
 
-|  属性  |  属性值  | 作用 |
-|:------:|:--------:|:----:|
-| action | url 地址 |      |
-| method | get/post |      |
-|  name  |   名称   |      |
+|  属性  |  属性值  |                         作用                         |
+|:------:|:--------:|:----------------------------------------------------:|
+| action | url 地址 |    指定接收并处理表单数据的服务器程序的 url 地址     |
+| method | get/post |    设置表单数据的提交方式，包含 post 和 get 两种     |
+|  name  |   名称   | 指定本表单域的名称，用以区分同一个页面中的多个表单域 |
 
-* `<form></form>` 会把它范围内的表单元素信息提交给服务器
+* 说明
+    * 每个表单元素都应该有表单域把它们包含
+    * 表单域就是 `<form></form>` 标签内的范围
+* `<form></form>` 会把它范围内的表单元素信息提交给相应的服务器程序
 
-> input 控件
+## 2.input 输入表单元素
 
+> type 属性，设置不同的属性值用来指定不同的控件类型
 
-> label 控件（提示信息）
+```html
+<input type="属性值" />
+```
+
+|  属性值  |                    描述                    |
+|:--------:|:------------------------------------------:|
+|  button  |               定义可点击按钮               |
+| checkbox |                 定义复选框                 |
+|   file   |   定义输入字段和“浏览”按钮，用于文件上传   |
+|  hidden  |             定义隐藏的输入字段             |
+|  image   |           定义图像形式的提交按钮           |
+| password |     定义密码字段，字段中的字符串被掩码     |
+|  radio   |                定义单选按钮                |
+|  reset   | 定义重置按钮，点击会清楚本表单中的所有数据 |
+|  submit  |    定义提交按钮，把表单数据发送到服务器    |
+|   text   |   定义单行输入字段，默认宽度为 20 个字符   |
+
+> 代码实践
+
+```html
+<form>
+<!-- text 文本框，用户可以输入任何文字 -->
+用户名：<input type="text"/> <br/>
+
+<!-- password 密码框，用户看不见输入的密码 -->
+密码：<input type="password"/> <br/>
+
+<!-- radio 单选按钮，可以实现多选一 -->
+性别：男<input type="radio" /> 女<input type="radio" /> 人妖<input type="radio" /> <br/>
+
+<!-- checkbox 多选框，可以实现多选 -->
+爱好：唱<input type="checkbox"/> 跳<input type="checkbox"/> RAP<input type="checkbox" /> 篮球<input type="checkbox"/>
+</form>
+
+<!-- submit 提交按钮，把表单数据提交到服务器 -->
+<input type="submit" value="免费注册"/>
+<!-- value 属性用于设置提交按钮上的文字 -->
+
+<!-- reset 重置按钮，清空本表单内的所有用户数据 -->
+<input type="reset" value="重新填写"/>
+<!-- value 属性用于设置重置按钮上的文字 -->
+
+<!-- button 普通按钮，用于通过 javascript 启动脚本 -->
+<input type="button" value="获取短信验证码" name=""/>
+<!-- value 属性用于设置普通按钮上的文字信息 -->
+
+<!-- file 文件域，用于上传文件 -->
+上传头像：<input type="file"/>
+```
+
+> name 和 value 属性
+
+```html
+<form>
+<!-- text 文本框，用户可以输入任何文字 -->
+用户名：<input type="text" name="username"/> <br/>
+<!-- value 属性设置文本框中的默认内容 -->
+
+<!-- password 密码框，用户看不见输入的密码 -->
+密码：<input type="password" name="password"/> <br/>
+<!-- value 属性设置密码框中的默认内容 -->
+
+<!-- radio 单选按钮，可以实现多选一 -->
+<!--
+    name 是表单元素的名字，这里的性别单选按钮必须具有相同的 name 属性
+    才能实现多选一
+-->
+性别：
+    男<input type="radio" name="gender" value="male"/>
+    女<input type="radio" name="gender" value="female"/>
+    人妖<input type="radio" name="gender" value="shemale"/>
+    <br/>
+<!-- value 属性用以标识一组单选按钮中的各个选项 -->
+
+<!-- checkbox 多选框，可以实现多选 -->
+爱好：
+    唱<input type="checkbox" name="hobby"/>
+    跳<input type="checkbox" name="hobby"/>
+    RAP<input type="checkbox" name="hobby"/>
+    篮球<input type="checkbox" name="hobby"/>
+
+<!-- 同一组单选框和复选框要有相同的 name 值 -->
+```
+
+> checked 属性
+
+```html
+<!-- 单选按钮和复选框可以设置 checked 属性，当页面打开的时候，默认选择这个按钮 -->
+性别：
+    男<input type="radio" name="gender" value="male"/>
+    女<input type="radio" name="gender" value="female" checked="checked"/>
+    <!-- 打开网页时，默认选中 女 -->
+    人妖<input type="radio" name="gender" value="shemale"/>
+    <br/>
+    
+爱好：
+    唱<input type="checkbox" name="hobby"/>
+    跳<input type="checkbox" name="hobby"/>
+    RAP<input type="checkbox" name="hobby"/>
+    篮球<input type="checkbox" name="hobby" checked="checked"/>
+    <!-- 打开网页时，默认选中 篮球 -->
+```
+
+> maxlength 属性
+
+```html
+<!-- 设置输入框最多可输入 6 个字符 -->
+用户名：<input type="text" name="username" maxlength="6"/>
+```
+
+## 3.label 控件（并不属于表单元素，但是常用于为 input 元素定义标注）
+
+&emsp;&emsp;`<label></label>` 标签用于绑定一个表单元素，当点击 `<label></label>` 标签内的文本时，浏览器就会自动将焦点转到对应的表单元素上，从而增加用户体验。
+
+```html
+<label for="male">男</label>
+<input type="radio" name="gender" id="male"/>
+<label for="female">女</label>
+<input type="radio" name="gender" id="female"/>
+<label for="shemale">人妖</label>
+<input type="radio" name="gender" id="shemale"/>
+```
+
+* 核心：label 标签中的 for 属性必须与相关元素的 id 属性相同
+
+## 4.select 下拉表单元素
+
+&emsp;&emsp;在页面中，有多个选项供用户选择，并且想要节约页面空间时，可以使用 `<select></select>` 标签定义下拉列表。
+
+```html
+<form>
+<select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    <option>选项4</option>
+    ...
+</select>
+</form>
+```
+
+* `<select></select>` 中至少要有一个 `<option></option>` 标签
+* 在 `<option></option>` 中定义 `selected="selected"` 属性，当前项即为默认选中项
+
+## 5.textarea 文本域元素
+
+&emsp;&emsp;当用户输入的内容较多时，可以使用 `<textarea></textarea>` 标签，定义多行文本输入的控件。常见于留言板、评论等有较多输入内容的输入框。
+
+```html
+<form>
+<textarea rows="3" cols="20">
+    默认文本内容
+</textarea>
+</form>
+```
+
+* cols 表示每行中的字符数，rows 表示显示的行数，当然这些在实际开发中都不会使用，都用 CSS 来设置
