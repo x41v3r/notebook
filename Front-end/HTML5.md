@@ -521,6 +521,7 @@
 ```html
 <form>
 <select>
+    <option>--请选择--</option>
     <option>选项1</option>
     <option>选项2</option>
     <option>选项3</option>
@@ -540,7 +541,7 @@
 ```html
 <form>
 <textarea rows="3" cols="20">
-    默认文本内容
+默认文本内容
 </textarea>
 </form>
 ```
