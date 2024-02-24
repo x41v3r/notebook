@@ -1,55 +1,92 @@
-# 一、基础语法
+# 1 Fundamentals of Python
 
-## 1.Hello, Python
+## 1.1 Hello Python
 
-> 字面量：在代码中，被写下来的**固定的值**
+> Variables
 
-![Python三种字面量的写法](./images/Python三种字面量的写法.png)
-
-> Python 中的注释：
+&emsp;&emsp;We can create a variable by assigning a value to a label using the equal sign or the assignament operator.
 
 ```python
-"""
-    打印 hello, world
-    （多行注释）
-"""
-print("hello, world")
-# 打印 hello, world （单行注释）
+name = "Xaiver"
+age = 39
 ```
 
-* 对于单行注释，Python **规范**要求 `#` 和 `注释内容` 之间以一个空格隔开
-* 多行注释一般用于解释整个 Python 代码文件、类或方法
+* A variable name can be composed of characters, numbers and underscore character but **it cannot start with a number**.
+* If we are going to create a variable, we should be assigning it to a value or using a variable that already exists. A single newly created variable name in a line is not a Python code.
+* A keyword is something that is used to write pyhton like `for`, `if`,`while`, `import` these are all  words that have very specific meanings within python, so **we cannot use them for a variable name**.
 
-> 定义变量的格式
+> Expressions and Statements
 
-![Python定义变量的格式](./images/Python定义变量的格式.png)
+&emsp;&emsp;An expression is any sort of code that returns a value. 
 
 ```python
-money = 100
-print("钱包中的余额：", money ,"元")
-money = money - 10
-print("钱包中的余额：", money ,"元")
+1+1
+"Xaiver"
 ```
 
-> 数据类型
+&emsp;&emsp;A porgram is formed by a series of statements and each statement is put on its own line like we have these two lines here, **but we can use a semicolon to have more than one statement on a single line**.
 
-![Python常用数据类型](./images/Python常用数据类型.png)
+```python
+# each statement is put on its own line
+name = "Xaiver"
+print(name)
 
-> 数据类型转换
+# using a semicolon
+name = "Xaiver"; print(name)
+```
 
+> Comments
 
+```python
+# Everything after a hash mark is ingnored.
+# This is a inline comment.
+```
 
-# 二、面向对象
+## 1.2 Data Types
 
+> Strings
 
+> Booleans
 
-# 三、高级
+> Number Data Types
 
-## 1.文件编程
+> Enums
 
-## 2.异常
+> Lists
 
-## 3.数据可视化
+> Lists
 
+> Tuples
 
+> Sets
+
+## 1.3 Operators
+
+> Arithmetic Operators
+
+| Operator | Expression | Result |
+|:--------:|:----------:|:------:|
+|    +     |   `1 + 1`  |    2   |
+|    -     |   `2 - 1`  |    1   |
+|    *     |   `2 * 2`  |    4   |
+|    /     |   `4 / 2`  |    2   |
+|    %     |   `4 % 3`  |    1   |
+|    **    |  `4 ** 2`  |   16   |
+|    //    |  `5 // 2`  |    2   |
+
+> Comparison Operators
+
+> Boolean Operators
+
+> Bitwise Operators
+
+> is & in Operators
+
+## 1.4 Control Statements
+
+## 1.5 Functions
+
+# 2 Object Oriented Programming with Python 
+
+# 3 Intermediate Python Programming
 
