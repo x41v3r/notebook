@@ -44,6 +44,18 @@ name = "Xaiver"; print(name)
 
 ## 1.2 Data Types
 
+```python
+name = "Xaiver"
+
+# We can use a `type()` function to get a variable's data type.
+print(type(name))  # str
+
+# We can use a `isintance(variable_name, data_type)` function to determine whether the variable is of the specified data type.
+print(isinstance(name, str))  # True
+
+# Functions above works same for other data types.
+```
+
 > Strings
 
 > Booleans
@@ -51,8 +63,6 @@ name = "Xaiver"; print(name)
 > Number Data Types
 
 > Enums
-
-> Lists
 
 > Lists
 
@@ -76,6 +86,20 @@ name = "Xaiver"; print(name)
 
 > Comparison Operators
 
+```python
+a = 1
+b = 2
+```
+
+| Operator | Expression | Result |
+|:--------:|:----------:|:------:|
+|   ==     |  `a == b`  | False  |
+|   !=     |  `a != b`  | Ture   |
+|   >      |  `a > b`   | False  |
+|   <      |  `a < b`   | True   |
+|   >=     |  `a >= b`  | False  |
+|   <=     |  `a <= b`  | Ture   |
+
 > Boolean Operators
 
 > Bitwise Operators
@@ -89,4 +113,6 @@ name = "Xaiver"; print(name)
 # 2 Object Oriented Programming with Python 
 
 # 3 Intermediate Python Programming
+
+
 
