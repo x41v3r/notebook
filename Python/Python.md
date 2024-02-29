@@ -47,10 +47,10 @@ name = "Xaiver"; print(name)
 ```python
 name = "Xaiver"
 
-# We can use a `type()` function to get a variable's data type.
+# We can use a type() function to get a variable's data type.
 print(type(name))  # str
 
-# We can use a `isintance(variable_name, data_type)` function to determine whether the variable is of the specified data type.
+# We can use a isintance(variable_name, data_type) function to determine whether the variable is of the specified data type.
 print(isinstance(name, str))  # True
 
 # Functions above works same for other data types.
