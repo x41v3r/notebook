@@ -14,7 +14,7 @@
             p {
                 color: limegreen;
                 /*
-                    The text inside p element will be set to limegreen,
+                    The text inside the p element will be set to limegreen,
                     because our internal stylesheet is read last.
                 */
             }
@@ -66,77 +66,101 @@ p {
 
 ## 2.1 Element Selector
 
+&emsp;&emsp;An element selector is sometimes referred to as a tag name selector or type selector because it selects an HTML tag/type in our document.
+
 ```css
 /*
+    selecting an element
+*/
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
 
+/*
+    selecting multiple elements
+*/
+p, li, h1 {
+  color: red;
+}
+
+/*
+    An element inherits some of the settings or properities from its parent element.
+    And the body element is parent to any other element on the web page.
+    Some properities would be inherited by all the elements inside it, such as "font-size".
+    Some properities wouldn't be inherited by any element inside it, such as "border".
 */
 body {
+    /*
+        
+    */
+    font-size: 10px;
 
-}
-
-
-/*
-    select any h2 element inside the h1 element
-*/
-h1 h2 {
-
-}
-
-/*
-    select both h1 element and h2 elements on the page
-*/
-h1, h2 {
-
-}
-
-/*
-    select any span element inside any p element
-*/
-p span {
-   text-transform: uppercase;
-   background-color: gold;
+    /*
+        The border only went around the body element.
+        It didn't apply to all the other elements inside the body.
+    */
+    border: 3px solid black;
 }
 ```
 
 ## 2.2 Class Selector
 
+&emsp;&emsp;The case-sensitive class selector starts with a dot `.` character. It will select everything in the document with that class applied to it.
+
+&emsp;&emsp;The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page. An element with multiple classes can also appear on a page.
+
+&emsp;&emsp;In the example below we have created a class called highlight, and have applied it to several places in our document. All of the elements that have the class applied are highlighted.
+
 ```css
 .hightlight {
-   text-transform: uppercase;
-   background-color: gold;
-}
-.first {
-    color: red;
+    background-color: yellow;
 }
 ```
 
 ```html
-<p class="hightlight first">
-In this in-depth course, you will learn about all the key features of CSS. This is the most comprehensive CSS course we've published to date. So if you want to become an expert in Cascading Style Sheets, this is the course for you.    
-</p>
-<p class="hightlight">
-In this in-depth course, you will learn about all the key features of CSS. This is the most comprehensive CSS course we've published to date. So if you want to become an expert in Cascading Style Sheets, this is the course for you.    
-</p>
+<h1 class="highlight">Class selectors</h1>
+<p>Veggies es bonus vobis, proinde vos postulo essum magis <span class="highlight">kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo
+    melon azuki bean garlic.</p>
+
+<p class="highlight">Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
 ```
+
 
 ## 2.3 Id Selector
 
 ```css
 #name {
-
+    
 }
 ```
 
 ## 2.4 Universal Selector
 
-```css
-/*
-    this means selecting everything on the page
-*/
-* {
+&emsp;&emsp;The universal selector is indicated by an asterisk `*`. It selects everything in the document (or inside the parent element if it is being chained together with another element and a descendant combinator). 
 
+&emsp;&emsp;This means **selecting everything** on the page. We typically only see this for what is called a css reset.
+
+&emsp;&emsp;**This is not inheritance**. This is actually selecting all elements.
+
+```css
+* {
+    font-family: monospace;
+
+    /*
+        All elements on the web page 
+    */
+    border: 10px solid black;
 }
 ```
+
+## 2.5 Attribute Selector
+
+## 2.6 Pseudo-class Selector
+
+## 2.7 Combinator
 
 # 3 Colors
 
