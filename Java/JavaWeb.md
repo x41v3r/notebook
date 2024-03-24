@@ -38,6 +38,7 @@ JDBC 的本质：
 * 各数据库厂商分别去实现这套接口，提供各自数据库的驱动 jar 包。
 
 JDBC 的好处：不同的数据库厂商使用相同的接口。
+
 ## 1.DriverManager（驱动管理类）
 
 > 注册驱动
@@ -69,6 +70,7 @@ username 用户名
 password 密码
 */
 ```
+
 ## 2.Connection
 
 > 获取执行 SQL 的对象
@@ -100,6 +102,7 @@ commit()
 //回滚事务
 rollback()
 ```
+
 ## 3.Statement
 
 ```java
@@ -113,6 +116,7 @@ int executeUpdate(String sql)
 //执行 DQL 语句，返回 ResultSet 结果集对象
 ResultSet executeQuery(String sql)
 ```
+
 ## 4.ResultSet
 
 > 封装了 DQL 语句的查询结果
@@ -147,6 +151,7 @@ while(resultSet.next()){
 	......
 }
 ```
+
 ## 5.PreparedStatement
 
 &emsp;&emsp;预编译，提高执行效率；转义敏感字符，防止 SQL 注入。
@@ -173,10 +178,7 @@ pstmt.executeQuery();
 ```
 
 ## 6.数据库连接池
+
 # 二、Servlet
 
-
-
 # 三、JSP
-
-

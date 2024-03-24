@@ -1,4 +1,3 @@
-&emsp;&emsp;Mybatis 是一款优秀的**持久层框架**，用于简化 JDBC 开发。
 # 一、MybatisDemo
 
 >写入依赖坐标到 pom.xml 配置文件，并同步这些依赖
@@ -212,13 +211,14 @@ public class MyBatisDemo {
     }
 }
 ```
+
 # 二、Mapper 代理开发
 
 &emsp;&emsp;以上 Demo 的 Java 代码中仍然存在硬编码的问题。 我们可以通过使用 Mapper 代理的方法，彻底地解决这个问题。
 
 > 定义与 SQL 映射文件同名的 Mapper 接口，并且将 Mapper 接口和映射文件放置在同一目录下
 
-![[SQL映射文件的位置.png]]
+![SQL映射文件的位置](./images/SQL映射文件的位置.png)
 
 > 设置 SQL 映射文件的 namespace 属性为 Mapper 接口的全限定名
 
@@ -307,9 +307,10 @@ public class MapperProxyDemo {
     <result column="company_name" property="companyName" />
 </resultMap>
 ```
+
 # 三、Mybatis 核心配置文件 mybatis-config.xml
 
-![[Mybatis配置顺寻.png]]
+![Mybatis配置顺寻](./images/Mybatis配置顺寻.png)
 
 注意：配置文件中**各个配置项的先后顺序绝对不能颠倒**（xml 约束）。
 
@@ -415,8 +416,4 @@ Map map = new HashMap();
 ```
 # 五、动态条件查询
 
-
-
 # 六、注解开发
-
-

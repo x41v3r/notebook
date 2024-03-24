@@ -24,7 +24,7 @@
 # 一、快速入门
 ## 1.BeanFactory
 
-![[BeanFactory开发步骤.png]]
+![BeanFactory开发步骤](./images/BeanFactory开发步骤.png)
 
 > 开发步骤
 
@@ -139,9 +139,3 @@ public class BeanFactoryTest {
 # 三、Spring 配置非自定义的 Bean
 
 
-
-
-
-
-[[Spring Boot]]
-[[Spring Cloud]]
