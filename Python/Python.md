@@ -17,7 +17,7 @@ age = 39
 
 > Expressions and Statements
 
-&emsp;&emsp;An expression is any sort of code that returns a value. 
+&emsp;&emsp;An expression is any sort of code that returns a value.
 
 ```python
 1+1
@@ -114,5 +114,5 @@ b = 2
 
 # 3 Intermediate Python Programming
 
-
+# 4 
 
