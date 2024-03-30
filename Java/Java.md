@@ -95,6 +95,7 @@ public class Hello{
 ![Java类型转换](./images/Java类型转换.png)
 
 隐式转换又叫**自动类型提升**，由程序自动完成：
+
 * 取值范围小的和取值范围大的进行运算，小的会先提升为大的，再进行运算；
 * byte、short、char 三种类型的数据在运算的时候，都会直接先提升为 int， 然后再进行运算。
 
@@ -105,6 +106,7 @@ int c = a + b; //自动类型提升为 int
 ```
 
 强制转换是**截断**操作，需要加入强制转换：
+
 * 格式：`目标数据类型 变量名 = (目标数据类型)被强转的数据`；
 * 若被强转的数据过大，则在强转的结果就会发生错误。
 
@@ -127,9 +129,9 @@ int c = a + b; //自动类型提升为 int
 
 ## 1.常用 API
 
+### 1）字符操作
 
-
-
+### 2）时间日期
 
 ## 2.异常处理
 
@@ -305,7 +307,7 @@ class AgeOutOfBoundsException extends RuntimeException{
 
 &emsp;&emsp;File 对象就**表示一个路径**，可以是文件的路径、也可以是文件夹的路径。这个路径可以是存在的，也允许是不存在的。
 
-### 1）对象的三种构建方法
+### 1）文件对象的三种构建方法
 
 1. 根据字符串表示的路径，获取 File 对象
 
@@ -317,9 +319,9 @@ System.out.println(file1);//C:\Users\x41v3r\Desktop\a.txt
 
 2. 根据子路径的名称和父路径的名称创建文件对象
 
-​	父路径：C:\Users\x41v3r\Desktop
+&emsp;父路径：C:\Users\x41v3r\Desktop
 
-​	子路径：a.txt
+&emsp;子路径：a.txt
 
 ```java
 String parent = "C:\\Users\\x41v3r\\Desktop";
@@ -556,8 +558,28 @@ while((num = fis.read(bytes)) != -1){
 
 ### 2）字符输入输出流
 
+#### `FileWriter`
+
+```java
+
+```
+
+#### `FileReader`
+
+```java
+
+
+```
+
 ### 3）缓冲流
+
+
 
 ## 5.多线程
 
+
+
 ## 6.反射
+
+
+

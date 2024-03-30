@@ -22,7 +22,7 @@ age = 39
 "Xaiver"
 ```
 
-&emsp;&emsp;A porgram is formed by a series of statements and each statement is put on its own line like we have these two lines here, **but we can use a semicolon to have more than one statement on a single line**.
+&emsp;&emsp;A program is formed by a series of statements and each statement is put on its own line like we have these two lines here, **but we can use a semicolon to have more than one statement on a single line**.
 
 ```python
 # each statement is put on its own line
@@ -36,8 +36,12 @@ name = "Xaiver"; print(name)
 ## 1.3 Comments
 
 ```python
-# Everything after a hash mark is ingnored.
+# Everything after a hash mark is ignored.
 # This is a inline comment.
+
+"""
+  This is a block comment.
+"""
 ```
 
 ## 1.4 User Input
@@ -74,7 +78,7 @@ name = first + " " + last
 print(name)
 ```
 
-> Notice: we can only concatenate str to str.
+> Notice: Using plus sign, we can only concatenate str to str.
 
 ```python
 name = "Yixuan Chen"
