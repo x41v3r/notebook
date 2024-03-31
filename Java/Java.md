@@ -123,13 +123,32 @@ int c = a + b; //自动类型提升为 int
 
 # 二、Java 面向对象
 
-
-
 # 三、Java 高级
 
 ## 1.常用 API
 
-### 1）字符操作
+### 1）字符串操作
+
+#### 模式匹配
+
+#### 编码和解码
+
+| String 类中的方法                          | 说明 |
+|:------------------------------------------:|:---------------------:|
+| `public byte[] getBytes()`                   | 使用默认方式进行编码  |
+| `public byte[] getBytes(String charsetName)` | 使用指定方式进行编码  |
+| `String(byte[] bytes)`                       | 使用默认方式进行解码 |
+| `String(byte[] bytes, String charsetName)`   | 使用指定方式进行解码 |
+
+```java
+String str = "ai你呦～";
+
+//编码
+byte[] bytes = str.getBytes("GBK");
+
+//解码（String 的构造方法）
+String res = new String(bytes,"GBK");
+```
 
 ### 2）时间日期
 
@@ -433,7 +452,7 @@ for(File file : files){
 
 ![Java中io流体系结构](./images/Java中io流体系结构.png)
 
-### 1）字节输入输出流
+### 1）字节流
 
 #### `FileOutputStream` 
 
@@ -556,7 +575,25 @@ while((num = fis.read(bytes)) != -1){
 }
 ```
 
-### 2）字符输入输出流
+### 2）字符流
+
+&emsp;&emsp;读取纯文本文件时，不应当使用字节流，因为不同语言的文字所占的字节数可能不同，按字节读取会导致出现乱码。
+
+产生乱码的原因有两个：
+
+* 读取数据时未读完整个汉字（不好解决）
+* 编码和解码的方式不统一（容易解决）
+
+因此我们引入了字符流：
+
+![Java字符流](./images/Java字符流.png)
+
+&emsp;&emsp;字符流的底层其实就是字节流。
+
+特点：
+
+* 输入流：一次读一个字节，遇到中文时，一次读多个字节
+* 输出流：底层会把数据按照指定的编码方式进行编码，变成字节在写到文件中
 
 #### `FileWriter`
 
@@ -566,14 +603,80 @@ while((num = fis.read(bytes)) != -1){
 
 #### `FileReader`
 
-```java
+1. 创建字符输入对象
 
+| 构造方法                         | 说明                                         |
+|:--------------------------------:|:--------------------------------------------:|
+|`public FileReader(File file)`      |通过文件对象，创建字符输入流关联本地文件      |
+|`public FileReader(String pathname)`|通过文件路径字符串，创建字符输入流关联本地文件|
 
-```
+* 若文件不存在，则直接报错
+
+2. 读取数据
+
+| 成员方法                     |说明|
+|:----------------------------:|:---:|
+|`public int read()`             |读取一个数据，返回值为读取到的数据，读到末尾返回 -1|
+|`public int read(char[] buffer)`|读取多个数据，返回值为本次读取到的字符的个数，本次未读到任何数据则返回 -1|
+
+对于空参 read 方法：
+* 按字节进行读取，遇到中文，一次读多个字节，读取后解码，返回一个整数
+* 读到文件末尾了，`read` 方法返回 -1
+* 在读取到数据之后，方法的底层会解码并转化为十进制，并最终把这个十进制作为方法的返回值（这个十进制数据也是就是当前字符在字符集上对应的数字）
+
+3. 释放资源
+
+| 成员方法           | 说明     |
+|:------------------:|:--------:|
+| `public int close()` | 释放资源 |
 
 ### 3）缓冲流
 
+```java
 
+```
+
+### 4）流中的异常处理
+
+错误思路：
+
+![Java流中的异常处理](./images/Java流中的异常处理.png)
+
+正确思路：
+
+![Java流的异常处理正确方式](./images/Java流的异常处理正确方式.png)
+
+正确实现：
+
+```java
+public static void iOExcecptionTest() {
+	FileInputStream fis = null;//确定为未初始化
+	FileOutputStream fos = null;//
+		
+	try {
+		fis = new FileInputStream("/home/x41v3r/Desktop/MAD-81.mp4");
+		fos = new FileOutputStream("/home/x41v3r/Desktop/MAD-81(new).mp4");
+		int b = fis.read();
+	}catch(IOException e) {
+		e.printStackTrace();
+	}finally {
+		if(fis != null) {
+			try {
+				fis.close();
+			}catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+		if(fos != null) {
+			try {
+				fos.close();
+			}catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+```
 
 ## 5.多线程
 
