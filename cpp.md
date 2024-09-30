@@ -37,19 +37,26 @@ void f(int a, int b)
 &emsp;&emsp;Conversely, integers can be implicitly converted to **bool** values: nonzero integers convert to **true** and **0** converts to **false**. For example:
 
 ```cpp
-bool b1 = 7;    // 7!=0, so b becomes true
-bool b2 {7};    // error: narrowing (§2.2.2, §10.5)
+bool b1 = 7;   // 7!=0, so b1 becomes true
+bool b2 = -23; // -23!=0, so b2 becomes true
+
+bool b3 {7};   // error: narrowing
+bool b4 {1};   // true
+
 int i1 = true;  // i1 becomes 1
 int i2 {true};  // i2 becomes 1
 
+int i3 = false; // i3 becomes 0
+int i4 {false}; // i4 becomes 0
+
 if(1)
 {
-    cout << "an integer is converted to a boolean value implicitly" << endl;
     //This line is executed.
+    cout << "an integer is converted to a boolean value implicitly" << endl;
 }
 ```
 
-&emsp;&emsp;In arithmetic and logical expressions, **bool**s are converted to **int**s; **integer arithmetic and logical operations are performed on the converted values**. For example:
+&emsp;&emsp;In arithmetic and logical expressions, **bool**s are converted to **int**s implicitly; **integer arithmetic and logical operations are performed on the converted values**. For example:
 
 ```cpp
 bool a = true;
@@ -87,12 +94,47 @@ unsigned char bar;  //definitely unsigned
 signed char snark;  //definitely signed
 ```
 
+&emsp;&emsp;On each implementation, the **char** type will be identical to that of either **signed char** or **unsigned char**, but these three names are still considered separate types.
+
 > It is implementation-defined whether a plain **char** is considered signed or unsigned. This opens the possibility for some nasty surprises and implementation dependencies.
+
+&emsp;&emsp;If we just use a char type to stand a character, **a plain char is enough**. But if we use a char type value as a "very short" integer, **it is meaningful to discuss whether a char variable is signed or unsigned**.
+
+```cpp
+
+
+
+```
 
 #### Character Literals
 
 &emsp;&emsp;A character literal is a single character enclosed in single quotes, for example, **'a'** and **'0'**. The type of a character literal is **char**.
 
+```cpp
+char c1 = 'a';
+char c2 = '#';  // a special character is acceptable
+char c3 = ' ';  // a space is also a character
+
+char c4 = '';  // error: there must be a character inside the single quotes
+char c5 = 'abc';  //warning: multi-character character constant, and c5 finally becomes 'c', the last character inside the single quotes
+```
+
+<!--error: there can only be no more than a character inside the single quotes-->
+
+A few characters have standard names that use the backslash, \\, as an escape character:
+
+|Name           |ASCII Name|C++ Name|
+|:-------------:|:--------:|:------:|
+|NewLine        |NL(LF)    |`\n`    |
+|Horizontal tab |HT        |`\t`    |
+|Backslash      |\         |`\\`    |
+
+> Despite their appearance, these are all single characters.
+
+```cpp
+char c1 = '\n';
+char c2 = '\t';
+```
 
 
 
@@ -108,12 +150,28 @@ signed char snark;  //definitely signed
 
 &emsp;&emsp;A **long int** can be referred to as plain **long**, and a **long long int** can be referred to as plain **long long**. Similarly, **short** is a synonym for **short int**, **unsigned** for **unsigned int**, and **signed** for **signed int**.
 
+> There is no **long short int** equivalent to **int**.
+
+&emsp;&emsp;The **unsigned** integer types are ideal for uses that treat storage as a bit array. 
+
+> Unlike plain **char**s, plain **int**s are always signed. The signed **int** types are simply more explicit synonyms for their plain **int** counterparts, rather than different types.
+
+> Using an unsigned instead of an int to gain one more bit to represent positive integers is almost never a good idea.
+Attempts to ensure that some values are positive by declaring variables unsigned will typically be
+defeated by the implicit conversion rules
+
+#### Integer Literals
+
+&emsp;&emsp;Integer literals come in three guises: **decimal, octal, and hexadecimal**. 
+
+
+
+
 > Notes:  
 > &emsp;&emsp;Using an **unsigned** instead of an **int** to gain one more bit to represent positive integers **is almost never a good idea**. Attempts to ensure that some values are positive by declaring variables **unsigned** will typically be defeated by the implicit conversion rules
 
 1. Integer Literals
 
-&emsp;&emsp;Integer literals come in three guises: **decimal, octal, and hexadecimal**. 
 
 > Notes:  
 > &emsp;&emsp;Decimal literals are the most commonly used and look as you would expect them to:
@@ -122,6 +180,10 @@ signed char snark;  //definitely signed
 &emsp;&emsp;A literal starting with zero followed by **x** or **X** (**0x** or **0X**) is a hexadecimal (base 16) number. A literal starting with zero but not followed by **x** or **X** is an octal (base 8) number.
 
 2. Types of Integer Literals
+
+
+
+
 
 ### 1.1.4 Floating-point Types
 
@@ -146,11 +208,15 @@ signed char snark;  //definitely signed
 
 # 2 Pointers, Arrays, and References
 
+
+
 # 3 Structures, Unions, and Enumerations
 
 # 4 Statements
 
 # 5 Expressions
+
+
 
 # 6 Select Operations
 
@@ -176,4 +242,6 @@ signed char snark;  //definitely signed
 
 # 17 Run-Time Type Information
 
-# 18 
+# 18 Templates
+
+# 19 
