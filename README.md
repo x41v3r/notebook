@@ -1,3 +1,3 @@
 # notebook
 
-My Learning Notes
+个人的编程学习笔记。
