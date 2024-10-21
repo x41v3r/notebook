@@ -1,3 +1,3 @@
 # notebook
 
-个人的编程学习记录。
+Personal Programming Notes
