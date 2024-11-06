@@ -17,6 +17,27 @@ create_option: [DEFAULT] {
 
 An error occurs if the database exists and we did not specify `IF NOT EXISTS`.
 
+* The `CHARACTER SET` option specifies the default database character set. The `COLLATE` option specifies the default database collation. 
+* The `ENCRYPTION` option, introduced in MySQL 8.0.16, defines the default database encryption, which is inherited by tables created in the database. 
+
+> A database in MySQL is implemented as a directory containing files that correspond to tables in the database. Because there are no tables in a database when it is initially created, the `CREATE DATABASE` statement creates only a directory under the MySQL data directory.
+
+Notes:
+
+1. Creating a database directory by manually creating a directory under the data directory is unsupported in MySQL 8.0.
+2. MySQL has no limit on the number of databases, while the underlying file system may have a limit on the number of directories.
+
+## 1.2 CREATE EVENT Statement
+
+## 1.3 CREATE FUNCTION Statement
+
+```sql
+CREATE [DEFINER = user] FUNCTION [IF NOT EXISTS] sp_name ([func_parameter[,...]])
+    RETURNS type
+    [characteristic ...] routine_body
+```
+
+
 
 
 
