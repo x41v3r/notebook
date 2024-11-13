@@ -2,6 +2,17 @@
 
 &emsp;&emsp;C is a general-purpose programming language. It has been closely associated with the UNIX system where it was developed, since both the system and most of the programs that run on it are written in C. 
 
+```c
+#include <stdio.h>  //include information about standard library
+
+main()  //define a funcation named "main"
+{  //statements of "main" are enclosed in braces
+    printf("hello, world\n");
+}
+```
+
+> A c program begins executing at the begining of **main**. This means that every pragram must have a **main** somewhere.
+
 # 2 Types, operators, and expressions
 
 ## 2.1 Variable names
@@ -52,22 +63,9 @@ On a 64-bit mechine, `short` is 16 bits, `long` 64 bits, and `int` 32 bits.
 
 ## 2.4 
 
-
-
 ## 2.5 
 
-# 3 
+# 3
 
 
 
-To create a new repository on the command line
-
-```bash
-echo "# learning_demos" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:x41v3r/learning_demos.git
-git push -u origin main
-```
