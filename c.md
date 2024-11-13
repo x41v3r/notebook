@@ -11,7 +11,7 @@ main()  //define a funcation named "main"
 }
 ```
 
-> A c program begins executing at the begining of **main**. This means that every pragram must have a **main** somewhere.
+> A C program begins executing at the begining of **main**. This means that every program must have a **main** somewhere.
 
 # 2 Types, operators, and expressions
 
@@ -20,8 +20,8 @@ main()  //define a funcation named "main"
 There are some restrications on the names of variables and symbolic constants:
 
 * Names are made up of letters and digits; the first character must be a letter. 
-* The underscore "_" counts as a letter, it is sometimes useful for improving the readability of long variable names. (Don't begin variable names with underscore, however, since library routines often use such names. )
-* Upper case and lower case letters are distinct, so "x" and "X" are two different names. (Traditional C practice is to use lower case for variable names, and all upper case for symbolic constants.)
+* The underscore "_" counts as a letter, it is sometimes useful for **improving the readability of long variable names**. (Don't begin variable names with underscore, however, since library routines often use such names. )
+* **Upper case and lower case letters are distinct**, so "x" and "X" are two different names. (Traditional C practice is to use lower case for variable names, and all upper case for symbolic constants.)
 
 ## 2.2 Data types and sizes
 
