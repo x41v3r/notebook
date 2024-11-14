@@ -1,24 +1,8 @@
-# 1 HTML5
+# 1 HTML
 
 ## 1.1 Getting started with HTML
 
-&emsp;&emsp;HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages we visit.
-
-### 1.1.1 Anatomy of an HTML element
-
-![frontend-html-element-anatomy](./assets/frontend-html-element-anatomy.png)
-
-### 1.1.2 Attributes
-
-![frontend-html-attribute](./assets/frontend-html-attribute.png)
-
-An attribute should have:
-
-* A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)
-* The attribute name, followed by an equal sign.
-* An attribute value, wrapped with opening and closing quote marks.
-
-### 1.1.3 Anatomy of an HTML document
+&emsp;&emsp;HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.
 
 ```html
 <!doctype html>
@@ -33,7 +17,32 @@ An attribute should have:
 </html>
 ```
 
-## 1.2 What's in the head? Metadata in HTML
+## 1.2 What's in the head?
+
+&emsp;&emsp;The HTML head is the contents of the `<head>` element. Unlike the contents of the `<body>` element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page.
+
+### 1.2.1 Adding a title
+
+```html
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title> &lt;title&gt; element </title>
+    </head>
+    <body>
+        <h1> &lt;h1&gt; element </h1>
+    </body>
+</html>
+```
+
+![frontend-html-title-h1-example](./assets/frontend-html-title-h1-example.png)
+
+### 1.2.2 Metadata: the `<meta>` element
+
+&emsp;&emsp;Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document — the `<meta>` element. 
+
+#### Specifying the document's charcter encoding
 
 ## 1.3 HTML text fundamentals
 
@@ -51,22 +60,15 @@ Each heading has to be wrapped in a heading element:
 <h1>I am the title of the story.</h1>
 ```
 
-![frontend-html-p-h1-example-ui](./assets/frontend-html-p-h1-example-ui.png)
+There are six heading elements: h1, h2, h3, h4, h5, and h6. 
 
-> There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document; `<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
+> Each element represents a different level of content in the document; `<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
 
 ### 1.3.2 Lists
 
-On the web, we have three types of lists: unordered, ordered, and description.
+### 1.3.3 Emphasis and importance
 
-#### Unordered
-
-#### Ordered
-
-
-# 2 CSS3
-
-## 2.1 Getting started with CSS
+# 2 CSS
 
 # 3 JavaScript
 
