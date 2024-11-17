@@ -59,9 +59,20 @@ On a 64-bit mechine, `short` is 16 bits, `long` 64 bits, and `int` 32 bits.
 
 &emsp;&emsp;An integer constant like `1234` is an `int`. A `long` constant is written with a terminal `l` or `L`, as in `123456789L`; an integer too big to fit into an `int` will also be taken as a `long`. The `unsigned int` constants are written with a terminal `u` or `U`, and the suffix `ul` or `UL` indicates `unsigned long`.
 
+> The value of an integer can be specified in octal or hexadecimal instead of decimal.  
+> &emsp;&emsp;A leading `0` on an integer constant means **octal**; a leading `0x` or `0X` means **hexadecimal**.  
+> ```c
+> int a = 037;  // 31 in octal
+> int b = 0x1F;  // 31 in hexadecimal
+>
+> printf("a(037) = %d\n", a);  // a(037) = 31
+> printf("b(0x1F) = %d\n", b);  // b(0x1F) = 31
+> ```
+
 &emsp;&emsp;Floating-point constants contain a decimal point (123.4) or an exponent (1e-2) or both; their type is `double`, unless suffixed. The suffixes `f` or `F` indicate a `float` constant; `l` or `L` indicate a `long double`.
 
 &emsp;&emsp;A character constant is an integer, written as one character within single quotes, such as `'x'`. The value of a character constant is the numeric value of the character in the machine's character set.
+
 
 ## 2.4 Declarations
 
