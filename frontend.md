@@ -62,7 +62,8 @@ Each heading has to be wrapped in a heading element:
 
 There are six heading elements: h1, h2, h3, h4, h5, and h6. 
 
-> Each element represents a different level of content in the document; `<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
+> Each element represents a different level of content in the document:  
+> &emsp;&emsp;`<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
 
 ### 1.3.2 Lists
 

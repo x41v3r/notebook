@@ -73,9 +73,8 @@ On a 64-bit mechine, `short` is 16 bits, `long` 64 bits, and `int` 32 bits.
 
 &emsp;&emsp;A character constant is an integer, written as one character within single quotes, such as `'x'`. The value of a character constant is the numeric value of the character in the machine's character set.
 
-
 ## 2.4 Declarations
 
-## 2.5 Operators and Expessions
+## 2.5 Operators and expessions
 
 # 3 Control flow
