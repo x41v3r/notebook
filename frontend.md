@@ -67,9 +67,54 @@ There are six heading elements: h1, h2, h3, h4, h5, and h6.
 
 ### 1.3.2 Lists
 
+#### Unordered
 
+&emsp;&emsp;Unordered lists are used to mark up lists of items for which the order of the items doesn't matter.
+
+&emsp;&emsp;For example, there is a shopping list:
+
+```html
+milk
+eggs
+bread
+hummus
+```
+
+&emsp;&emsp;Every unordered list starts off with a `<ul>` element—this wraps around all the list items:
+
+```html
+<ul>
+    milk
+    eggs
+    bread
+    hummus
+</ul>
+```
+
+&emsp;&emsp;The last step is to wrap each list item in a `<li>` (list item) element:
+
+```html
+<ul>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>bread</li>
+    <li>hummus</li>
+</ul>
+```
+
+![frontend-html-unordered-list-ui](./assets/frontend-html-unordered-list-ui.png)
+
+#### Ordered
 
 ### 1.3.3 Emphasis and importance
+
+#### Emphasis
+
+&emsp;&emsp;In written language we tend to stress words by putting them in italics. 
+
+
+
+#### Strong importance
 
 # 2 CSS
 
