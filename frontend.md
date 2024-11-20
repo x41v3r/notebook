@@ -2,7 +2,7 @@
 
 ## 1.1 Getting started with HTML
 
-&emsp;&emsp;HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.
+&emsp;&emsp;HTML (Hyper Text Markup Language) is the code that is used to structure a web page and its content.
 
 ```html
 <!doctype html>
@@ -42,7 +42,7 @@
 
 &emsp;&emsp;Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document — the `<meta>` element. 
 
-#### Specifying the document's charcter encoding
+#### Specifying the document's character encoding
 
 ## 1.3 HTML text fundamentals
 
@@ -60,7 +60,7 @@ Each heading has to be wrapped in a heading element:
 <h1>I am the title of the story.</h1>
 ```
 
-There are six heading elements: h1, h2, h3, h4, h5, and h6. 
+There are six heading elements: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`. 
 
 > Each element represents a different level of content in the document:  
 > &emsp;&emsp;`<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
