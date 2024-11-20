@@ -71,7 +71,18 @@ On a 64-bit machine, `short` is 16 bits, `long` 64 bits, and `int` 32 bits.
 
 &emsp;&emsp;Floating-point constants contain a decimal point (123.4) or an exponent (1e-2) or both; their type is `double`, unless suffixed. The suffixes `f` or `F` indicate a `float` constant; `l` or `L` indicate a `long double`.
 
+```c
+
+```
+
 &emsp;&emsp;A character constant is an integer, written as one character within single quotes, such as `'x'`. The value of a character constant is the numeric value of the character in the machine's character set.
+
+> &emsp;&emsp;For example, in the ASCII character set the character constant `'0'` has the value `48`, which is unrelated to the numeric value 0.  
+> &emsp;&emsp;If we write `'0'` instead of a numeric value like `48` that depends on character set, *the program is independent of the particular value and easier to read*.
+
+```c
+
+```
 
 ## 2.4 Declarations
 
