@@ -2,6 +2,3 @@
 
 # 2 Types and Declarations
 
-
-
-

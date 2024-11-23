@@ -21,4 +21,3 @@ FROM table_name;
 
 To use the `SELECT` statement without referencing a table.
 
-

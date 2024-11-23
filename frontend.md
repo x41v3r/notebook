@@ -112,12 +112,9 @@ hummus
 
 &emsp;&emsp;In written language we tend to stress words by putting them in italics. 
 
-
-
 #### Strong importance
 
 # 2 CSS
 
 # 3 JavaScript
-
 
