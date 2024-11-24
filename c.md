@@ -124,7 +124,47 @@ float eps = 1.0e-5;
 
 ## 2.5 Operators and expressions
 
+### 2.5.1 Arithmetic operators
+
+`+`&emsp;`-`&emsp;`*`&emsp;`/`&emsp;`%`
+
+### 2.5.2 Relational and logical operators
+
+`>`&emsp;`>=`&emsp;`<`&emsp;`<=`&emsp;`==`&emsp;`!=`
+
+`&&`&emsp;`||`&emsp;`!`
+
+### 2.5.3 Type conversions
+
+### 2.5.4 Increment and decrement operators
+
+&emsp;&emsp;The increment operator `++` adds `1` to its operand, while the decrement operator `--` subtracts `1`, as in 
+
+```c
+int a = 10;
+int b = 10;
+
+a++;
+b--;
+
+printf("a = %d\n", a);  //11
+printf("b = %d\n", b);  //9
+```
+
+### 2.5.5 Bitwise operators
+
+| Operator |  |
+|:--------:|:--------------------:|
+| `&`      | bitwise AND          |
+| `\|`     | bitwise inclusive OR |
+| `^`      | bitwise exclusive OR |
+| `<<`     | left shift           |
+| `>>`     | right shift          |
+| `~`      | one's complement     |
+
+### 2.5.6 Assignment operators and expressions
+
+### 2.5.7 Conditional expressions
+
 # 3 Control flow
-
-
 
