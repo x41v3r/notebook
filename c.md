@@ -168,3 +168,34 @@ printf("b = %d\n", b);  //9
 
 # 3 Control flow
 
+## 3.1 Statement and blocks
+
+&emsp;&emsp;An expression such as `x = 0` or `i++` or `printf(...)` becomes a *statement* when it is followed by a semicolon, as in
+
+```c
+x = 0;
+i++;
+printf(...);
+```
+
+> In C, semicolon is a statement terminator, rather than ...
+
+&emsp;&emsp;Braces `{` and `}` are used to group declarations and statements together into a compound statement, or block, so that they are syntactically equivalent to a single statement.
+
+## 3.2 if-else
+
+&emsp;&emsp;The if-else statement is used to express decisions. Formally, the syntax is
+
+```c
+if (expression)
+    statement1;
+else
+    statement2;
+```
+
+where the `else` part is optional.
+
+> &emsp;&emsp;The *expression* is evaluated, if it is true (that is, if *expression* has a non-zero value), *statement1* is executed. If it is false (*expression* is zero)and if there is an `else` part, *statement2* is executed instead.
+
+## 3.3 else-if
+
