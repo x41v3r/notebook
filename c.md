@@ -168,7 +168,7 @@ printf("b = %d\n", b);  //9
 
 # 3 Control flow
 
-## 3.1 Statement and blocks
+## 3.1 Statements and blocks
 
 &emsp;&emsp;An expression such as `x = 0` or `i++` or `printf(...)` becomes a *statement* when it is followed by a semicolon, as in
 
@@ -197,5 +197,37 @@ where the `else` part is optional.
 
 > &emsp;&emsp;The *expression* is evaluated, if it is true (that is, if *expression* has a non-zero value), *statement1* is executed. If it is false (*expression* is zero)and if there is an `else` part, *statement2* is executed instead.
 
+&emsp;&emsp;Since an if simply tests the numeric value of an expression, certain coding shortcuts are possible. The most obvious is writing
+
+```C
+if(expression)
+```
+
+instead of 
+
+```C
+if(expression != 0)
+```
+
+Sometimes this is natural and clear; at other times it can be cryptic.
+
 ## 3.3 else-if
+
+&emsp;&emsp;Look at the construction below
+
+```C
+if (expression1)
+    statement1;
+else if (expression2)
+    statement2;
+else if (expression3)
+    statement3;
+else if (expression4)
+    statement4;
+else if (expression5)
+    statement5;
+else
+    statement;
+```
+
 
