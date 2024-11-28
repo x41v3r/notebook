@@ -21,6 +21,7 @@
 Notes:
 
 * `utf-8` is a universal character set that includes pretty much any character from any human language. (This means that the web page will be able to handle displaying any language.)
+* 
 
 ## 1.3 HTML text fundamentals
 
@@ -40,17 +41,60 @@ Each heading has to be wrapped in a heading element:
 
 > &emsp;&emsp;There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document; `<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
 
-![frontend-html-head-para-ui](./assets/frontend-html-head-para-ui.png)
+<img src="./assets/frontend-html-head-para-ui.png" width="400px">
 
 ### 1.3.2 Lists
 
 ### 1.3.3 Emphasis and importance
+
+## 1.4 
 
 # 2 CSS
 
 ## 2.1 Getting started with CSS
 
 &emsp;&emsp;CSS (Cascading Style Sheets) is the code that styles web content.
+
+### 2.1.1 Applying CSS to HTML
+
+&emsp;&emsp;There are three methods to apply CSS to a document: with an external stylesheet, with an internal stylesheet, and with inline styles.
+
+&emsp;&emsp;An external stylesheet contains CSS in a separate file with a `.css` extension. 
+
+> This is the most common and useful method of bringing CSS to a document. We can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet.
+
+Reference an external CSS stylesheet from an HTML <link> element:
+
+```html
+<!doctype html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8" />
+        <title>My CSS experiment</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p>This is my first CSS example</p>
+    </body>
+</html>
+```
+
+The CSS stylesheet file might look like this:
+
+```css
+h1 {
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+p {
+    color: red;
+}
+```
+
+### 2.1.2
 
 ## 2.2 CSS selectors
 
@@ -97,7 +141,7 @@ em {
 }
 ```
 
-![frontend-css-type-selector-ui](./assets/frontend-css-type-selector-ui.png)
+<img src="./assets/frontend-css-type-selector-ui.png" width="600px">
 
 &emsp;&emsp;The case-sensitive **class selector** starts with a dot `.` character. It will select everything in the document with that class applied to it. 
 
@@ -126,7 +170,7 @@ body {
 }
 ```
 
-![frontend-css-class-selector-ui](./assets/frontend-css-class-selector-ui.png)
+<img src="./assets/frontend-css-class-selector-ui.png" width="600px">
 
 &emsp;&emsp;The case-sensitive **ID selector** begins with a `#` rather than a `.` character, but is used in the same way as a class selector. It can select an element that has the `id` set on it. (However, an ID can be used only once per page, and elements can only have a single id value applied to them. )
 
@@ -158,7 +202,7 @@ h1#heading {
 }
 ```
 
-![frontend-css-id-selector-ui](./assets/frontend-css-id-selector-ui.png)
+<img src="./assets/frontend-css-id-selector-ui.png" width="600px">
 
 ### 2.2.2 Attribute selectors
 
@@ -178,13 +222,11 @@ h1#heading {
 
 &emsp;&emsp;JavaScript is a programming language that adds interactivity to the website.
 
-
-
 # 4 TypeScript
 
 # 5 Node.js
 
-# 6
+# 6 
 
 ## 6.1 jQuery
 
@@ -192,6 +234,10 @@ h1#heading {
 
 ## 6.3 less
 
-# 7 vue
+# 7 Vue
 
+# questions
 
+<a href="https://github.com/turbio/bracey.vim/issues/21" >bracey build</a>
+
+<a href="https://blog.csdn.net/m0_52172586/article/details/142930356" >npm to slow</a>
