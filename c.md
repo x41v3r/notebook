@@ -61,7 +61,10 @@ On a 64-bit machine, `short` is 16 bits, `long` 64 bits, and `int` 32 bits.
 
 ```c
 int a = 1234;
+unsigned int ua = 1234u;
+
 long b = 1234567890L;
+unsigned long ub = 1234567890UL;
 ```
 
 The value of an integer *can be specified in octal or hexadecimal instead of decimal*: A leading `0` on an integer constant means **octal**; a leading `0x` or `0X` means **hexadecimal**.  
@@ -77,13 +80,22 @@ printf("b(0x1F) = %d\n", b);  // b(0x1F) = 31
 &emsp;&emsp;Floating-point constants contain a decimal point (123.4) or an exponent (1e-2) or both; their type is `double`, unless suffixed. The suffixes `f` or `F` indicate a `float` constant; `l` or `L` indicate a `long double`.
 
 ```c
+double d = 12.34;
+float f = 12.34f;
+long double ld = 12.34L;
 ```
 
 &emsp;&emsp;A character constant is an integer, written as one character within single quotes, such as `'x'`. The value of a character constant is the numeric value of the character in the machine's character set.
 
-> &emsp;&emsp;For example, in the ASCII character set the character constant `'0'` has the value `48`, which is unrelated to the numeric value 0. If we write `'0'` instead of a numeric value like `48` that depends on character set, *the program is independent of the particular value and easier to read*.
+```c
+char c = 'x';
+```
+
+> &emsp;&emsp;For example, in the ASCII character set the character constant `'0'` has the value `48`, which is unrelated to the numeric value `0`. If we write `'0'` instead of a numeric value like `48` that depends on character set, *the program is independent of the particular value and easier to read*.
 
 ```c
+char c = '0';
+int ci = c;  //ci = 48 
 ```
 
 ## 2.4 Declarations

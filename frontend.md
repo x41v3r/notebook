@@ -27,7 +27,7 @@ Notes:
 
 ### 1.3.1 Headings and paragraphs
 
-&emsp;&emsp;In HTML, each paragraph has to be wrapped in a <p> element, like so:
+&emsp;&emsp;In HTML, each paragraph has to be wrapped in a `<p>` element, like so:
 
 ```html
 <p>I am a paragraph, oh yes I am.</p>
@@ -44,6 +44,65 @@ Each heading has to be wrapped in a heading element:
 <img src="./assets/frontend-html-head-para-ui.png" width="400px">
 
 ### 1.3.2 Lists
+
+&emsp;&emsp;**Unordered lists** are used to mark up lists of items for which the order of the items doesn't matter. For example:
+
+```html
+milk
+eggs
+bread
+hummus
+```
+
+Every unordered list starts off with a `<ul>` element—this wraps around all the list items:
+
+```html
+<ul>
+    milk
+    eggs
+    bread
+    hummus
+</ul>
+```
+
+The last step is to wrap each list item in a `<li>` (list item) element:
+
+```html
+<ul>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>bread</li>
+    <li>hummus</li>
+</ul>
+```
+
+<img src="./assets/frontend-html-unordered-list-ui.png" width="190px"/>
+
+&emsp;&emsp;**Ordered lists** are lists in which the order of the items does matter. 
+
+For example, there is a set of directions:
+
+```html
+Drive to the end of the road
+Turn right
+Go straight across the first two roundabouts
+Turn left at the third roundabout
+The school is on your right, 300 meters up the road
+```
+
+The markup structure is the same as for unordered lists, except that we have to wrap the list items in an `<ol>` element, rather than `<ul>`:
+
+```html
+<ol>
+    <li>Drive to the end of the road</li>
+    <li>Turn right</li>
+    <li>Go straight across the first two roundabouts</li>
+    <li>Turn left at the third roundabout</li>
+    <li>The school is on your right, 300 meters up the road</li>
+</ol>
+```
+
+<img src="./assets/frontend-html-ordered-list-ui.png" width="500px"/>
 
 ### 1.3.3 Emphasis and importance
 
@@ -238,6 +297,6 @@ h1#heading {
 
 # questions
 
-<a href="https://github.com/turbio/bracey.vim/issues/21" >bracey build</a>
+<a href="https://github.com/turbio/bracey.vim/issues/21" target="_blank">bracey build</a>
 
-<a href="https://blog.csdn.net/m0_52172586/article/details/142930356" >npm to slow</a>
+<a href="https://blog.csdn.net/m0_52172586/article/details/142930356" target="_blank">npm too slow</a>
