@@ -134,7 +134,6 @@ float eps = 1.0e-5;
 
 
 
-
 ## 2.5 Operators and expressions
 
 ### 2.5.1 Arithmetic operators
