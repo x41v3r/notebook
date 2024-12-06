@@ -76,7 +76,7 @@ The last step is to wrap each list item in a `<li>` (list item) element:
 </ul>
 ```
 
-<img src="./assets/frontend-html-unordered-list-ui.png" width="190px"/>
+<img src="./assets/frontend-html-unordered-list-ui.png" width="190px" align="left"/>
 
 &emsp;&emsp;**Ordered lists** are lists in which the order of the items does matter. 
 
