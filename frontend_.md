@@ -112,7 +112,7 @@ The markup structure is the same as for unordered lists, except that we have to 
 
 ## 2.1 Getting started with CSS
 
-&emsp;&emsp;CSS (Cascading Style Sheets) is the code that styles web content.
+&emsp;&emsp;
 
 ### 2.1.1 Applying CSS to HTML
 
