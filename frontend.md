@@ -73,7 +73,8 @@ The last step is to wrap each list item in a `<li>` (list item) element:
 </ul>
 ```
 
-<img src="./assets/frontend-html-unordered-list-ui.png" width="190px" align="left"/>
+<!-- <img src="./assets/frontend-html-unordered-list-ui.png" width="190px" align="left"/> -->
+![frontend-html-unordered-list-ui](./assets/frontend-html-unordered-list-ui.png)
 
 &emsp;&emsp;**Ordered lists** are lists in which the order of the items does matter. 
 
@@ -99,7 +100,8 @@ The markup structure is the same as for unordered lists, except that we have to 
 </ol>
 ```
 
-<img src="./assets/frontend-html-ordered-list-ui.png" width="500px" align="left"/>
+<!-- <img src="./assets/frontend-html-ordered-list-ui.png" width="500px" align="left"/> -->
+![frontend-html-ordered-list-ui](./assets/frontend-html-ordered-list-ui.png)
 
 ### 1.3.3 Emphasis and importance
 
@@ -115,9 +117,10 @@ In HTML we use the `<em>` (emphasis) element  to mark up such instances.
 
 &emsp;&emsp;To emphasize important words, we tend to stress them in spoken language and **bold** them in written language.
 
-<img src="./assets/frontend-html-importance-example.png" align="left"/>
+<!-- <img src="./assets/frontend-html-importance-example.png" align="left"/> -->
+![](./assets/frontend-html-importance-example.png)
 
- In HTML we use the `<strong>` (strong importance) element to mark up such instances. 
+&emsp;&emsp;In HTML we use the `<strong>` (strong importance) element to mark up such instances. 
 
 ```html
 <p>This liquid is <strong>highly toxic</strong>.</p>
@@ -126,23 +129,7 @@ In HTML we use the `<em>` (emphasis) element  to mark up such instances.
 
 ## 1.4 Creating hyperlinks
 
-
-
-
-
-
-
 ## 1.5 Advanced text formatting
-
-
-
-
-
-
-
-
-
-
 
 # 2 CSS
 
@@ -155,12 +142,5 @@ In HTML we use the `<em>` (emphasis) element  to mark up such instances.
 ### 2.2.1 Type, class, and ID selectors
 
 &emsp;&emsp;A **type selector** is sometimes referred to as a tag name selector or element selector because it selects an HTML tag/element in the document. 
-
-
-
-
-
-
-
 
 
