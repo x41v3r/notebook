@@ -38,8 +38,6 @@ Each paragraph has to be wrapped in a `<p>` element:
 <p>I am a paragraph, oh yes I am.</p>
 ```
 
-
-
 > &emsp;&emsp;There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document; `<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
 
 ### 1.3.2 Lists
@@ -107,7 +105,7 @@ The markup structure is the same as for unordered lists, except that we have to 
 
 &emsp;&emsp;In written language we tend to stress words by putting them in italics. 
 
-<img src="./assets/frontend-html-emphsis-example.png" align="left">
+<img src="./assets/frontend-html-emphsis-example.png" align="left" />
 
 In HTML we use the `<em>` (emphasis) element  to mark up such instances.
 
@@ -117,7 +115,7 @@ In HTML we use the `<em>` (emphasis) element  to mark up such instances.
 
 &emsp;&emsp;To emphasize important words, we tend to stress them in spoken language and **bold** them in written language.
 
-<img src="./assets/frontend-html-importance-example.png" align="left">
+<img src="./assets/frontend-html-importance-example.png" align="left"/>
 
  In HTML we use the `<strong>` (strong importance) element to mark up such instances. 
 
