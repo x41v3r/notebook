@@ -27,7 +27,8 @@ Notes:
 ### 1.3.1 Headings and paragraphs
 
 &emsp;&emsp;In HTML, each paragraph has to be wrapped in a `<p>` element, like so:
-                                                                                                                                                  ```html 
+
+```html 
 <p>I am a paragraph, oh yes I am.</p>
 ```
 
@@ -39,6 +40,36 @@ Each heading has to be wrapped in a heading element:
 
 > &emsp;&emsp;There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document; `<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.
 
+### 1.3.2 Lists
+
+&emsp;&emsp;Unordered lists are used to mark up lists of items for which the order of the items doesn't matter.
+
+```html
+<ul>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>bread</li>
+    <li>hummus</li>
+</ul>
+```
+
+&emsp;&emsp;Ordered lists are lists in which the order of the items does matter.
+
+```html
+<ol>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>bread</li>
+    <li>hummus</li>
+</ol>
+```
+
+### 1.3.3 Emphasis and importance
+
+
+
 # 2 CSS
 
 # 3 JavaScript
+
+# 4 TypeScript
