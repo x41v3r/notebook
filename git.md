@@ -47,4 +47,9 @@ git log
 ```
 
 
+```bash
+git reset --soft HEAD~1  # undo the nearest commit and keep the modification
+git reset --hard HEAD~1  # undo the commit and give up the modification
+```
+
 

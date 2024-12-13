@@ -15,12 +15,12 @@ FROM table_name;
 
 In this syntax:
 
-- First, specify one or more columns from which we want to select data after the `SELECT` keyword. If the `select_list` has multiple columns, we need to separate them by a comma `,`.
-- Second, specify the name of the table from which we want to select data after the `FROM` keyword.
-- Third, the semicolon `;` is optional, which denotes the end of a statement. (If we have two or more statements, we need to use the semicolon `;` to separate them so that MySQL will execute each statement individually.)
+* First, specify one or more columns from which we want to select data after the `SELECT` keyword. If the `select_list` has multiple columns, we need to separate them by a comma `,`.
+* Second, specify the name of the table from which we want to select data after the `FROM` keyword.
+* Third, the semicolon `;` is optional, which denotes the end of a statement. (If we have two or more statements, we need to use the semicolon `;` to separate them so that MySQL will execute each statement individually.)
 
 
-
+## 2.2 
 
 
 
