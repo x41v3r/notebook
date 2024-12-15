@@ -66,8 +66,6 @@ Each heading has to be wrapped in a heading element:
 
 ### 1.3.3 Emphasis and importance
 
-
-
 # 2 CSS
 
 # 3 JavaScript
