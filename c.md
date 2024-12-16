@@ -244,5 +244,7 @@ is the most general way of writing a *multi-way decision*.
 
 ## 3.4 switch
 
+# 4 Functions and program structure
 
+# 4.1 Basics of functions
 
