@@ -19,9 +19,17 @@ In this syntax:
 * Second, specify the name of the table from which we want to select data after the `FROM` keyword.
 * Third, the semicolon `;` is optional, which denotes the end of a statement. (If we have two or more statements, we need to use the semicolon `;` to separate them so that MySQL will execute each statement individually.)
 
+## 2.2 Sorting data 
 
-## 2.2 
+To sort the rows in the result set, we add the `ORDER BY` clause to the `SELECT` statement.
 
+The following illustrates the syntax of the `ORDER BY` clause:
+
+```sql
+SELECT select_list
+FROM table_name
+ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
+```
 
 
 
