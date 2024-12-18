@@ -27,12 +27,12 @@ There are some restrictions on the names of variables and symbolic constants:
 
 There are only a few basic data types in C:
 
-| type    | description                                                                       |
-|:-------:|:---------------------------------------------------------------------------------:|
-| `char`  | A single byte, capable of holding one character in the local character set.       |
-| `int`   | An integer, typically reflecting the natural size of integers on the host machine.|
-| `float` | Single-precision floating point.                                                  |
-| `double`| Double-precision floating point.                                                  |
+| type    | description                                                                        |
+|:-------:|:----------------------------------------------------------------------------------:|
+| `char`  | A single byte, capable of holding one character in the local character set.        |
+| `int`   | An integer, typically reflecting the natural size of integers on the host machine. |
+| `float` | Single-precision floating point.                                                   |
+| `double`| Double-precision floating point.                                                   |
 
 &emsp;&emsp;In addition, there are a number of qualifiers that can be applied to these basic types. 
 
@@ -190,7 +190,7 @@ printf(...);
 
 > In C, semicolon is a statement terminator, rather than ...
 
-&emsp;&emsp;Braces `{` and `}` are used to group declarations and statements together into a compound statement, or block, so that they are syntactically equivalent to a single statement.
+&emsp;&emsp;Braces `{` and `}` are used to group declarations and statements together into a compound statement, or block, so that *they are syntactically equivalent to a single statement*.
 
 ## 3.2 if-else
 
@@ -207,7 +207,7 @@ where the `else` part is optional.
 
 > &emsp;&emsp;The *expression* is evaluated, if it is true (that is, if *expression* has a non-zero value), *statement1* is executed. If it is false (*expression* is zero) and if there is an `else` part, *statement2* is executed instead.
 
-&emsp;&emsp;Since an if simply tests the numeric value of an expression, certain coding shortcuts are possible. The most obvious is writing
+&emsp;&emsp;Since an `if` simply tests the numeric value of an expression, certain coding shortcuts are possible. The most obvious is writing
 
 ```c
 if(expression)
@@ -226,23 +226,42 @@ if(expression != 0)
 &emsp;&emsp;The construction
 
 ```c
-if (expression1)
-    statement1;
-else if (expression2)
-    statement2;
-else if (expression3)
-    statement3;
-else if (expression4)
-    statement4;
+if (expression)
+    statement;
+else if (expression)
+    statement;
+else if (expression)
+    statement;
+else if (expression)
+    statement;
 else
     statement;
 ```
 
 is the most general way of writing a *multi-way decision*. 
 
-> &emsp;&emsp;The expression are evaluated in order; if any expression is true, the statement associated with it is executed, and this terminates the whole chain.
+> &emsp;&emsp;The expression are evaluated in order; *if any expression is true, the statement associated with it is executed, and this terminates the whole chain*. The last `else` part handles the “none of the above” or default case where none of the other conditions is satisfied.
+
+&emsp;&emsp;Sometimes there is no explicit action for the default; in that case the trailing
+
+```c
+else
+    statement
+```
+
+can be ommitted, it may be used for error checking to *catch an "impossible" condition*.
 
 ## 3.4 switch
+
+&emsp;&emsp;The switch statement is a multi-way decision that tests whether an expression matches one of a number of constant integer values, and branches accordingly.
+
+```c
+switch (expression)
+{
+    case const-expr: statements
+    case const-expr: statements
+    default: statements
+```
 
 # 4 Functions and program structure
 

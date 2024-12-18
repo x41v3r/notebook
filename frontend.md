@@ -68,6 +68,12 @@ Each heading has to be wrapped in a heading element:
 
 # 2 CSS
 
+## 2.1 Getting started with CSS
+
+&emsp;&emsp;CSS (Cascading Style Sheets) is used to style and lay out web pages.
+
+
+
 # 3 JavaScript
 
 # 4 TypeScript
