@@ -180,7 +180,7 @@ printf("b = %d\n", b);  //9
 
 ## 3.1 Statements and blocks
 
-&emsp;&emsp;An expression such as `x = 0` or `i++` or `printf(...)` becomes a *statement* when it is followed by a semicolon, as in
+&emsp;&emsp;An expression such as `x = 0` or `i++` or `printf(...)` becomes a *statement* when it is followed by a semicolon `;`, as in
 
 ```c
 x = 0;
@@ -192,7 +192,9 @@ printf(...);
 
 &emsp;&emsp;Braces `{` and `}` are used to group declarations and statements together into a compound statement, or block, so that *they are syntactically equivalent to a single statement*.
 
-## 3.2 if-else
+## 3.2 Branches
+
+### 3.2.1 if-else
 
 &emsp;&emsp;The if-else statement is used to express decisions. Formally, the syntax is
 
@@ -205,7 +207,7 @@ else
 
 where the `else` part is optional.
 
-> &emsp;&emsp;The *expression* is evaluated, if it is true (that is, if *expression* has a non-zero value), *statement1* is executed. If it is false (*expression* is zero) and if there is an `else` part, *statement2* is executed instead.
+> &emsp;&emsp;The *expression* is evaluated, if it is true (*that is, if expression has a non-zero value*), **statement1** is executed. If it is false (*expression is zero*) and if there is an `else` part, **statement2** is executed instead.
 
 &emsp;&emsp;Since an `if` simply tests the numeric value of an expression, certain coding shortcuts are possible. The most obvious is writing
 
@@ -221,7 +223,7 @@ if(expression != 0)
 
 > &emsp;&emsp;Sometimes this is natural and clear; at other times it can be cryptic.
 
-## 3.3 else-if
+### 3.2.2 else-if
 
 &emsp;&emsp;The construction
 
@@ -251,9 +253,9 @@ else
 
 can be ommitted, it may be used for error checking to *catch an "impossible" condition*.
 
-## 3.4 switch
+### 3.2.3 switch
 
-&emsp;&emsp;The switch statement is a multi-way decision that tests whether an expression matches one of a number of constant integer values, and branches accordingly.
+&emsp;&emsp;The **switch** statement is a multi-way decision that tests whether an expression matches one of a number of constant integer values, and branches accordingly.
 
 ```c
 switch (expression)
@@ -261,9 +263,24 @@ switch (expression)
     case const-expr: statements
     case const-expr: statements
     default: statements
+}
 ```
+
+## 3.3 Loops
+
+### 3.3.1 while
+
+### 3.3.2 for
+
+### 3.3.2 do-while
+
+## 3.4 break and continue
+
+## 3.5 goto
 
 # 4 Functions and program structure
 
 # 4.1 Basics of functions
+
+
 
