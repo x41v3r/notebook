@@ -196,7 +196,7 @@ printf(...);
 
 ### 3.2.1 if-else
 
-&emsp;&emsp;The if-else statement is used to express decisions. Formally, the syntax is
+&emsp;&emsp;The **if-else** statement is used to express decisions. Formally, the syntax is
 
 ```c
 if (expression)
@@ -265,6 +265,16 @@ switch (expression)
     default: statements
 }
 ```
+
+Each **case** is labeled by one or more integer-valued constants or constant expressions.
+
+If a case matches the expression value, *execution **starts** at the case. (All case expressions must be different.)*
+
+The case labeled **default** is executed if none of the other cases are satisfied. (A default is optional.)
+
+If there isn't a "default" and if none of the cases match, *no action at all takes place*.
+
+Cases and the defult clause can occur in any order.
 
 ## 3.3 Loops
 
