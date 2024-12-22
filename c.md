@@ -290,7 +290,5 @@ Cases and the defult clause can occur in any order.
 
 # 4 Functions and program structure
 
-# 4.1 Basics of functions
-
-
+## 4.1 Basics of functions
 
