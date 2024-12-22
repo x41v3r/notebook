@@ -280,8 +280,6 @@ Cases and the defult clause can occur in any order.
 
 ### 3.3.1 while
 
-
-
 ### 3.3.2 for
 
 ### 3.3.3 do-while
