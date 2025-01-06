@@ -1,4 +1,0 @@
-# notebook
-
-Personal Programming Notes
-
