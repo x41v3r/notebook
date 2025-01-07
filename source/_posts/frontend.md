@@ -12,9 +12,9 @@ tags:
 
 &emsp;&emsp;HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.
 
-## 1.1.2 
+### 1.1.2 
 
-## 1.1.3 Including special characters in HTML
+### 1.1.3 Including special characters in HTML
 
 | Literal character | Character reference equivalent |
 |:-----------------:|:------------------------------:|
@@ -24,7 +24,7 @@ tags:
 | '                 | `&apos;`                       |
 | &                 | `&amp;`                        |
 
-## 1.1.4 HTML comments
+### 1.1.4 HTML comments
 
 HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user.
 
@@ -41,6 +41,9 @@ HTML has a mechanism to write comments in the code. Browsers ignore comments, ef
     <head>
         <meta charset="utf-8" />
         <title>My test page</title>
+        <style></style>  <!-- Internal stylesheet -->
+        <script></script>  <!-- Internal JavaScript codes -->
+        <link src="path_to_file"/>  <!-- External stylesheet or JavaScript  -->
     </head>
     <body>
         <p>This is my page</p>
@@ -174,6 +177,157 @@ The purpose of description lists is to *mark up a set of items and their associa
 ```
 
 ## 1.6 Structuring documents
+
+### 1.6.1 
+
+A "typical website" could be structured something like this:
+
+<img src="/images/webpage-structure-sample.png"/>
+
+```html
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>My page title</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    
+        <!-- The main header used across all the pages of our website -->
+        <header>
+          <h1>Header</h1>
+        </header>
+
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- A Search form: another common non-linear way to navigate through a site. -->
+            <form>
+                <input type="search" name="q" placeholder="Search query" />
+                <input type="submit" value="Go!" />
+            </form>
+        </nav>
+
+        <!-- Our page's main content -->
+        <main>
+            <!-- An article -->
+            <article>
+                <h2>Article heading</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
+                    lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
+                    viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
+                    et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
+                    congue enim, ut porta lorem lacinia consectetur.
+                </p>
+                <section>
+                    <h3>Subsection</h3>
+
+                    <p>
+                        Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
+                        gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                        dolor.
+                    </p>
+
+                    <p>
+                        Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+                        dapibus, enim sit amet elit pharetra tincidunt feugiat nist
+                        imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed
+                        odio eros.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Another subsection</h3>
+
+                    <p>
+                        Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+                        soclis natoque penatibus et manis dis parturient montes, nascetur
+                        ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at
+                        sem facilisis semper ac in est.
+                    </p>
+
+                    <p>
+                        Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+                        tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+                        ultricied. Curabitur ornare, ligula semper consectetur sagittis,
+                        nisi diam iaculis velit, is fringille sem nunc vet mi.
+                    </p>
+                </section>
+            </article>
+
+            <!-- the aside content can also be nested within the main content -->
+            <aside>
+                <h2>Related</h2>
+                <ul>
+                    <li><a href="#">Oh I do like to be beside the seaside</a></li>
+                    <li><a href="#">Oh I do like to be beside the sea</a></li>
+                    <li><a href="#">Although in the North of England</a></li>
+                    <li><a href="#">It never stops raining</a></li>
+                    <li><a href="#">Oh well…</a></li>
+                </ul>
+            </aside>
+        </main>
+
+        <!-- The footer that is used across all the pages of our website -->
+        <footer>
+            <p>©Copyright 2050 by nobody. All rights reversed.</p>
+        </footer>
+    </body>
+</html>
+```
+
+### 1.6.2 Non-semantic wrappers
+
+Sometimes we'll come across a situation where *we can't find an ideal semantic element to group some items together or wrap some content*.
+
+Sometimes we might want to just group a set of elements together to affect them all as a single entity with some **CSS** or **JavaScript**.
+
+For cases like these, **HTML** provides the `<div>` and `<span>` elements.
+
+> We should use these elements preferably with a **suitable class attribute**, to provide some kind of label for them so they can be easily targeted.
+
+`<span>` is an inline non-semantic element.
+
+```html
+<p>
+    The King walked drunkenly back to his room at 01:00, the beer doing nothing to
+    aid him as he staggered through the door.
+    <span class="editor-note">
+        [Editor's note: At this point in the play, the lights should be down low].
+    </span>
+</p>
+```
+
+`<div>` is a block level non-semantic element.
+
+```html
+<div class="shopping-cart">
+    <h2>Shopping cart</h2>
+    <ul>
+        <li>
+            <p>
+                <a href=""><strong>Silver earrings</strong></a>: $99.95.
+            </p>
+            <img src="../products/3333-0985/thumb.png" alt="Silver earrings" />
+        </li>
+        <li>…</li>
+    </ul>
+    <p>Total cost: $237.89</p>
+</div>
+```
+
+### 1.6.3 Line breaks and horizontal rules
 
 # 2 CSS
 
