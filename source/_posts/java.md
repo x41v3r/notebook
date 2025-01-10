@@ -1,5 +1,5 @@
 ---
-title: Java
+title: Java语言基础
 date: 2024-12-30 14:16:47
 tags:
 ---
