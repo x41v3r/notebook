@@ -1,5 +1,5 @@
 ---
-title: frontend
+title: Front-end Development
 date: 2025-01-13 15:34:11
 tags:
 ---
