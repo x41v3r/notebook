@@ -1,6 +1,8 @@
 ---
 title: MySQL
 date: 2024-12-30 15:57:14
+categories:
+- Database
 tags:
 ---
 

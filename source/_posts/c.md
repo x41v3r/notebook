@@ -1,7 +1,10 @@
 ---
-title: The C Programming Language
+title: C Programming Language
 date: 2024-12-22 23:08:36
+categories:
+- C
 tags:
+- c
 ---
 
 # 1 Introduction to C

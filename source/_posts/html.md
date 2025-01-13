@@ -1,20 +1,22 @@
 ---
-title: Front-end Development
-date: 2025-01-13 15:34:11
+title: HTML
+date: 2025-01-13 17:08:46
+categories:
+- Frontend
 tags:
 ---
 
 # HTML
 
-## 1.1 Getting started with HTML
+# 1 Getting started with HTML
 
-### 1.1.1 What is HTML?
+## 1.1 What is HTML?
 
 &emsp;&emsp;HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.
 
-### 1.1.2 
+## 1.2 
 
-### 1.1.3 Including special characters in HTML
+## 1.3 Including special characters in HTML
 
 | Literal character | Character reference equivalent |
 |:-----------------:|:------------------------------:|
@@ -24,7 +26,7 @@ tags:
 | '                 | `&apos;`                       |
 | &                 | `&amp;`                        |
 
-## 1.1.4 HTML comments
+## 1.4 HTML comments
 
 HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user.
 
@@ -33,7 +35,7 @@ HTML has a mechanism to write comments in the code. Browsers ignore comments, ef
 <!-- <p>I am!</p> -->
 ```
 
-## 1.2 What's in the head?
+# 2 What's in the head?
 
 ```html
 <!doctype html>
@@ -51,7 +53,7 @@ HTML has a mechanism to write comments in the code. Browsers ignore comments, ef
 </html>
 ```
 
-## 1.3 Headings and paragraphs
+# 3 Headings and paragraphs
 
 In HTML, each paragraph has to be wrapped in a `<p>` element, like so:
 
@@ -67,9 +69,9 @@ Each heading has to be wrapped in a heading element:
 
 > There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document.
 
-## 1.4 Emphasis and importance
+# 4 Emphasis and importance
 
-### 1.4.1 Emphasis and importance
+## 4.1 Emphasis and importance
 
 ```html
 <p>I am <em>glad</em> you weren't <em>late</em>.</p>
@@ -78,7 +80,7 @@ Each heading has to be wrapped in a heading element:
 <p>This liquid is <strong>highly toxic</strong> — if you drink it, <strong>you may <em>die</em></strong>.</p>
 ```
 
-### 1.4.2 Italic, bold, underline…
+## 4.2 Italic, bold, underline…
 
 ```html
 <!-- scientific names -->
@@ -106,9 +108,9 @@ Each heading has to be wrapped in a heading element:
 </dl>
 ```
 
-## 1.5 Lists
+# 5 Lists
 
-### 1.5.1 Unordered lists
+## 5.1 Unordered lists
 
 ```html
 <ul>
@@ -119,7 +121,7 @@ Each heading has to be wrapped in a heading element:
 </ul>
 ```
 
-### 1.5.2 Ordered lists
+## 5.2 Ordered lists
 
 ```html
 <ol>
@@ -131,7 +133,7 @@ Each heading has to be wrapped in a heading element:
 </ol>
 ```
 
-### 1.5.3 Nesting lists
+## 5.3 Nesting lists
 
 It is perfectly OK to nest one list inside another one.
 
@@ -150,7 +152,7 @@ It is perfectly OK to nest one list inside another one.
 </ol>
 ```
 
-### 1.5.4 Description lists
+## 5.4 Description lists
 
 The purpose of description lists is to *mark up a set of items and their associated descriptions*, such as terms and definitions, or questions and answers.
 
@@ -176,9 +178,9 @@ The purpose of description lists is to *mark up a set of items and their associa
 </dl>
 ```
 
-## 1.6 Structuring documents
+# 6 Structuring documents
 
-### 1.6.1 
+## 6.1 
 
 A "typical website" could be structured something like this:
 
@@ -287,7 +289,7 @@ A "typical website" could be structured something like this:
 </html>
 ```
 
-### 1.6.2 Non-semantic wrappers
+## 6.2 Non-semantic wrappers
 
 Sometimes we'll come across a situation where *we can't find an ideal semantic element to group some items together or wrap some content*.
 
@@ -327,150 +329,7 @@ For cases like these, **HTML** provides the `<div>` and `<span>` elements.
 </div>
 ```
 
-### 1.6.3 Line breaks and horizontal rules
+## 6.3 Line breaks and horizontal rules
 
-# 2
-
-## 2.1 Getting started with CSS
-
-### 2.1.1 What is CSS?
-
-&emsp;&emsp;CSS (Cascading Style Sheets) is used to style and lay out web pages.
-
-### 2.1.2 Adding CSS to the document
-
-There are three different ways to apply CSS to an HTML document.
-
-#### External stylesheets
-
-```css
-/*styles.css*/
-h1 {
-    color: red;
-}
-```
-
-To link styles.css to index.html, add the following line somewhere inside the `<head>` of the HTML document:
-
-```html
-<link rel="stylesheet" href="styles.css" />
-```
-
-#### Internal stylesheets
-
-Internal stylesheets are contained within `<style>` elements, which go inside the HTML `<head>`.
-
-```html
-<style>
-    p {
-        color: purple;
-    }
-</style>
-```
-
-#### Inline styles
-
-Inline styles are CSS declarations that *affect a single HTML element*, contained within a style attribute.
-
-Add a `style` attribute to the element to specify its style.
-
-```html
-<span style="color: purple; font-weight: bold">span element</span>
-```
-
-> **Avoid using CSS in this way if possible.** It is a bad practice.
-
-### 2.1.3 Selectors
-
-A CSS selector is a pattern of elements and other terms that tell the browser *which HTML elements should be selected to have the CSS property values inside the rule applied to them*.
-
-The element or elements which are selected by the selector are referred to as the subject of the selector.
-
-```html
-<body>
-    <h1 class="heading">Selectors</h1>
-    <p id="one">
-        Veggies es bonus vobis, proinde vos postulo essum magis
-        <span class="highlight first-para">kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo melon azuki
-        bean garlic.
-    </p>
-
-    <p class="highlight">
-        Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley
-        shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra
-        wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
-    </p>
-
-    <p>
-        Turnip greens yarrow ricebean rutabaga <em>endive cauliflower</em> sea lettuce
-        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter
-        purslane kale. Celery potato scallion desert raisin horseradish spinach
-    </p>
-</body>
-```
-
-#### Type selectors
-
-A type selector is sometimes referred to as a *tag name selector* or *element selector* because it selects an HTML tag/element in the document.
-
-```css
-body {
-    font-family: sans-serif;
-}
-
-span {
-    background-color: yellow;
-}
-
-strong {
-    color: rebeccapurple;
-}
-
-em {
-    color: rebeccapurple;
-}
-```
-
-#### Class selectors
-
-The case-sensitive class selector starts with a dot `.` character. It will select everything in the document with that class applied to it.
-
-```css
-body {
-    font-family: sans-serif;
-}
-
-.highlight {
-    background-color: yellow;
-}
-```
-
-#### ID selectors
-
-The case-sensitive ID selector begins with a `#` rather than a dot character, but is used in the same way as a class selector. The difference is that an ID can be used only once per page, and elements can only have a single id value applied to them.
-
-```css
-body {
-  font-family: sans-serif;
-}
-
-#one {
-  background-color: yellow;
-}
-
-h1#heading {
-  color: rebeccapurple;
-}
-```
-
-#### Attribute selectors
-
-### 2.1.4 Combinators
-
-### 2.1.5 The box model
-
-## 2.2 Text styling
-
-## 2.3 Layout
 
 
