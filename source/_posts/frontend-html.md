@@ -1,6 +1,6 @@
 ---
 title: HTML
-date: 2025-01-13 17:08:46
+date: 2025-01-13 17:10:46
 categories:
 - Frontend
 tags:
@@ -28,7 +28,7 @@ tags:
 
 ## 1.4 HTML comments
 
-HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user.
+&emsp;&emsp;HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user.
 
 ```html
 <p>I'm not inside a comment</p>

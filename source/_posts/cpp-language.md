@@ -1,7 +1,7 @@
 ---
-title: C++ Programming Language
+title: "C++: The Language"
 date: 2025-01-13 23:58:37
 categories:
-- C++
+- C/Cpp
 tags:
 ---

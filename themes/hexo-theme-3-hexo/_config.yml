@@ -1,7 +1,7 @@
 version: 1.1.0
 # 你的头像url
 avatar: /img/avatar.png
-favicon: /img/avatar.jpg
+favicon: /img/avatar.png
 
 #如果博客放置位置不是根目录，则可以通过配置此路径解决静态文件路径错误问题
 # 比如访问地址为 yelog.org/blog 那就需要配置为 blog_path: /blog 才能正常访问
@@ -42,12 +42,12 @@ category:
   num: true # 分类显示文章数
   sub: true # 开启多级分类
   sort:
+    - C/Cpp
     - EECS
-    - C
-    - C++
+    - Cpp
     - Frontend
     - Java
-    - Database 
+    - MySQL
   width:
     lg: 170 # 1468px<屏幕宽度 左侧分类宽度
     md: 100 # 1024px<屏幕宽度<=1468px 左侧分类宽度
@@ -182,7 +182,7 @@ code:
 highlight:
   on: true # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
   lineNum: true # true显示行号
-  copy: false # 复制功能
+  copy: true # 复制功能
   theme: github
 # 代码高亮主题,效果可以查看 https://highlightjs.org/static/demo/
 # 支持主题：

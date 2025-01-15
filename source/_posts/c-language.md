@@ -1,8 +1,8 @@
 ---
-title: C Programming Language
+title: "C: The Language"
 date: 2024-12-22 23:08:36
 categories:
-- C
+- C/Cpp
 tags:
 - C
 ---
