@@ -1,5 +1,5 @@
 ---
-title: Java Programming Language
+title: "Java: The Language"
 date: 2024-12-30 14:16:47
 categories:
 - Java
@@ -33,21 +33,43 @@ The rules and conventions for naming your variables can be summarized as follows
 
 ## 2.2 Creating Primitive Type Variables
 
+### 2.2.1 Primitive Types
+
 The eight primitive data types supported by the Java programming language are:
 
-1. `byte`
-2. `short`
-3. `int`
-4. `long`
-5. `float`
-6. `double`
-7. `boolean`
-8. `char`
+|          |                                           |       |
+|:--------:|:----------------------------------------:|:------:|
+| `byte`   | an 8-bit signed two's complement integer |     |
+
+1. `byte`: an 8-bit signed two's complement integer
+2. `short`: a 16-bit signed two's complement integer
+3. `int`: a 32-bit signed two's complement integer
+4. `long`: a 64-bit two's complement integer
+5. `float`: a single-precision 32-bit IEEE 754 floating point
+6. `double`: a double-precision 64-bit IEEE 754 floating point
+7. `boolean`: has only two possible values: `true` and `false`
+8. `char`: a single 16-bit Unicode character
+
+### 2.2.2 Initializing a field with a default value
+
+| Data Type | Default Value (for fields) |
+|:---------:|:--------------------------:|
+| `byte`    |  0                         |
+| `short`	|  0                         |
+| `int`     |  0                         |
+| `long`    |  0L                        |
+| `float`   |  0.0f                      |
+| `double`  |  0.0d                      |
+| `char`    |  \u0000                    |
+| `boolean` | false                      |
+
+
+
+| `String (or any other object)` | null|
+
+### 2.2.3 Creating values with literals
+
 
 # 3 Classes and Objects
-
-
-
-
 
 

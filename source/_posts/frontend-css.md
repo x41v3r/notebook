@@ -1,6 +1,6 @@
 ---
 title: CSS3
-date: 2025-01-13 17:12:47
+date: 2025-01-13 17:13:47
 categories:
 - Frontend
 tags:
@@ -84,7 +84,7 @@ The element or elements which are selected by the selector are referred to as th
 </body>
 ```
 
-### Type selectors
+### 1.3.1 Type selectors
 
 A type selector is sometimes referred to as a *tag name selector* or *element selector* because it selects an HTML tag/element in the document.
 
@@ -106,7 +106,7 @@ em {
 }
 ```
 
-### Class selectors
+### 1.3.2 Class selectors
 
 The case-sensitive class selector starts with a dot `.` character. It will select everything in the document with that class applied to it.
 
@@ -120,7 +120,7 @@ body {
 }
 ```
 
-### ID selectors
+### 1.3.3 ID selectors
 
 The case-sensitive ID selector begins with a `#` rather than a dot character, but is used in the same way as a class selector. The difference is that an ID can be used only once per page, and elements can only have a single id value applied to them.
 
@@ -138,7 +138,7 @@ h1#heading {
 }
 ```
 
-### Attribute selectors
+### 1.3.4 Attribute selectors
 
 ## 1.4 Combinators
 

@@ -6,8 +6,6 @@ categories:
 tags:
 ---
 
-# HTML
-
 # 1 Getting started with HTML
 
 ## 1.1 What is HTML?
@@ -135,7 +133,7 @@ Each heading has to be wrapped in a heading element:
 
 ## 5.3 Nesting lists
 
-It is perfectly OK to nest one list inside another one.
+It is **perfectly OK** to nest one list inside another one.
 
 ```html
 <ol>
@@ -180,7 +178,7 @@ The purpose of description lists is to *mark up a set of items and their associa
 
 # 6 Structuring documents
 
-## 6.1 
+## 6.1 An example
 
 A "typical website" could be structured something like this:
 
@@ -289,6 +287,8 @@ A "typical website" could be structured something like this:
 </html>
 ```
 
+> The appearance of the page shown above — including the layout, colors, and fonts — is achieved by applying CSS to the HTML.
+
 ## 6.2 Non-semantic wrappers
 
 Sometimes we'll come across a situation where *we can't find an ideal semantic element to group some items together or wrap some content*.
@@ -330,6 +330,8 @@ For cases like these, **HTML** provides the `<div>` and `<span>` elements.
 ```
 
 ## 6.3 Line breaks and horizontal rules
+
+# 7 Advanced text features
 
 
 
