@@ -141,11 +141,101 @@ int limit MAXLINE+1;
 float eps = 1.0e-5;
 ```
 
-## 2.5 Operators and expressions
+## 2.5 Operators
+
+<img src="/images/c-operators.png" width="60%">
 
 ### 2.5.1 Arithmetic operators
 
-`+`&emsp;`-`&emsp;`*`&emsp;`/`&emsp;`%`
+&emsp;&emsp;The C arithmetic operators are the symbols that are used to perform mathematical operations on operands. 
+
+There are **a total of 9 arithmetic operators** in C to provide the basic arithmetic operations such as addition, subtraction, multiplication, etc.
+
+| Operator | Arithmetic Operation   | Syntax  |
+|:--------:|:----------------------:|:-------:| 
+| `+`      | Add two operands.      | `x + y` |
+| `–`      | Subtract the second operand from the first operand. | `x – y` |
+| `*`      | Multiply two operands. | `x * y` |
+| `/`      | Divide the first operand by the second operand. | `x / y` |
+| `%`      | Calculate the remainder when the first operand is divided by the second operand. | `x % y` |
+| `--`     | Decreases the integer value of the variable by one. | `--h` or `h--` |
+| `++`     | Increases the integer value of the variable by one. | `++h` or `h++` |
+| `+`      | Returns the value of its operand. | `+h` |
+| `-`      | Returns the negative of the value of its operand. | `-h` |
+
+```c
+// C program to demonstrate syntax of arithmetic operators
+#include <stdio.h>
+
+int main()
+{
+    int a = 10, b = 4, res;
+
+    // printing a and b
+    printf("a is %d and b is %d\n", a, b);
+
+    res = a + b; // addition
+    printf("a + b is %d\n", res);
+
+    res = a - b; // subtraction
+    printf("a - b is %d\n", res);
+
+    res = a * b; // multiplication
+    printf("a * b is %d\n", res);
+
+    res = a / b; // division
+    printf("a / b is %d\n", res);
+
+    res = a % b; // modulus
+    printf("a %% b is %d\n", res);
+
+    printf("Post Increment and Decrement\n");
+    // post-increment example:
+    // res is assigned 10 only, a is not updated yet
+    res = a++;
+    printf("a is %d and result is %d\n", a,
+           res); // a becomes 11 now
+
+    // post-decrement example:
+    // res is assigned 11 only, a is not updated yet
+    res = a--;
+    printf("a is %d and result is %d\n", a,
+           res); // a becomes 10 now
+
+    printf("\nPre Increment and Decrement\n");
+    // pre-increment example:
+    // res is assigned 11 now since
+    // a is updated here itself
+    res = ++a;
+
+    // a and res have same values = 11
+    printf("a is %d and result is %d\n", a, res);
+
+    // pre-decrement example:
+    // res is assigned 10 only since a is updated here
+    // itself
+    res = --a;
+
+    // a and res have same values = 10
+    printf("a is %d and result is %d\n", a, res);
+
+    return 0;
+}
+```
+
+### 2.5.2 Assignment operators
+
+&emsp;&emsp;Assignment operators are used for assigning value to a variable.
+
+The left side operand of the assignment operator is a variable and right side operand of the assignment operator is a value. 
+
+The value on the right side must be of the same data-type of the variable on the left side otherwise the compiler will raise an error. 
+
+### 2.5.2 Unary Operators
+
+
+
+
 
 ### 2.5.2 Relational and logical operators
 
@@ -184,6 +274,10 @@ printf("b = %d\n", b);  //9
 ### 2.5.6 Assignment operators and expressions
 
 ### 2.5.7 Conditional expressions
+
+## 2.6 Expressions
+
+
 
 # 3 Control flow
 
