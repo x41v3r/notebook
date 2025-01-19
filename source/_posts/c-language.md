@@ -229,10 +229,12 @@ The left side operand of the assignment operator is a variable and right side op
 
 The value on the right side must be of the same data-type of the variable on the left side otherwise the compiler will raise an error. 
 
-1. `=`: This is the simplest assignment operate
+1. `=`: This is the simplest assignment operators.
 
+<a href="https://www.geeksforgeeks.org/assignment-operators-in-c-c/"> knowledge webpage </a>
 
 ### 2.5.2 Unary Operators
+
 
 
 
@@ -399,8 +401,6 @@ If there isn't a "default" and if none of the cases match, *no action at all tak
 Cases and the defult clause can occur in any order.
 
 ## 3.3 Loops
-
-
 
 ### 3.3.1 while
 
