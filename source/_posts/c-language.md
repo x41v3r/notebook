@@ -143,8 +143,6 @@ float eps = 1.0e-5;
 
 ## 2.5 Operators
 
-<img src="/images/c-operators.png" width="60%">
-
 ### 2.5.1 Arithmetic operators
 
 &emsp;&emsp;The C arithmetic operators are the symbols that are used to perform mathematical operations on operands. 
@@ -230,6 +228,9 @@ int main()
 The left side operand of the assignment operator is a variable and right side operand of the assignment operator is a value. 
 
 The value on the right side must be of the same data-type of the variable on the left side otherwise the compiler will raise an error. 
+
+1. `=`: This is the simplest assignment operate
+
 
 ### 2.5.2 Unary Operators
 
