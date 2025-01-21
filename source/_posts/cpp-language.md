@@ -1,7 +1,13 @@
 ---
-title: "C++: The Language"
+title: C++ Language
 date: 2025-01-13 23:58:37
 categories:
-- C/Cpp
+- Cpp
 tags:
 ---
+
+<a href="https://www.geeksforgeeks.org/c-plus-plus/?ref=lbp" target="_blank">knowledge page</a>
+
+
+
+

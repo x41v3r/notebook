@@ -1,5 +1,5 @@
 ---
-title: CSS3
+title: CSS
 date: 2025-01-13 17:13:47
 categories:
 - Frontend

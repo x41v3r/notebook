@@ -1,8 +1,8 @@
 ---
-title: "C: The Language"
+title: "C Language"
 date: 2024-12-22 23:08:36
 categories:
-- C/Cpp
+- C
 tags:
 - C
 ---
@@ -36,12 +36,12 @@ There are some restrictions on the names of variables and symbolic constants:
 
 There are only a few basic data types in C:
 
-| type    | description                                                                        |
-|:-------:|:----------------------------------------------------------------------------------:|
-| `char`  | A single byte, capable of holding one character in the local character set.        |
-| `int`   | An integer, typically reflecting the natural size of integers on the host machine. |
-| `float` | Single-precision floating point.                                                   |
-| `double`| Double-precision floating point.                                                   |
+| type    | description                                                                          |
+|:-------:|:------------------------------------------------------------------------------------:|
+| `char`  | **A single byte**, capable of holding one character in the local character set.      |
+| `int`   | An integer, *typically reflecting the natural size of integers on the host machine*. |
+| `float` | Single-precision floating point.                                                     |
+| `double`| Double-precision floating point.                                                     |
 
 &emsp;&emsp;In addition, there are a number of qualifiers that can be applied to these basic types. 
 
@@ -188,12 +188,13 @@ int main()
     printf("a %% b is %d\n", res);
 
     printf("Post Increment and Decrement\n");
+   
     // post-increment example:
     // res is assigned 10 only, a is not updated yet
     res = a++;
     printf("a is %d and result is %d\n", a,
            res); // a becomes 11 now
-
+    
     // post-decrement example:
     // res is assigned 11 only, a is not updated yet
     res = a--;
@@ -201,19 +202,16 @@ int main()
            res); // a becomes 10 now
 
     printf("\nPre Increment and Decrement\n");
-    // pre-increment example:
-    // res is assigned 11 now since
-    // a is updated here itself
-    res = ++a;
 
+    // pre-increment example:
+    // res is assigned 11 now since a is updated here itself
+    res = ++a;
     // a and res have same values = 11
     printf("a is %d and result is %d\n", a, res);
 
     // pre-decrement example:
-    // res is assigned 10 only since a is updated here
-    // itself
+    // res is assigned 10 only since a is updated here itself
     res = --a;
-
     // a and res have same values = 10
     printf("a is %d and result is %d\n", a, res);
 
@@ -229,58 +227,63 @@ The left side operand of the assignment operator is a variable and right side op
 
 The value on the right side must be of the same data-type of the variable on the left side otherwise the compiler will raise an error. 
 
-1. `=`: This is the simplest assignment operators.
+* `=` is the simplest assignment operator, which is used to assign the value on the right to the variable on the left.
+* `+=` is combination of `+` and `=` operators and `(a += b)` can be written as `(a = a + b)`.
+* `-=` is combination of `-` and `=` operators and `(a -= b)` can be written as `(a = a - b)`.
+* `*=` is combination of `*` and `=` operators and `(a *= b)` can be written as `(a = a * b)`.
+* `/=` is combination of `/` and `=` operators and `(a /= b)` can be written as `(a = a / b)`.
+
+```c
+// C program to demonstrate working of Assignment operators
+
+#include <stdio.h>
+
+int main()
+{
+    // Assigning value 10 to a
+    // using "=" operator
+    int a = 10;
+    printf("Value of a is %d\n", a);
+
+    // Assigning value by adding 10 to a
+    // using "+=" operator
+    a += 10;
+    printf("Value of a is %d\n", a);
+
+    // Assigning value by subtracting 10 from a
+    // using "-=" operator
+    a -= 10;
+    printf("Value of a is %d\n", a);
+
+    // Assigning value by multiplying 10 to a
+    // using "*=" operator
+    a *= 10;
+    printf("Value of a is %d\n", a);
+
+    // Assigning value by dividing 10 from a
+    // using "/=" operator
+    a /= 10;
+    printf("Value of a is %d\n", a);
+
+    return 0;
+}
+```
+
+### 2.5.3 Logical operators
+
+&emsp;&emsp;Logical operators in C are used to combine multiple conditions/constraints. *Logical Operators returns either 0 or 1, it depends on whether the expression result is `true` or `false`.*
 
 <a href="https://www.geeksforgeeks.org/assignment-operators-in-c-c/"> knowledge webpage </a>
 
-### 2.5.2 Unary Operators
+### 2.5.4 Bitwise operators
 
+&emsp;&emsp;The following 6 operators are bitwise operators (also known as bit operators as they work at the bit-level). 
 
+They are used to perform bitwise operations in C.
 
+## 2.6 Type conversions
 
-
-
-### 2.5.2 Relational and logical operators
-
-`>`&emsp;`>=`&emsp;`<`&emsp;`<=`&emsp;`==`&emsp;`!=`
-
-`&&`&emsp;`||`&emsp;`!`
-
-### 2.5.3 Type conversions
-
-### 2.5.4 Increment and decrement operators
-
-&emsp;&emsp;The increment operator `++` adds `1` to its operand, while the decrement operator `--` subtracts `1`, as in 
-
-```c
-int a = 10;
-int b = 10;
-
-a++;
-b--;
-
-printf("a = %d\n", a);  //11
-printf("b = %d\n", b);  //9
-```
-
-### 2.5.5 Bitwise operators
-
-| Operator |  |
-|:--------:|:--------------------:|
-| `&`      | bitwise AND          |
-| `\|`     | bitwise inclusive OR |
-| `^`      | bitwise exclusive OR |
-| `<<`     | left shift           |
-| `>>`     | right shift          |
-| `~`      | one's complement     |
-
-### 2.5.6 Assignment operators and expressions
-
-### 2.5.7 Conditional expressions
-
-## 2.6 Expressions
-
-
+## 2.7 Expressions
 
 # 3 Control flow
 
