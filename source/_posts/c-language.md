@@ -273,13 +273,130 @@ int main()
 
 &emsp;&emsp;Logical operators in C are used to combine multiple conditions/constraints. *Logical Operators returns either 0 or 1, it depends on whether the expression result is `true` or `false`.*
 
-<a href="https://www.geeksforgeeks.org/assignment-operators-in-c-c/"> knowledge webpage </a>
+There are 3 logical operators in the C language:
+
+1. Logical AND (`&&`)
+
+```c
+// C program for Logical
+// AND Operator
+#include <stdio.h>
+
+// Driver code
+int main()
+{
+    int a = 10, b = 20;
+
+    if (a > 0 && b > 0) 
+    {
+        printf("Both values are greater than 0\n");
+    }
+    else 
+    {
+        printf("Both values are less than 0\n");
+    }
+    return 0;
+}
+```
+
+2. Logical OR (`||`)
+
+```c
+// C program for Logical
+// OR Operator
+#include <stdio.h>
+
+// Driver code
+int main()
+{
+    int a = -1, b = 20;
+
+    if (a > 0 || b > 0) 
+    {
+        printf("Any one of the given value is "
+               "greater than 0\n");
+    }
+    else 
+    {
+        printf("Both values are less than 0\n");
+    }
+    return 0;
+}
+```
+
+3. Logical NOT (`!`)
+
+```c
+// C program for Logical
+// NOT Operator
+#include <stdio.h>
+
+// Driver code
+int main()
+{
+    int a = 10, b = 20;
+
+    if (!(a > 0 && b > 0)) 
+    {
+        // condition returned true but
+        // logical NOT operator changed
+        // it to false
+        printf("Both values are greater than 0\n");
+    } 
+    else 
+    {
+        printf("Both values are less than 0\n");
+    }
+    return 0;
+}
+```
+
+&emsp;&emsp;When the result can be determined by evaluating the preceding Logical expression without evaluating the further operands, it is known as **short-circuiting**.
 
 ### 2.5.4 Bitwise operators
 
 &emsp;&emsp;The following 6 operators are bitwise operators (also known as bit operators as they work at the bit-level). 
 
+* 
+
 They are used to perform bitwise operations in C.
+
+```c
+// C Program to demonstrate use of bitwise operators
+
+#include <stdio.h>
+int main()
+{
+    // a = 5 (00000101 in 8-bit binary), b = 9 (00001001 in
+    // 8-bit binary)
+    unsigned int a = 5, b = 9;
+
+    // The result is 00000001
+    printf("a = %u, b = %u\n", a, b);
+    printf("a&b = %u\n", a & b);
+
+    // The result is 00001101
+    printf("a|b = %u\n", a | b);
+
+    // The result is 00001100
+    printf("a^b = %u\n", a ^ b);
+
+    // The result is 11111111111111111111111111111010
+    // (assuming 32-bit unsigned int)
+    printf("~a = %u\n", a = ~a);
+
+    // The result is 00010010
+    printf("b<<1 = %u\n", b << 1);
+
+    // The result is 00000100
+    printf("b>>1 = %u\n", b >> 1);
+
+    return 0;
+}
+```
+
+
+<a href="https://www.geeksforgeeks.org/assignment-operators-in-c-c/"> knowledge webpage </a>
 
 ## 2.6 Type conversions
 
