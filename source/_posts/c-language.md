@@ -54,6 +54,11 @@ long int counter;
 
 &emsp;&emsp;The word "int" can be omitted in such declarations, and typically is.
 
+```c
+short sh;
+long counter;
+```
+
 > &emsp;&emsp;The intent is that `short` and `long` should provide different lengths of integers where practical; `int` will normally be the natural size for a particular machine.
 
 On a 32-bit machine, `short` is often 16 bits, `long` 32 bits, and `int` either 16 or 32 bits.
@@ -192,14 +197,12 @@ int main()
     // post-increment example:
     // res is assigned 10 only, a is not updated yet
     res = a++;
-    printf("a is %d and result is %d\n", a,
-           res); // a becomes 11 now
+    printf("a is %d and result is %d\n", a, res); // a becomes 11 now
     
     // post-decrement example:
     // res is assigned 11 only, a is not updated yet
     res = a--;
-    printf("a is %d and result is %d\n", a,
-           res); // a becomes 10 now
+    printf("a is %d and result is %d\n", a, res); // a becomes 10 now
 
     printf("\nPre Increment and Decrement\n");
 
@@ -225,7 +228,7 @@ int main()
 
 The left side operand of the assignment operator is a variable and right side operand of the assignment operator is a value. 
 
-The value on the right side must be of the same data-type of the variable on the left side otherwise the compiler will raise an error. 
+The value on the right side must be of **the same data-type** of the variable on the left side otherwise the compiler will raise an error. 
 
 * `=` is the simplest assignment operator, which is used to assign the value on the right to the variable on the left.
 * `+=` is combination of `+` and `=` operators and `(a += b)` can be written as `(a = a + b)`.
