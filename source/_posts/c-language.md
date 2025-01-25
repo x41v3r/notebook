@@ -358,9 +358,7 @@ int main()
 
 ### 2.5.4 Bitwise operators
 
-&emsp;&emsp;The following 6 operators are bitwise operators (also known as bit operators as they work at the bit-level). 
-
-* 
+&emsp;&emsp;The following 6 operators are bitwise operators (also known as **bit operators** as they work at the bit-level).  
 
 They are used to perform bitwise operations in C.
 
@@ -397,7 +395,6 @@ int main()
     return 0;
 }
 ```
-
 
 <a href="https://www.geeksforgeeks.org/assignment-operators-in-c-c/"> knowledge webpage </a>
 
