@@ -7,31 +7,17 @@ tags:
 - Java
 ---
 
-# 1 Java Language Basics
+# 1 About Java
 
-## 1.1 Creating variables and naming them
+&emsp;&emsp;Java is a high-level, object-oriented programming language introduced by SUN (Stanford University Network) in 1995. It not only incorporates the strengths of C++ but also eliminates complex concepts like multiple inheritance and pointers found in C++, making Java both powerful and user-friendly. As a leading example of static object-oriented programming languages, Java excels in implementing object-oriented principles, enabling programmers to tackle complex programming tasks with an elegant approach.
 
-## 1.2 Creating primitive type variables in the programs
+&emsp;&emsp;With the continuous maturation of Java technology in web development, Java has become the preferred development language for web applications.
 
-<img src="/images/java-data-types.png"/>
+# 2 Variables and Data Types
 
-### 1.2.1 Primitive types
+## 2.1 Variables
 
-|   Type    |       Description       | Default  |  Size   |                     Example Literals                      |                       Range of values                       |
-| :-------: | :---------------------: | :------: | :-----: | :-------------------------------------------------------: | :---------------------------------------------------------: |
-| `boolean` |    `true` or `false`    | `false`  | 8 bits  |                      `true`, `false`                      |                       `true`, `false`                       |
-|  `byte`   | twos-complement integer |   `0`    | 8 bits  |                          (none)                           |                       `-128` to `127`                       |
-|  `char`   |    Unicode character    | `\u0000` | 16 bits | `‘a’`, `‘\u0041’`, `‘\101’`, `‘\\’`, `‘\’`, `‘\n’`, `‘β’` |   characters representation of ASCII values `0` to `255`    |
-|  `short`  | twos-complement integer |   `0`    | 16 bits |                          (none)                           |                    `-32,768` to `32,767`                    |
-|   `int`   | twos-complement intger  |   `0`    | 32 bits |                   `-2`,`-1`,`0`,`1`,`2`                   |             `-2,147,483,648` to `2,147,483,647`             |
-|  `long`   | twos-complement integer |   `0`    | 64 bits |                `-2L`,`-1L`,`0L`,`1L`,`2L`                 | `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807` |
-|  `float`  | IEEE 754 floating point |  `0.0`   | 32 bits |        `1.23e100f`, `-1.23e-100f` , `.3f` ,`3.14F`        |                    upto 7 decimal digits                    |
-| `double`  | IEEE 754 floating point |  `0.0`   | 64 bits |         `1.23456e300d` , `-123456e-300d` , `1e1d`         |                   upto 16 decimal digits                    |
+### 2.1.1 Variables in Java
 
-### 1.2.2 Primitive type literals
-
-
-
-# 2 Classes and Objects
 
 
