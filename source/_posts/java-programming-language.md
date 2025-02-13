@@ -19,5 +19,8 @@ tags:
 
 ### 2.1.1 Variables in Java
 
+&emsp;&emsp;A variable is a storage area in memory where the data can continuously change within the same type range. It serves as the most fundamental storage unit in a program, consisting of three components: variable type, variable name, and stored value.
 
+&emsp;&emsp;Java defines explicit data types for each kind of data and allocates memory space of varying sizes in memory accordingly. (Java is categorized as a strongly-typed programming language.)
 
+> Variables are used to store data generated during the execution of a program in memory. (We use the variable name to access the data in this memory area.)
