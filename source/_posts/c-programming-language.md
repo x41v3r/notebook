@@ -228,7 +228,7 @@ int main()
 
 The left side operand of the assignment operator is a variable and right side operand of the assignment operator is a value. 
 
-The value on the right side must be of **the same data-type** of the variable on the left side otherwise the compiler will raise an error. 
+The value on the right side must be **of the same data-type** of the variable on the left side otherwise the compiler will raise an error. 
 
 * `=` is the simplest assignment operator, which is used to assign the value on the right to the variable on the left.
 * `+=` is combination of `+` and `=` operators and `(a += b)` can be written as `(a = a + b)`.
