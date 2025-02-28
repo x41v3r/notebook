@@ -11,6 +11,12 @@ tags:
 
 ## 1.1 Variables
 
+```java
+int cadence = 0;
+int speed = 0;
+int gear = 1;
+```
+
 The Java programming language defines the following kinds of variables:
 
 * **Instance Variables (Non-Static Fields)**
@@ -49,11 +55,15 @@ If the name you choose consists of only one word, spell that word in all lowerca
 
 
 
-
 &emsp;&emsp;A variable is a storage area in memory where the data can continuously change within the same type range. It serves as the most fundamental storage unit in a program, consisting of three components: variable type, variable name, and stored value.
 
 &emsp;&emsp;Java defines explicit data types for each kind of data and allocates memory space of varying sizes in memory accordingly. (Java is categorized as a **strongly-typed** programming language.)
 
 > Variables are used to store data generated during the execution of a program in memory. (We use the variable name to access the data in this memory area.)
+
+
+
+# 2 Creating Primitive Type Variables
+
 
 
