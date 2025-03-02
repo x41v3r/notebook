@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: x41v3r's notebook
+title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: x41v3r
+author: John Doe
 language: en
 timezone: ''
 
@@ -43,15 +43,13 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-  #syntax_highlighter: highlight.js
-syntax_highlighter: #empty
+syntax_highlighter: highlight.js
 highlight:
-  enable: false
-    #line_number: true
-    #auto_detect: false
-    #tab_replace: ''
-    #wrap: true
-    #hljs: false
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
 prismjs:
   preprocess: true
   line_number: true
@@ -98,8 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-## theme: landscape
-theme: hexo-theme-3-hexo
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
